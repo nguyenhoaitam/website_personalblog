@@ -1,0 +1,75 @@
+.sort {
+    margin: 1rem 0 2rem 85%;
+}
+
+.sort select { 
+    padding: 5px 10px;
+}
+
+div.all-post {
+    background: var(--body-color);
+    padding: 2rem 0.5rem;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+div.all-post > div {
+    width: 48.5%;
+    margin: 0.5rem;
+}
+
+div.all-post div.post-er::after {
+    display: none;
+}
+
+div.posts > div {
+    justify-content: space-between;
+}
+
+.post-topic-btn {
+    margin-bottom: 0.5rem;
+}
+
+.post-content h3 {
+    margin-bottom: 0;
+}
+
+.post-text {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* .all-post .react {
+    margin: 1rem 3rem 0 3rem !important;
+} */
+
+/* .all-post .react {
+    margin: 0 3rem;
+} */
+
+div.loading {
+    color: var(--font-color-item);
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+div.loading span {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+div.loading a {
+    text-decoration: none;
+    color: var(--font-color-item);
+}
+
+div.loading.page1 .one, div.loading.page2 .two {
+    background: var(--bg-color-hover);
+    color: var(--color-hover);
+}

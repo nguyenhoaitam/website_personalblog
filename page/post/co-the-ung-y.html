@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 14/08/2022</p>
+        <h1 class="post-h1">Làm thế nào để có một cơ thể ưng ý</h1>
+        
+        <div class="body-good">
+
+            <h4>Làm thế nào để có thân hình đẹp cho nam?</h4>
+            <p>Nếu trong thời gian ở nhà, các chàng trai luyện tập chăm chỉ và đúng cách thì sẽ giúp cải thiện vóc dáng một cách đáng kể. Có nhiều cách để các chàng trai sở hữu than hinh nam dep với cơ thể săn chắc, không cần đến phòng gym bằng loạt bài tập đơn giản, dễ dàng áp dụng ngay tại nhà.</p>
+            
+
+            <h2 class="post-h2">Chế độ dinh dưỡng và nghỉ ngơi</h2>
+            <h5>Bổ sung thực phẩm theo nhu cầu</h5>
+            <img src="../../images/post/page/the-hinh1-min.jpg" alt="" class="post-img-content">
+            <p>
+                Bạn cần ăn nhiều thực phẩm lành manh nếu muốn có một thân hình nam đẹp. Tránh những thức ăn vặt, có chứa nhiều dầu mỡ và không tốt cho cơ thể như: khoai tây chiên, gà rán, bánh kém, pizza,..Chỉ cần hạn chế điều này thôi bạn cũng có thể cảm nhận được sự thay đổi rõ rệt trong cơ thể.
+            </p>
+
+            <p>
+                Bên cạnh đó, bạn cần bổ sung các <b>thực phẩm giàu protein</b> và chất xơ, cũng như chia khẩu phần thức ăn nhỏ hơn. Tốt nhất bạn nên ăn từ 3-4 bữa mỗi ngày.
+            </p>
+            <p>
+                Đặc biệt, trái cây và rau quả luôn là những thực phẩm ưu tiên hàng đầu trong quá trình luyện tập nhất là đối với những ai có ý định ăn kiêng và muốn sở hữu cơ thể nam đẹp. Ăn rau quả có nhiều màu sắc để bổ sung đầy đủ vitamin cho cơ thể bạn nhé.
+            </p>
+            <p>
+                Một điều bạn cần lưu ý đặc biết đó là không nhịn đói. Có rất nhiều người nghĩ rằng nhịn đói là <b>cách giảm cân nhanh nhất</b>. Nhưng trên thực tế, điều đó hoàn toàn sai, vì quá trình trao đổi chất không hoạt động hiệu quả không hoạt động nếu không nhận được thức ăn. Vì thế, nếu muốn giảm cân hiệu quả, bạn nên ăn nhiều bữa nhỏ thường xuyên thay vì nhịn đói.
+            </p>
+            <h5>Uống thật nhiều nước</h5>
+            <p>Hiện tại, phần lớn giới trẻ đang ưa chuộng các loại nước uống như soda hay nước ép. Có thể bạn đang nghĩ đến những loại soda dành cho người ăn kiêng. Tuy nhiên, chúng vẫn tác động không tốt đến quá trình giảm cân của bạn. Nếu muốn có cơ thể nam đẹp, tốt nhất bạn chỉ nên uống nước lọc. Uống nước giúp cơ thể giảm độ hấp thụ calo đáng kể.</p>
+            <img src="../../images/post/page/the-hinh2-min.jpg" alt="" class="post-img-content">
+
+            <p>Mỗi ngày uống ít nhất 2 lít nước sẽ giúp cơ thể bạn thay đổi đáng kể. Ai cũng biết điều này, nhưng chúng ta không dễ dàng gì có thể bỏ trà sữa thăm ngon hay tách cà phê thơm ngậy để chuyển đổi thành nước lọc được.</p>
+            <p>Tuy nhiên, nếu bạn thực hiện một cách từ từ và tăng dần sẽ giúp cơ thể dần thích nghi hơn. Uống nước thường xuyên giúp da bạn khỏe mạnh hơn và mịn màng hơn. Nếu bạn cần phải di chuyển nhiều hãy mang theo chai nước và uống thường xuyên nhé.</p>
+            <p>Ngoài ra, bạn cần phải loại bỏ rượu bia ra khỏi chế độ ăn uống ngay lập thức. Thực chất, ai cũng có thể nhận thức được điều này. Tuy nhiên, không phải ai cũng từ bỏ được nó. Từ lý thuyết đến thực tế luôn là một chặng đường dài mà bạn cần phải cố gắng.</p>
+            <p>Có những người vì tính chất công việc nên không thể từ chối được nhưng bạn có thể hạn chế nó bằng nhiều cách. Rượu bia chứa rất nhiều calo nhưng chúng không có tác dụng giảm cân.</p>
+            <h5>Nghỉ ngơi hợp lý</h5>
+            <img src="../../images/post/page/the-hinh3-min.jpg" alt="" class="post-img-content">
+
+            <p>Làm sao để có thân hình đẹp? Dù bận rộn trăm công nghìn việc đi chăng nữa thì giấc ngủ luôn là điều quan trọng trong quá trình giữ gìn sức khỏe. Một người ngủ đủ giấc trông có sức sống hơn rất nhiều so với những người thiếu ngủ. <b>Mất ngủ</b>, thiếu ngủ cũng khiến cơ thể của bạn không có khả năng giảm cân. Lý do là vì nếu bạn không ngủ, cơ thể sản xuất lượng glu-cô và insulin của những người mắc bệnh tiểu đường.</p>
+            <p>Ngủ ít làm mất tập trung trong công việc cũng như động lực tập luyện và ăn uống lành mạnh. Tất cả chúng ta đều đã trải qua trường hợp này: Khi cơ thể thiếu ngủ sẽ dẫn đến mệt mỏi và không còn sức để làm những thứ khác. Nhưng khi ngủ đủ giấc cơ thể sẽ tỉnh táo và tràn đầy năng lượng khiến bạn nhiệt huyết với công việc hơn.</p>
+            <h2 class="post-h2">Chế độ tập luyện</h2>
+            <p>Cách để có thân hình cân đối cho nam không thể bỏ qua đó là tập luyện. Các bạn nam có thể thực hiện các bài tập dưới đây để sở hữu cho mình một thân hình đẹp.</p>
+            <h5>Tập cơ ngực và tay</h5>
+            <p>Làm thế nào để có thân hình đẹp cho nam? Các bài tập cơ bản, không đòi hỏi kỹ năng cao và dụng cụ đặc biệt cũng đủ giúp nam giới cải thiện vóc dáng. Động tác hít đất sẽ tập trung vào ngực, vai và bắp thịt sau cánh tay. Nam giới có thể thay đổi vị trí đặt tay sao cho tạo hiệu quả lên các phần cơ khác, sải tay rộng hơn để tập luyện cho cơ ngực và de co than hinh dep.</p>
+            <img src="../../images/post/page/the-hinh4-min.jpg" alt="" class="post-img-content">
+            <p>Bài luyện tập cơ tay tương tự như việc bạn cố gắng nhấc người lên khỏi mặt đất. Động tác này có lợi cho các bắp tay khiến bạn luôn cảm thấy phần cơ được săn chắc và mạnh mẽ hơn. Chúng mang lại hiệu quả tốt với cơ ngực và vai.</p>
+            <p>Ngoài ra, phái mạnh có thể tăng cường độ bằng việc nhấc chân lên khỏi mặt đất để dồn sức vào đôi tay.</p>
+            <h5>Cơ bụng và lưng săn chắc</h5>
+            <p>Động tác sử dụng mông làm điểm tựa, hai chân duỗi thẳng hoặc co lên tạo hình chữ V, thân ngả lưng về sau và tay đưa lên gập vào sau gáy. Cách có thân hình đẹp ở nam giới là tăng cường cho việc luyện tập, bạn có thể tập cùng với tạ, dây thun hoặc ghế nâng chân. Nếu muốn tăng độ khó cho nhóm cơ bụng dưới có thể sử dụng với bóng tập thể dục.</p>
+            <p><b>Hít xà đơn</b> là một trong những bài tập thể hình rất tốt cho phần thân trên, cơ bắp tay sau và vai trở nên săn chắc hơn. Trong quá trình luyện tập, bạn có thể đổi khoảng cách giữa hai tay để các cơ bắp được làm việc nhiều hơn ở các góc độ khác nhau</p>
+            <h5>Tập cơ chân</h5>
+            <p>Làm thế nào để có thân hình đẹp cho nam? Động tác tạo tư thế ngồi dùng lực trên hai chân sẽ giúp tiêu hao năng lượng thừa trong cơ thể và phần đùi trở nên săn chắc. Bạn có thể sử dụng kèm với tạ hay dây trợ lực để tăng độ khó khi luyện tập. Một lưu ý nhỏ chính là nam giới nên khởi đầu từ những bước đơn giản và sau đó nâng dần độ khó.</p>
+            <p>Buổi chiều được xem như thời điểm tập luyện tốt nhất trong ngày, khi cơ bắp đạt được độ dẻo dai cần thiết. Mỗi bài tập 3-5 lần xen kẽ giúp đạt được hiệu quả cao, dễ tập luyện ở nhà.</p>
+            <p>Buổi chiều được xem như thời điểm tập luyện tốt nhất trong ngày, khi cơ bắp đạt được độ dẻo dai cần thiết. Mỗi bài tập 3-5 lần xen kẽ giúp đạt được hiệu quả cao, dễ tập luyện ở nhà.</p>
+            <br>
+            <p>Vậy là bạn vừa tìm hiểu xong những cách làm thế nào để có thân hình đẹp cho nam. Hi vọng những chia sẻ trên của mình có thể hữu ích cho bạn trong quá trình cải thiện vóc dáng!</p>
+
+            <h4>Chúc bạn thành công!</h4>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="sach-gan-day.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="tieng-anh.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

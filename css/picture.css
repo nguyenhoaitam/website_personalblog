@@ -1,0 +1,260 @@
+div.logo {
+    display: none;
+}
+
+.main-picture {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1.h1 {
+    width: 180px;
+}
+
+.intro-picture {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@keyframes doinen {
+    0% {
+        background-image: url(../images/pic/poster/poster1.png);
+    }
+
+    15% {
+        background-image: url(../images/pic/poster/poster2.png);
+    }
+
+    30% {
+        background-image: url(../images/pic/poster/poster3.png);
+    }
+
+    45% {
+        background-image: url(../images/pic/poster/poster4.png);
+    }
+
+    60% {
+        background-image: url(../images/pic/poster/poster5.png);
+    }
+
+    75% {
+        background-image: url(../images/pic/poster/poster6.png);
+    }
+    
+    100% {
+        background-image: url(../images/pic/poster/poster1.png);
+    }
+}
+
+.banner {
+    animation: doinen 18s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner img {
+    width: 100%;
+    visibility: hidden;
+}
+
+.slider-content {
+    background-color: var(--body-color);
+    /* padding: 1rem; */
+    border-radius: 10px;
+    box-shadow: 0 5px 5px var(--color-shadow);
+}
+
+.slider-title h2 {
+    margin: 0;
+    padding: 1rem;
+}
+
+.slider-content-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-content-father {
+    position: relative;
+    height: 310px;
+    transition: all 1s ease;
+}
+
+.slider-items {
+    justify-content: space-evenly;
+    padding: 1rem 0.2rem;
+    position: absolute;
+}
+
+.slider-items:nth-child(2) {
+    transform: translateX(100%);
+}
+
+.slider-items:nth-child(3) {
+    transform: translateX(200%);
+}
+
+.slider-item {
+    width: 19%;
+}
+
+.slider-item img {
+    width: 100%;
+}
+
+.slider-item img:hover {
+    transform: scale(1.01);
+}
+
+.slider-item h5 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.slider-pre-nex {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-pre-nex i {
+    color: #333333;
+    font-size: 2rem;
+    height: 50px;
+    width: 40px;
+    background: rgb(253, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-70%);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.show-images {
+    margin-top: 2.5rem;
+}
+
+.show-images > div {
+    justify-content: space-between;
+}
+
+.show-images > div > div {
+    width: 32%;
+
+}
+
+.show-images img {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hover-pics {
+    position: relative;
+}
+
+.hover-pic {
+    position: absolute;
+    /* top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px; */
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 12%;
+} 
+
+.hover-pic::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scale(0,1)
+}
+
+.hover-pics:hover .hover-pic::before {
+    transform: scale(1,1)
+}
+
+.hover-pic::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scale(1,0)
+}
+
+.hover-pics:hover .hover-pic::after {
+    transform: scale(1,1)
+}
+
+.hover-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-content > div {
+    position: relative;
+}
+
+.hover-pics:hover .hover-content {
+    opacity: 1;
+}
+
+.hover-like-copy {
+    display: fixed;
+    top: -3.7%;
+    left: 58%;
+}
+
+.hover-dow {
+    display: fixed;
+    left: 78.5%;
+    top: -3.7%;
+}
+
+.hover-dow a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.hover-like-copy > div > i,
+.hover-dow i {
+    width: 3rem;
+    height: 3rem;
+    background: var(--white);
+    margin: 0.5rem;
+    cursor: pointer;
+    display: flex;justify-content: center;
+    align-items: center;
+}

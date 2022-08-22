@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../index.html" class="nav__logo">
+                    <img src="../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../index.html">Trang chủ</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="travel.html">Du lịch</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="all-page">
+        <h1 class="h1">Du lịch</h1>
+        <p class="intro-travel">Du lịch là một phần cuộc sống của chúng mình, nếu bạn có ý định đi du lịch hoặc đã lên kế hoạch mà còn đang phân vân về địa điểm đó thì hãy đến đây chúng mình sẽ giới thiệu tất tần tật cho bạn xem.
+            Bên cạnh đó chúng mình cũng giới thiệu cho bạn những kinh nghiệp đi du lịch sao cho tiết kiệm và những mẹo vặt trong khi du lịch, nó sẽ giúp ích cho bạn rất nhiều.
+            Hãy like và share bài viết nếu thấy hay bạn nhé &hearts; Nó là một phần động lực để chúng mình tiếp tục ra những bài viết hay nhất.
+        </p>
+    </div>
+
+    <section class="main-travel">
+        
+        <div class="find-location">
+            <h1>Tìm kiếm địa điểm bạn muốn đi</h1>
+            <div class="find-locat">
+                <input type="text" placeholder="Nhập địa điểm..." class="find-loca-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="travel-content flex">
+            <div class="travel-left">
+                <div class="travel-items">
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/cau-rong-da-nang.png" alt="caurong">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Đà Nẵng</button>
+                            <a href="#"><h4>Cầu Rồng Đà Nẵng - Top những cây cầu đẹp nhất thế giới nên Check in</h4></a>
+                            <div class="flex">
+                                <p>QuocHau</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>20/08/2022</p>
+                                </div>
+                            </div>
+                            <p>Đà Nẵng không chỉ được du khách gần xa yêu mến bởi những danh thắng nổi tiếng, các gian hàng ẩm thực đậm đà mà …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/aquatopia-phu-quoc.png" alt="aquatopia">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Phú Quốc</button>
+                            <a href="#"><h4>Trải nghiệm Công Viên Nước Aquatopia Water Park xịn xò nhất Đông Nam Á</h4></a>
+                            <div class="flex">
+                                <p>HoaiTam</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>05/08/2022</p>
+                                </div>
+                            </div>
+                            <p>Công viên nước Hòn Thơm Aquatopia được đầu tư bởi tập đoàn Sun Group bắt đầu hoạt động vào 28/12/2019 tại Hòn Thơm là công …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/cau-vang-da-nang.png" alt="cauvang">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Đà Nẵng</button>
+                            <a href="#"><h4>Cầu Vàng Đà Nẵng trên Bà Nà Hill, cây cầu sống ảo gây sốt CĐM</h4></a>
+                            <div class="flex">
+                                <p>QuocHau</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>04/08/2022</p>
+                                </div>
+                            </div>
+                            <p>Cầu Vàng trên Bà Nà Hill - Đà Nẵng là thành phố du lịch nổi tiếng thế giới không chỉ bởi những bãi biển đẹp, …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/chua-linh-phuoc-da-lat.png" alt="chualinhphuoc">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Đà Lạt</button>
+                            <a href="#"><h4>Tham quan Chùa Linh Phước và câu chuyện lý giải cái tên</h4></a>
+                            <div class="flex">
+                                <p>HoaiTam</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>01/08/2022</p>
+                                </div>
+                            </div>
+                            <p>Chùa Linh Phước ( hay chùa Ve Chai ) ở Đà Lạt sở hữu lối kiến trúc độc đáo mà ít các công trình tâm …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/doi-thien-phuc-duc-da-lat.png" alt="doithienphuc">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Đà Lạt</button>
+                            <a href="#"><h4>Lên đồi Thiên Phúc Đức ở Đà Lạt, cắm trại săn mây view bao đẹp</h4></a>
+                            <div class="flex">
+                                <p>HoaiTam</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>30/07/2022</p>
+                                </div>
+                            </div>
+                            <p>Đồi Thiên Phúc Đức là một ngọn đồi còn khá hoang sơ và bình yên của Đà Lạt. Mặc dù chưa được nhiều khách du …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/villa-vung-tau.png" alt="villavungtau">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Vũng Tàu</button>
+                            <a href="#"><h4>List 30+ Villa Vũng Tàu đẹp, gần biển cho đại gia đình nhóm bạn | 2022</h4></a>
+                            <div class="flex">
+                                <p>HoaiTam</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>25/06/2022</p>
+                                </div>
+                            </div>
+                            <p>Homestay ở Vũng Tàu giá rẻ nào dành cho bạn ? Vũng Tàu là địa điểm quá nổi tiếng dành cho dân Sài Gòn vivu …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/homestay-con-dao.png" alt="homestaycondao">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Côn đảo</button>
+                            <a href="#"><h4>Top #7 Resort Côn Đảo đẹp với phong cách cổ điển, lẫn hiện đại | new 2022</h4></a>
+                            <div class="flex">
+                                <p>QuocHau</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>23/06/2022</p>
+                                </div>
+                            </div>
+                            <p>Côn Đảo là một thiên đường nghỉ dưỡng cực kỳ yên bình với những bãi biển đẹp và phong cảnh thiên nhiên hoang sơ, quyến …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/du-lich-phu-yen.png" alt="dulichphuyen">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Phú Yên</button>
+                            <a href="#"><h4>Du Lịch Phú Yên - 20+ địa điểm tham quan bạn nên check in</h4></a>
+                            <div class="flex">
+                                <p>QuocHau</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>20/06/2022</p>
+                                </div>
+                            </div>
+                            <p>Bài viết tổng hợp chia sẻ kinh nghiêm du lịch Phú Yên, với list các địa điểm tham quan hot nhất hiện tại. Cho bạn …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/kinh-thanh-hue.png" alt="kinhthanhhue">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">Huế</button>
+                            <a href="#"><h4>Kinh Thành Huế - di sản hơn 100 năm của Triều Nguyễn</h4></a>
+                            <div class="flex">
+                                <p>HoaiTam</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>16/06/2022</p>
+                                </div>
+                            </div>
+                            <p>Trong các di sản còn lại của thời phong kiến thì Kinh Thành Huế là công trình tiêu biểu nhất hiện nay. Kiến trúc của …</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-item flex">
+                        <div class="travel-img">
+                            <img src="../images/post/travel/homestay-sapa.png" alt="homestaysapa">
+                        </div>
+
+                        <div class="travel-cont">
+                            <button type="button">SaPa</button>
+                            <a href="#"><h4>#20 Homestay SaPa đẹp nhất đây nè, bao xinh, bao sống ảo 2022</h4></a>
+                            <div class="flex">
+                                <p>QuocHau</p>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div class="travel-date flex">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>01/12/2021</p>
+                                </div>
+                            </div>
+                            <p>Chọn Homestay SaPa để lưu trú luôn là lựa chọn hàng đầu của nhóm mình khi đến SaPa. Bởi cách bài trí , thiết kế …</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="loading travel1">
+                    <span>
+                        <i class="fa-solid fa-angles-left"></i>
+                    </span>
+                    <span class="one">1</span>
+                    <span>
+                        <a href="travel2.html">2</a>
+                    </span>
+                    <span>
+                        <a href="travel3.html">3</a>
+                    </span>
+                    <span>
+                        <a href="travel2.html">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </span>
+                </div>
+                
+            </div>
+
+            <div class="travel-right">
+                <div>
+                    <h2 class="h2">Đọc nhiều nhất</h2>
+                    <div class="most-read flex">
+                        <div>
+                            <img src="../images/post/travel/cau-rong-da-nang.png" alt="caurongdanang">
+                            <span>1</span>
+                        </div>
+                        <a href="#">Cầu Rồng Đà Nẵng - Top những cây cầu đẹp nhất thế giới nên Check in</a>
+                    </div>
+
+                    <div class="most-read flex">
+                        <div>
+                            <img src="../images/post/travel/kinh-thanh-hue.png" alt="kinhthanhhue">
+                            <span>2</span>
+                        </div>
+                        <a href="#">Kinh Thành Huế - di sản hơn 100 năm của Triều Nguyễn</a>
+                    </div>
+
+                    <div class="most-read flex">
+                        <div>
+                            <img src="../images/post/travel/que-garden-da-lat.png" alt="quegardendalat">
+                            <span>3</span>
+                        </div>
+                        <a href="#">Que Garden Da Lat, một Nhật Bản thu nhỏ ngay đèo Mimosa ở Đà Lạt</a>
+                    </div>
+
+                    <div class="most-read flex">
+                        <div>
+                            <img src="../images/post/travel/home-stay-da-lat.png" alt="homestaydalat">
+                            <span>4</span>
+                        </div>
+                        <a href="#">Homestay Đà Lạt - Thiên đường cho những ai thích mộng mơ!!!</a>
+                    </div>
+
+                    <div class="most-read flex">
+                        <div>
+                            <img src="../images/post/travel/resort-phu-quoc.png" alt="resortphuquoc">
+                            <span>5</span>
+                        </div>
+                        <a href="#">Top 30+ Resort Phú Quốc sang chảnh để nghỉ dưỡng từ 3 đến 5 sao tốt nhất</a>
+                    </div>
+
+                    <div class="most-read flex">
+                        <div>
+                            <img src="../images/post/travel/doi-thien-phuc-duc-da-lat.png" alt="doithienphuc">
+                            <span>6</span>
+                        </div>
+                        <a href="#">Lên đồi Thiên Phúc Đức ở Đà Lạt, cắm trại săn mây view bao đẹp</a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="h2">Địa điểm</h2>
+                    <div class="travel-list">
+                        <a href="#">Vũng Tàu</a>
+                        <a href="#">Côn đảo</a>
+                        <a href="#">Phú Yên</a>
+                        <a href="#">Đà Nẵng</a>
+                        <a href="#">Nha Trang</a>
+                        <a href="#">Hà Giang</a>
+                        <a href="#">Đà Lạt</a>
+                        <a href="#">Hội An</a>
+                        <a href="#">Huế</a>
+                        <a href="#">Gia Lai</a>
+                        <a href="#">Dak Lak</a>
+                        <a href="#">SaPa</a>
+                        <a href="#">Phú Quốc</a>
+                    </div>
+                </div>
+
+                <div class="book-ticket">
+                    <h2 class="h2">Web đặt vé <br/> tốt nhất hiện tại</h2>
+                    <a href="https://travel.com.vn/" target="_blank">travel.com.vn</a>
+                    <a href="https://www.vietnambooking.com/" target="_blank">vietnambooking.com</a>
+                    <a href="https://mytour.vn/" target="_blank">mytour.vn</a>
+                    <a href="https://www.vietravel.com/" target="_blank">vietravel.com</a>
+                    <a href="https://divui.com/" target="_blank">divui.com</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="all-page">
+        <h1 class="h1 ticket">Hổ trợ đặt vé</h1>
+        <p class="intro-travel">Nếu bạn có ý định đi du lịch mà chưa biết đặt vé đâu cho uy tín, thì hãy để chúng mình giúp bạn!!!</p>
+    </div>
+
+    <div class="sp-ticket">
+        <div>
+            <ul class="flex list-type">
+                <li>
+                    <i class="fa-solid fa-plane"></i>
+                    Máy bay
+                </li>
+                <li>
+                    <i class="fa-solid fa-caravan"></i>
+                    Tour
+                </li>
+                <li>
+                    <i class="fa-solid fa-hotel"></i>
+                    Khách sạn
+                </li>
+            </ul>
+        </div>
+        <div class="flex" style="padding: 0.5rem;">
+            <div class="location-from" onclick="choose()">
+                <span>
+                    <i class="fa-solid fa-plane-departure"></i>
+                </span>
+                <input type="text" placeholder="Điểm đi">
+            </div>
+
+            <div class="location-to">
+                <span>
+                    <i class="fa-solid fa-plane-arrival"></i>
+                </span>
+                <input type="text" placeholder="Điểm đến">
+            </div>
+
+            <div class="date-from">
+                Ngày đi
+                <br/>
+                <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </span>
+                <input type="date">
+            </div>
+            <div class="date-to">
+                Ngày về
+                <br/>
+                <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </span>
+                <input type="date">
+            </div>
+
+            <div class="people">
+                Số người
+                <br/>
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                </span>
+                <input type="number">
+            </div>
+
+            <div class="find-loca">
+                <button type="submit" id="find-location">Tìm ngay</button>
+            </div>
+
+            <div class="choose" id="choose-loca">
+                <div class="info-loca flex">
+                    <h5>Chọn điểm đi</h5>
+                    <input type="text" placeholder="Thành phố, tên sân bay,...">
+                </div>
+                <div class="list-loca">
+                    <ul>
+                        <li>Hà Nội</li>
+                        <li>TP.Hồ Chí Minh</li>
+                        <li>Đà Nẵng</li>
+                        <li>Nha Trang</li>
+                        <li>Vũng Tàu</li>
+                        <li>Huế</li>
+                        <li>Hải Phòng</li>
+                        <li>Cần Thơ</li>
+                        <li>Đà Lạt</li>
+                        <li>Phú Quốc</li>
+                        <li>Vinh</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-xmark" id="x-choose"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 10rem"></div>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

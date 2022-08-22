@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+       
+        <p class="post-date-up">Đăng ngày: 12/08/2022</p>
+        <h1 class="post-h1">Tiếng anh có quan trọng thời điểm hiện tại</h1>
+
+        <div>
+
+            <p>Trong thời đại 4.0, tiếng Anh đã trở nên phổ biến trong cuộc sống và giao tiếp trên thế giới. Để bắt kịp với xu thế toàn cầu hóa, chúng ta cần cố gắng trau dồi, bồi dưỡng tiếng Anh để có thêm hành trang vững bước trong tương lai. Vậy tiếng Anh thực sự quan trọng thế nào? Nó được thể hiện như thế nào trong thời kỳ hội nhập? Mời các bạn cùng khám phá bài viết sau. </p>
+            
+            <h2 class="post-h2">Các tài liệu nghiên cứu mới nhất đều bằng tiếng Anh</h2>
+
+            <p>Ngành công nghiệp 4.0 đang lan tỏa và phát triển với tốc độ nhanh chóng trên toàn thế giới. Đây vừa là cơ hội vừa là thách thức cho chúng ta. Để có thể bắt kịp và hòa nhập vào cuộc cách mạng đang phát triển với tốc độ mạnh mẽ này thì ngôn ngữ đóng vai trò vô cùng quan trọng. Đặc biệt là tiếng Anh, vì đây là ngôn ngữ giao tiếp phổ biến và thông dụng nhất hiện nay trên thế giới.  </p>
+
+            <img src="../../images/post/page/tieng-anh1-min.jpg" alt="" class="post-img-content">
+
+            <p class="af-pic">Ngành công nghiệp 4.0 đang lan tỏa và phát triển với tốc độ nhanh chóng</p>
+
+            <p>Điển hình là các tài liệu nghiên cứu mới nhất hiện nay của chúng ta hay các quốc gia khác đều được thể hiện và lưu hành bằng tiếng Anh. Các văn bản trong các hội nghị cũng tương tự. Tài liệu nghiên cứu là những văn bản cực kỳ quan trọng, nó không chỉ được đánh giá bởi các chuyên gia trong nước mà rất nhiều nghiên cứu sẽ được thẩm định bởi các chuyên gia từ nước ngoài. Vì vậy các tài liệu nghiên cứu mới nhất đều bằng tiếng Anh dường như là điều phổ biến và hiển nhiên hiện nay. </p>
+
+            <h2 class="post-h2">Cơ hội được vào làm việc và nghiên cứu tại các tập đoàn lớn</h2>
+
+            <p>Trong xu thế toàn cầu và hội nhập hiện nay, các nhà tuyển dụng lớn sẽ có xu hướng lựa chọn những ứng viên có khả năng ngoại ngữ tốt, trôi chảy, đặc biệt là những người có khả năng sử dụng tiếng Anh để giao tiếp, mở rộng quan hệ với công ty nước ngoài. Chính vì vậy, để có cơ hội được vào làm việc và nghiên cứu tại các tập đoàn lớn hiện nay thì tiếng Anh là bước đệm vô cùng quan trọng. </p>
+
+            <img src="../../images/post/page/tieng-anh2-min.jpg" alt="" class="post-img-content">
+
+            <p class="af-pic">Tiếng Anh giúp bạn có thêm cơ hội làm việc và nghiên cứu tại các tập đoàn lớn </p>
+
+            <h2 class="post-h2">Cơ hội thăng tiến lên vị trí quan trọng trong công ty</h2>
+
+            <p>Sau khi đã có cho mình một công việc làm ổn định, mục tiêu tiếp theo của bạn sẽ là gì? Đó chính là được thăng chức và đảm nhiệm một chức vụ cao hơn đúng không nào? Vậy để có thêm cho mình cơ hội thăng tiến lên vị trí quan trọng hơn trong công ty bạn cần cải thiện năng lực nghiệp vụ của mình, và một trong số đó chính là tiếng Anh. Một trưởng phòng hay một chức vụ nào đó đại diện cho bộ mặt của một công ty không thể thuyết trình bằng tiếng Anh mà phải nhờ phiên dịch để nói chuyện với đối tác thì đó gần như là điều không hợp lý. Vì thế trau dồi tiếng Anh chính là đang tạo thêm cơ hội để bạn có thể phát triển sự nghiệp tốt hơn</p>
+
+            <h2 class="post-h2">Du học</h2>
+
+            <p>53 chính là con số thể hiện số lượng các quốc gia, vùng lãnh thổ sử dụng tiếng Anh phổ biến và xem đây như ngôn ngữ mẹ đẻ hay ngôn ngữ thứ hai của mình. Con số đầy kinh ngạc này đã phản ánh một cách trực quan nhất về sự phổ dụng của tiếng Anh trên thế giới hiện nay.</p>
+
+            <p>Không chỉ dừng lại ở việc giao tiếp hay khám phá kiến thức, tiếng Anh còn là công cụ quan trọng và là một trong những điều kiện cần để các bạn có thể đi du học dễ dàng, thuận tiện hơn, đặc biệt là các nước như Hoa Kỳ, Canada, khối EU. Đây cũng là phương tiện để bạn có thể sinh sống và giao tiếp cũng như học tập, làm việc tại nước ngoài. </p>
+
+            <h2 class="post-h2">Kết bạn và Du lịch xuyên quốc gia</h2>
+
+            <p>Ngoại ngữ nói chung và tiếng Anh nói riêng là phương tiện kết nối con người với con người, nền văn hóa này với nền văn hóa khác, nền kinh tế này với nền kinh tế khác, dân tộc này với dân tộc khác,…. Tiếng Anh chính là cây cầu kết nối chúng ta với mọi nơi trên thế giới. </p>
+
+            <p>Khả năng ngoại ngữ tốt sẽ giúp chúng ta mở được cánh cửa bước vào thế giới, khám phá nhiều nền văn minh khác nhau, học thêm một nền văn hóa, tôn giáo mới và nắm bắt được nhiều cơ hội lớn cho mình. </p>
+
+            <p>Có tiếng Anh thì dù bạn muốn kết bạn với bất cứ người bạn ở nơi đâu, quốc gia nào đều rất dễ dàng. Có tiếng Anh bạn cũng không sợ việc đi du lịch xuyên quốc gia nữa. Ngược lại bạn sẽ học được rất nhiều điều, nhiều kiến thức từ những lần trải nghiệm và trò chuyện thực tế với người bản địa. </p>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="co-the-ung-y.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="meo-giu-lanh.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

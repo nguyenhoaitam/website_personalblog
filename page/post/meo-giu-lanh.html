@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+        <div class="post-img">
+            <img src="../../images/post/page/meo-giu-lanh.png" alt="">
+            <p>Ảnh dã ngoại (Nguồn: Internet)</p>
+        </div>
+        <p class="post-date-up">Đăng ngày: 11/08/2022</p>
+        <h1 class="post-h1">Mẹo giúp bạn giữ đồ ăn/uống lạnh khi dã ngoại</h1>
+
+        <div>
+            <p>Giữ lạnh đồ uống khi đi du lịch, dã ngoại là điều rất cần thiết để an tâm rằng thực phẩm, đồ uống bạn mang theo luôn giữ được độ tươi ngon.</p>
+            <p>Thông thường, khi đi du lịch, dã ngoại chúng ta thường mang theo ít thực phẩm, đồ uống để có thể dùng dọc đường hoặc chế biến đồ ăn ở nơi cắm trại, nghỉ dưỡng… Hầu hết theo thói quen, thực phẩm, đồ uống sẽ được giữ lạnh trong thùng thùng giữ lạnh chuyên dụng, thùng xốp cùng với đá lạnh.</p>
+            <p>Tuy nhiên, bạn có biết không, có một loại đá giúp giữ lạnh đồ uống khi đi du lịch, dã ngoại hữu hiệu hơn nhiều so với đá lạnh thông thường, đó chính là đá gel, hay còn được gọi phổ biến với tên gọi đá khô.</p>
+            <p>Vậy chúng ta hãy tìm hiểu một chút về Đá gel, và hiệu quả của việc sử dụng đá gel bảo quản đồ uống thực phẩm khi đi dã ngoại</p>
+
+            <h2 class="post-h2">Vậy đá gel là gì?</h2>
+
+            <img src="../../images/post/page/meo-giu-lanh-1.jpg" alt="" class="post-img-content">
+            <p>Theo Wikipedia, Đá gel giữ lạnh được hiểu là Túi giữ lạnh di động bên trong chứa nước và chất đông lạnh nhằm cung cấp khả năng tạo độ lạnh, giữ đông cho các sản phẩm khác. Đá gel giữ lạnh có nhiều tác dụng, điển hình như giữ lạnh trái cây, rau củ, thịt cá…; giữ lạnh vắc xin, dược phẩm, mẫu phẩm trong y tế; chườm lạnh y tế.</p>
+            <p>Tên gọi khác của đá gel giữ lạnh mà người ta hay gọi là Đá khô, hoặc Túi giữ lạnh.</p>
+            <p><b>Thực ra đá khô chính xác hơn là loại đá khói CO2, chủ yếu được dùng trong việc tạo khói ở các sự kiện như tiệc cưới hỏi, sân khấu. Đá khô CO2 không dùng để giữ lạnh. Do đó tên gọi Đá gel là chính xác nhất so với tên gọi Đá khô, hay Túi giữ lạnh.</b></p>
+
+            <h2 class="post-h2">So sánh đá gel với nước đá</h2>
+
+            <p>Độ lạnh âm sâu hơn: Đá gel có khả năng tiếp nhận độ lạnh âm sâu hơn, thường là âm sâu 20 độ. Lạnh âm hơn nhiều so với đá nước (đá lạnh thông thường trong thủ lạnh khoảng âm 5 độ).</p>
+            <p>Làm lạnh nhanh: đây là hệ quả của việc độ lạnh sâu của đá gel.</p>
+            <p>Thời gian tay chảy lâu hơn nhiều lần: Thông thường đá gel có thời gian tan chảy rất lâu, khoảng 10-15 tiếng. Trong khi đó thời gian tan chảy của đá nước chỉ là vài phút. Có được điều này nhờ tính chất siêu hấp thụ nhiệt bên trong thành phần của đá gel.</p>
+            <p>Không tan thành nước: Do đặc thù đá gel được đóng trong hộp (hộp đá gel) hay trong túi (túi giữ lạnh) nên đá gel không tan chảy. Điều này đặc biệt hữu hiệu khi bạn cần làm giảm nhiệt độ của vật phẩm nhưng không làm hòa tan (làm loãng) thành phần của vật phẩm. Ví dụ điển hình khi bạn muốn giảm nhiệt độ của nước ngâm chân mà không muốn làm loãng nước chứa thảo dược.</p>
+            <p>Tái sử dụng: so với đá nước truyền thống chỉ dùng một lần thì Đá gel có thể được tái cấp đông và sử dụng nhiều lần. Điều này đặc biệt hữu ích khi quá trình sử dụng đá gel lặp lại liên tục như quá trình giữ lạnh và vận chuyển vắc xin.</p>
+
+            <h2 class="post-h2">Một số ứng dụng điển hình của đá gel</h2>
+
+            <p>Bảo quản, giữ lạnh trong y tế (vắc xin, dược phẩm…), thực phẩm (sữa, hải sản, thịt, rau…)</p>
+            <p>Vận chuyển hàng đông lạnh</p>
+            <p>Chườm lạnh giảm đau</p>
+            <p>Sử dụng cho quạt hơi nước</p>
+            <p>Làm lạnh nhanh đồ uống</p>
+
+            <h2 class="post-h2">Lưu ý khi sử dụng</h2>
+
+            <ul>
+                <li>Chọn sản phẩm có bao bì chắc chắn, thông tin rõ ràng</li>
+                <li>Không sử dụng khi bao bì bị vỡ rách</li>
+                <li>Trên thị trường có 2 loại đá gel phân loại theo bao bì là Hộp đá gel và Túi đá gel. Chúng ta nên sử dụng hộp đá gel.</li>
+                <li>Cấp đông tối thiểu 10 tiếng trước khi sử dụng. Hoặc mua loại đá gel đã được cấp đông.</li>
+            </ul>
+
+            <p><b><i>Trên là tất cả những gì mình biết. Có sai xót gì mong được mọi người góp ý trong phần bình luận bên dưới.</i></b></p>
+            
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="tieng-anh.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="ngu-ngon.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

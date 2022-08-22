@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 05/08/2022</p>
+        <h1 class="post-h1">Những điều giúp bạn có một giất ngủ ngon</h1>
+
+        <div>
+            
+            <p>Giấc ngủ là hoạt động sinh lý quan trọng, giúp cơ thể nghỉ ngơi và sức khỏe hồi phục, duy trì trạng thái phấn chấn. Chất lượng của giấc ngủ ảnh hưởng đến chất lượng sống của chúng ta. Ngủ ngon, ngủ sâu giúp tâm trạng tốt hơn, suy nghĩ minh mẫn hơn, quyết định sáng suốt hơn. Không quá khó để có giấc ngủ ngon nếu bạn thực hành những mẹo nhỏ trong bài viết này. </p>
+
+            <h2 class="post-h2">1. Tắt nguồn ánh sáng xanh 1-2 giờ trước khi ngủ</h2>
+
+            <p>Ánh sáng xanh mà các thiết bị điện tử phát ra đã được chứng minh sẽ làm gián đoạn nhịp sinh học tự nhiên của cơ thể, khiến cho đầu óc của bạn duy trì trạng thái tỉnh táo và ngăn cản giấc ngủ tìm đến. Vì vậy, để ngủ ngon, hãy tắt các thiết bị điện tử 1-2 tiếng trước giờ ngủ. Nếu bạn có thói quen đọc sách trước khi ngủ thì hãy chọn sách giấy thay vì iPad hoặc Kindle. Khi bạn đọc sách trên màn hình, bạn sẽ khó ngủ hơn và mức độ hormone melatonin (*) sản sinh ra sẽ thấp hơn, khiến cho giấc ngủ không sâu và bạn có thể thấy thiếu tỉnh táo khi thức dậy.</p>
+
+            <h2 class="post-h2">2. Không uống cà phê sau 2 giờ chiều</h2>
+
+            <p>Nhiều người chúng ta thường uống cà phê vào đầu buổi chiều để tỉnh táo hơn, tập trung hơn mà giải quyết khối lượng công việc còn lại trong ngày. Tuy nhiên, đừng nên làm điều này nếu bạn muốn lên giường vào tầm 9 – 10 giờ tối. Uống cà phê muộn, đến tối lượng caffeine vẫn còn luân chuyển trong cơ thể, khiến bạn “tỉnh như sáo”, đầu óc không thể thư giãn mà mời giấc ngủ đến được.</p>
+
+            <h2 class="post-h2">3. Tập thể dục nhẹ nhàng</h2>
+
+            <p>Những bài tập thể dục nhẹ nhàng trước khi ngủ có thể giúp bạn giải phóng một số căng thẳng và lo lắng tích tụ suốt một ngày dài. Chỉ cần 15-20 phút tập những động tác yoga cơ bản, dạo bộ, hay tập thái cực quyền để điều hoà nhịp thở và thả lỏng các cơ, bạn sẽ thấy tinh thần và thân thể mình dịu đi nhiều, bình tĩnh hơn, khỏe mạnh hơn. Với đầu óc nhẹ nhàng, khi nằm lên giường bạn cũng dễ tập trung ngủ hơn, không bị quấy rầy bởi những suy nghĩ về các chuyện xảy ra trong ngày.</p>
+
+            <h2 class="post-h2">4. Thiết lập thói quen ngủ đúng và đủ</h2>
+
+            <p>Nếu nằm trên giường mà bạn không ngủ được trong vòng nửa giờ hoặc lâu hơn, hãy rời khỏi phòng ngủ của bạn để làm một việc gì đó thư giãn. Nằm trằn trọc lâu quá sẽ khiến bạn khó chịu, sốt ruột – cảm giác này lại càng khiến bạn khó ngủ.</p>
+
+            <h2 class="post-h2">5. Uống trà hoa cúc, trà thảo mộc giúp thư thái</h2>
+
+            <p>Trà hoa cúc hay trà thảo mộc có thể là một trợ thủ tuyệt vời cho giấc ngủ, vì nó giúp cơ thể bạn thư giãn. Bạn có thể uống một cốc trà hoa cúc nhỏ một giờ trước khi ngủ (cùng khoảng thời gian bạn tắt điện thoại), và tận hưởng làn nước trà ấm áp nhẹ nhàng từ từ di chuyển khắp cơ thể, giúp bạn thư giãn từ ngón chân đến đỉnh đầu.</p>
+
+            <img src="../../images/post/page/nn1-min.jpg" alt="" class="post-img-content">
+
+            <h2 class="post-h2">6. Liệu pháp hương thơm</h2>
+
+            <p>Những mùi hương dễ chịu, ví dụ như hương hoa oải hương, hoa nhài, hoa cúc… có thể giúp bạn thư giãn thần kinh, hỗ trợ đem đến một giấc ngủ sâu. Khi đọc sách trước giờ ngủ, bạn có thể đốt nến thơm hay tinh dầu có những mùi dễ ngủ này, để hương thơm từ tốn xoa dịu hai thái dương và não bộ của bạn khiến toàn cơ thể hoàn toàn thả lỏng và dần dần cảm thấy buồn ngủ.</p>
+
+            <h2 class="post-h2">7. Tắm nước ấm trước khi ngủ</h2>
+
+            <p>Đắm mình trong làn nước ấm giúp thư giãn cơ bắp, khiến cho toàn thân của bạn được thả lỏng. Nước ấm kích hoạt cơ thể chúng ta rơi vào chế độ chậm hơn, nhịp tim và nhịp thở chậm lại để chúng ta dễ dàng đi vào “vùng đất mơ màng” của giấc ngủ. Tuy nhiên, không nên tắm muộn sau 9 giờ tối, vì tắm muộn có thể khiến cho bạn bị cảm lạnh thậm chí nguy hiểm đến sức khỏe.</p>
+
+            <h2 class="post-h2">8. Giữ cho chăn êm, nệm ấm</h2>
+
+            <p>Một chiếc giường êm ái với chăn gối thoải mái sẽ mang đến cho bạn cảm giác an toàn, được yêu thương và bảo bọc. Hãy thường xuyên thay mới vỏ gối, chăn, ga giường để đảm bảo vệ sinh và giúp bạn ngủ ngon hơn.</p>
+
+            <p>Ngủ trong một không gian yên tĩnh cũng rất quan trọng để dỗ giấc ngủ và có một giấc ngủ sâu. Các nghiên cứu cho thấy việc tiếp xúc với tiếng ồn tần số thấp và tiếng ồn giao thông khiến chúng ta không ngủ được, không nghỉ ngơi hợp lý. Do vậy, nếu nhà bạn ở ngay giữa vùng đô thị, có thể xem xét việc thay các cửa sổ bằng loại chống ồn.</p>
+
+            <h2 class="post-h2">9. Đọc vài trang sách</h2>
+
+            <p>Bước vào một thế giới mới trong các trang sách sẽ giúp bạn giảm bớt sự căng thẳng ở hiện thực và đầu óc được thư giãn hơn. Ngoài ra, đọc sách trước giấc ngủ còn là một cách luyện cho trí óc minh mẫn và có trí nhớ tốt.</p>
+
+            <img src="../../images/post/page/nn2-min.jpg" alt="" class="post-img-content">
+
+            <h2 class="post-h2">10. Dùng đèn ngủ có ánh sáng ấm áp</h2>
+
+            <p>Những luồng ánh sáng ấm áp như màu vàng, màu cam, màu đỏ nhạt sẽ tạo cảm giác thư giãn cho chúng ta vào buổi tối, sẵn sàng cho giấc ngủ. Do vậy, trước giờ ngủ khoảng 1 giờ, bạn có thể tắt các loại đèn ánh sáng trắng và xanh đi, chỉ bật đèn có ánh sáng ấm nhằm “lừa” cơ thể vào trạng thái nghỉ ngơi.</p>
+
+            <p><i>(*) Melatonin là hormone giúp cân bằng chu kỳ ngày đêm cho cơ thể.</i></p>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button>Đăng</button><button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="meo-giu-lanh.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="meo-vat-du-lich.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

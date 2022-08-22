@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+        <div class="post-img">
+            <img src="../../images/post/page/da-lat1-min.jpg" alt="">
+            <p>Ảnh Đà Lạt (Nguồn: Internet)</p>
+        </div>
+        <p class="post-date-up">Đăng ngày: 24/08/2022</p>
+        <h1 class="post-h1">Trải nghiệm chuyến du lịch Đà Lạt 3 ngày 2 đêm</h1>
+
+        <div class="dalat">
+            <p>Đà Lạt là một điểm du lịch trong nước “hót hòn họt” và chưa bao giờ có dấu hiệu hạ nhiệt. Nơi đây thu hút đông đảo khách du lịch ở mọi lứa tuổi và từ mọi miền đất nước. Nếu du lịch Đà Lạt 3 ngày 2 đêm, chúng ta nên lên một lịch trình như thế nào cho hợp lý?</p>
+            <p>Sau khi đi trải nghiệm về mình chia sẽ cho mọi người một lịch trình đi du lịch sao cho hợp lí nhất</p>
+            
+            <h2 class="post-h2">ĐỊA ĐIỂM THAM QUAN</h2>
+
+            <img src="../../images/post/page/da-lat2-min.jpg" alt="" class="post-img-content">
+
+            <p>Hồ Tuyền Lâm là một trong những điểm tham quan lý tưởng cho <b>lịch trình du lịch Đà Lạt 3 ngày 2 đêm</b>, đặc biệt đối với những ai lần đầu đặt chân đến thành phố này. Hồ Tuyền Lâm cách trung tâm Đà Lạt khoảng 7km, với diện tích 320ha. Nơi đây đốn tim nhiều du khách bởi phong cảnh non nước hữu tình, thơ mộng. Đặt chân đến chốn này, bạn sẽ cảm thấy được thả hồn vào một khung cảnh vô cùng nên thơ và trong lành.</p>
+            <p>Hồ Tuyền Lâm có khá nhiều hoạt động vui chơi, giải trí như: đạp vịt, câu cá, cắm trại,… Xung quanh khu vực hồ có khá nhiều quán cà phê cũng như homestay với view hướng ra hồ. Bạn có thể đến đây vào buổi chiều tà, khi trời vừa tắt nắng để có thể chiêm ngưỡng vẻ đẹp hoàng hôn và nhâm nhi một ly trà ấm.</p>
+
+            <h3>Hồ Tuyền Lâm</h3>
+
+            <img src="../../images/post/page/da-lat3-min.jpg" alt="" class="post-img-content">
+
+            <h3>Thác Datanla</h3>
+
+            <p>Datanla là một trong những thác nước đẹp mê hồn mị thị giác ở Đà Lạt, bởi nó vẫn còn giữ được vẻ hoang sơ, hùng vĩ. <b>Du lịch Đà Lạt</b> và ghé qua thác nước này, bạn chắc chắn sẽ không khỏi mê đắm trước nét đẹp đậm chất núi rừng Tây Nguyên.</p>
+            <p>Với lượng nước dồi dào và gần như ổn định quanh năm, thác Datanla luôn biết cách làm say lòng bao du khách. Nơi đây cũng được đánh giá là một trong những điểm tham quan, du lịch đầy tính phiêu lưu cho <b>lịch trình du lịch Đà Lạt 3 ngày 2 đêm</b> đấy!</p>
+
+            <img src="../../images/post/page/da-lat4-min.jpg" alt="" class="post-img-content">
+
+            <h3>XQ Sử Quán Đà Lạt</h3>
+
+            <p>XQ Sử Quán Đà Lạt hay tranh thêu XQ tọa lạc tại số 258 Mai Anh Đào, phường 9, thành phố Đà Lạt. Nơi đây sẽ mang đến cho bạn một không gian vô cùng độc đáo của nghề thêu cùng những tác phẩm nghệ thuật đẹp mê hồn.</p>
+            <p>Đặt chân đến chốn này khi <b>du lịch Đà Lạt</b>, bạn sẽ được dịp hòa mình vào những giá trị truyền thống, dân gian đượm màu cổ kính. XQ có nhiều khu vực như: khu vực phát tích, khu vực truyền thống, khu vực nghệ thuật của người địa phương. Vào cuối tuần nơi đây còn có những chương trình biểu diễn nghệ thuật vô cùng đặc sắc. Bên cạnh đó, bạn còn có thể thưởng thức những món ăn dân gian được chế biến bởi đôi bàn tay khéo léo của những nghệ nhân.</p>
+
+            <img src="../../images/post/page/da-lat5-min.jpg" alt="" class="post-img-content">
+
+            <h3>Tiệm cà phê hoàng hôn chiều </h3>
+
+            <P>Đà Lạt vốn đã quá nổi tiếng với những quán cà phê sở hữu loạt phong cách độc đáo, không trộn lẫn vào đâu. Người đến những quán cà phê này không chỉ thưởng thức nước uống mà hơn hết là thưởng thức không gian. Tiệm cà phê hoàng hôn chiều là một điển hình cho việc níu chân bao du khách bởi không gian quá đỗi hữu tình.</P>
+            <p>Tiệm nằm trên đồi cao, ở khu vực Trại Mát, không gian bốn bề đều là đồi núi. Buổi sáng sớm, bạn có thể săn mây, khi chiều về lại có thể nhìn ngắm từng tia nắng cuối ngày rơi xuống cho đến khi màn đêm ôm trọn đất trời. Đây cũng là nơi chụp hình, check in vo cùng lý tưởng cho lịch trình du lịch Đà Lạt 3 ngày 2 đêm với những chiếc gương cao đậm chất nghệ thuật cùng đồi cỏ lau đung đưa trong gió.</p>
+
+            <h2 class="post-h2">DU LỊCH ĐÀ LẠT 3 NGÀY 2 ĐÊM NÊN ĂN GÌ</h2>
+
+            <p>Ngoài cảnh quan thiên nhiên tuyệt mĩ, khí hậu trong lành, tiết trời dễ chịu, Đà Lạt còn biết cách làm say lòng người khác bởi những món ăn thơm ngon, độc đáo. Trải nghiệm lịch trình <b>du lịch Đà Lạt 3 ngày 2 đêm</b> tuyệt đối đừng bỏ qua những món ăn sau nhé.</p>
+
+            <h3>Gà nướng cơm lam</h3>
+
+            <img src="../../images/post/page/da-lat6-min.jpg" alt="" class="post-img-content">
+
+            <h4>Nhà hàng trên đỉnh đồi trăng</h4>
+            <p>Địa chỉ: Ngô Thì Sỹ, Đà Lạt</p>
+
+            <h4>Cơm Lam Gà nướng Cô Sinh</h4>
+            <p>Địa chỉ: 36 Tự Phước, phường 11, Đà Lạt</p>
+
+            <h4>Quán Hương Rừng – Đa Phú </h4>
+            <p>Địa chỉ: Số 6B, đường Đa Phú, phường 7, Đà Lạt</p>
+
+            <h4> Quán gà nướng ngói Tam Nguyên- Ayun</h4>
+            <p>Địa chỉ: An Kroet, cách Thung lũng Vàng 300m</p> 
+
+            <h3>Lẩu gà lá é</h3>
+
+            <img src="../../images/post/page/da-lat7-min.jpg" alt="" class="post-img-content">
+
+            <h4>Quán Lẩu Gà Đà Lạt</h4>
+            <p>Địa chỉ: Số 28 đường Huỳnh Thúc Kháng, phường 4, Đà Lạt</p>
+
+            <h4>Lẩu gà lá é đường 3/4 –  Quán Tao Ngộ</h4>
+            <p>Địa chỉ quán: Số 5 đường 3 tháng 4, Đà Lạt</p>
+
+            <h4>Lẩu gà lá é Đà Lạt 668</h4>
+            <p>Địa chỉ quán: Số 2B đường Chu Văn An, Đà Lạt</p>
+
+            <h3>Nem nướng</h3>
+
+            <img src="../../images/post/page/da-lat8-min.jpg" alt="" class="post-img-content">
+
+            <h4>Nem nướng Bà Dung</h4>
+            <p>Địa chỉ: A5 khu quy hoạch Hoàng Văn Thụ, phường 4, Đà Lạt</p>
+
+            <h4>Nem nướng Bà Hùng</h4>
+            <p>Địa chỉ: 3 Trần Hưng Đạo, phường 3, Đà Lạt</p>
+
+            <h3>Sữa đậu nành nóng</h3>
+
+            <img src="../../images/post/page/da-lat9-min.jpg" alt="" class="post-img-content">
+
+            <h4>Quán sữa đậu nành Hoa Sữa</h4>
+            <p>Địa chỉ: 64 Tăng Bạt Hổ, P1, Đà Lạt</p>
+
+            <h4>Quán sữa đậu nành Đà Lạt – Quán sữa đậu nành 2 chị em</h4>
+            <p>Địa chỉ: 37 Bùi Thị Xuân, phường 2, Đà Lạt</p>
+
+            <h4>Sữa Đậu nành Đà Lạt – Cô Lan</h4>
+            <p>Địa chỉ: hẻm 185 Phan Đình Phùng, phường 2, Đà Lạt</p>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="nui-ba-den.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="sach-gan-day.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

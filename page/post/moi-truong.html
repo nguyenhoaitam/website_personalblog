@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 01/08/2021</p>
+        <h1 class="post-h1">Tại sao chúng ta phải bảo vệ môi trường</h1>
+
+        <div>
+            
+            <p><i>Xã hội phát triển kèm theo đó là tình trạng ô nhiễm môi trường cũng ngày một gia tăng. Vậy vì sao cần phải bảo vệ môi trường xung quanh chúng ta? Những việc cần làm để bảo vệ môi trường là gì? Chúng ta cùng tìm hiểu qua bài viết bên dưới nhé!</i></p>
+
+            <h2 class="post-h2">Ô nhiễm môi trường là gì?</h2>
+
+            <p>Ô nhiễm môi trường là gì? Khái niệm này tưởng như đơn giản nhưng rất nhiều người chưa thể xác định được chính xác khái niệm môi trường là gì?</p>
+
+            <p>Theo Điều 1, Luật bảo vệ môi trường Việt Nam quy định: Môi trường là tất cả các yếu tố tự nhiên và nhân tạo, 2 yếu tố có quan hệ mật thiết với nhau bao quanh con người. Chúng có ảnh hưởng lớn đến sự tồn tại và phát triển của con người và thiên nhiên.</p>
+
+            <p>Ô nhiễm môi trường là gì? Ô nhiễm môi trường là hiện tượng môi trường bị thay đổi theo chiều hướng tiêu cực. Trong đó các yếu tố mang tính chất sinh học, vật lý, sinh học, hóa học bị nhiễm bẩn gây ảnh hưởng đến sức khỏe con người cũng như các sinh vật khác.</p>
+
+            <h2 class="post-h2">Các dạng ô nhiễm môi trường</h2>
+
+            <p><i>Theo các chuyên gia nghiên cứu về môi trường ô nhiễm môi trường được chia làm 3 dạng chính:</i></p>
+
+            <h3>Ô nhiễm nước</h3>
+
+            <p>Ô nhiễm nước là tình trạng nguồn nước bị thay đổi theo chiều hướng tiêu cực. Cụ thể là môi trường nước xuất hiện các chất lỏng hoặc chất rắn lạ, sự biến đổi này gây nguy hại đối với sức khỏe con người và động vật.</p>
+
+            <p>Nếu sử dụng nguồn nước bị ô nhiễm sẽ khiến con người dễ dàng mắc cách bệnh về da, thận và những căn bệnh nguy hiểm khác đe dọa đến tính mạng của con người.</p>
+
+            <h3>Ô nhiễm đất</h3>
+
+            <p>Ô nhiễm đất là hiện tượng trong đất xuất hiện chất xenobiotic gây hại cho sức khỏe của con người và động vật. Các chất gây hại này hình thành do hoạt động công nghiệp, hóa chất nông nghiệp…Mức độ ô nhiễm tùy thuộc vào mức sử dụng hóa chất và tình trạng công nghiệp hóa.</p>
+
+            <h3>Ô nhiễm không khí</h3>
+
+            <p>Tình trạng ô nhiễm không khí là sự xuất hiện của các chất độc lạ làm biến đổi thành phần không khí. Điều này khiến không khí có mùi khó chịu và khi con người hít phải sẽ gây ra một số bệnh nguy hiểm.</p>
+
+            <p>Ô nhiễm không khí là tình trạng phổ biến nhất ở nước ra, chính vì thế số người mắc các bệnh về đường hô hấp mỗi năm tăng khá nhiều, bệnh thường tái đi tái lại nhiều lần do ô nhiễm ảnh hưởng đến chất lượng cuộc sống của nhiều người.</p>
+
+            <p><b>Ô nhiễm môi trường có ảnh hưởng nghiêm trọng đến cuộc sống của con người</b></p>
+
+            <img src="../../images/post/page/moi-truong1-min.jpg" alt="" class="post-img-content">
+
+            <h2 class="post-h2">Các nguyên nhân gây nên ô nhiễm môi trường</h2>
+
+            <p><i>Có nhiều nguyên nhân gây nên tình trạng ô nhiễm môi trường chủ yếu là do con người tác động, ngoài ra ô nhiễm môi trường cũng có thể do tác động từ tự nhiên. Nguyên nhân cụ thể như sau:</i></p>
+
+            <h3>Do chất thải từ khu công nghiệp, nhà máy</h3>
+
+            <p>Thực tế cho thấy các xí nghiệp, nhà máy thải ra ngoài môi trường rất nhiều các loại hóa chất độc hại. Nước thải nếu không được xử lý trước khi đưa ra ngoài môi trường sẽ gây ô nhiễm môi trường trầm trọng.</p>
+
+            <p>Các nhà máy sử dụng nhiên liệu hóa thạch làm chất đốt tạo ra các khí CO, CO2, Nox, SO2…cũng gây ô nhiễm môi trường trầm trọng.</p>
+
+            <h3>Các hóa chất độc hại, chất bảo vệ thực vật</h3>
+
+            <p>Các loại thuốc trừ sâu, phân bón hóa học bị người dùng sử dụng quá mức và vứt lung tung sẽ gây ra tình trạng ô nhiễm nguồn nước, ô nhiễm đất.</p>
+
+            <p>Những chất độc hại này nếu không được khắc phục kịp thời sẽ gây ra hiện tượng “thủy triều đỏ” và những hiện tượng ô nhiễm khác.</p>
+
+            <h3>Do các chất thải rắn</h3>
+
+            <p>Trong quá trình sản xuất nhiều cơ sở đã sản xuất ra nhiều chất thải rắn nhưng lại không xử lý trước khi thải ra ngoài môi trường làm ô nhiễm không khí, ô nhiễm nguồn nước, ô nhiễm đất. Điều này làm ảnh hưởng nghiêm trọng đến sức khỏe con người và làm mất cân bằng hệ sinh thái.</p>
+
+            <p>Trong quá trình phát triển đất nước, nhiều cơ sở đã ra đời nhằm phục vụ nhu cầu ngày càng cao của con người. Điều này dẫn tới sự gia tăng của các chất thải rắn.</p>
+
+            <h3>Khói bụi từ ngoài môi trường</h3>
+
+            <p>Khói bụi từ ngoài môi trường là nguyên nhân chính gây nên hiện tượng ô nhiễm không khí. Tình trạng này xảy ra thường xuyên ở các thành phố lớn nơi có nhiều xe cộ đi lại và mật động xe đông đúc.</p>
+
+            <img src="../../images/post/page/moi-truong-2-min.jpg" alt="" class="post-img-content">
+
+            <p class="af-pic">Xe cộ đông đúc thải nhiều khói gây ô nhiễm (Nguồn: Internet)</p>
+
+            <h2 class="post-h2">Ảnh hưởng của ô nhiễm môi trường đến đời sống con người</h2>
+
+            <h3>Đối với sức khỏe con người</h3>
+
+            <p>Ô nhiễm không khí có ảnh hưởng nghiêm trọng đến hệ hô hấp của con người. Các loại khí thải từ ngoài môi trường như khói bụi, xăng xe, bụi mịn có ảnh hưởng nghiêm trọng đến sức khỏe con người, nếu xâm nhập vào phổi chúng có thể gây nên một số loại bệnh như viêm phổi, vô sinh…</p>
+
+            <p>Ô nhiễm không khí còn là nguyên nhân gây nên các tình trạng đau đầu, chóng mặt, bệnh tim mạch…đặc biệt người cao tuổi, phụ nữ mang thai, người đang mang bệnh, trẻ nhỏ là những đối tượng dễ bị mắc bệnh do ô nhiễm môi trường.</p>
+
+            <p>Ngoài ô nhiễm không khí ô nhiễm tiếng ồn cũng gây nên những tác hại khôn lường như đau đầu, stress, bệnh thần kinh…</p>
+
+            <p>Ngoài ra biến đổi khí hậu cũng khiến nhiệt độ tăng giảm thất thường gây ra một số bệnh nguy hiểm cho con người như đột quỵ, chuột rút…</p>
+
+            <h4>Ảnh hưởng của ô nhiễm nước với sức khỏe con người</h4>
+
+            <p>Nước có vai trò vô cùng quan trọng đối với sự tồn tại của con người, thiếu nước hoặc nước bị ô nhiễm đều ảnh hưởng trực tiếp đến sức khỏe của chúng ta.</p>
+
+            <p>Ô nhiễm nước ảnh hưởng đến sức khỏe của con người thông qua 2 con đường là đường ăn uống hoặc do tiếp xúc trực tiếp với môi trường bị ô nhiễm.</p>
+
+            <p>Một số bệnh phổ biến do ô nhiễm nước là dịch tả, tiêu chảy, thương hàn, viêm não, viêm gan, bệnh thiếu máu, bệnh di truyền từ muỗi…</p>
+
+            <h4>Ảnh hưởng của ô nhiễm đất với sức khỏe con người</h4>
+
+            <p>Việc sử dụng các loại thuốc, hóa chất vào sản xuất nông nghiệp là không thể tránh khỏi, tuy nhiên nhiều người lạm dụng sử dụng quá liều dẫn tới các thuốc trừ sâu, hóa chất, phân bón ngấm vào trong đất làm ô nhiễm đất.</p>
+            
+            <p>Khi đất bị ô nhiễm sẽ khiến sẽ khiến nông sản bị nhiễm độc, con người ăn vào sẽ ảnh hưởng trực tiếp đến sức khỏe.</p>
+
+            <p>Một số bệnh xuất hiện ở những người bị nhiễm độc nông sản phải kể đến như: Gan to, hệ thần kinh, hệ di truyền bị ảnh hưởng tiêu cực, giảm chỉ số thông minh ở trẻ nhỏ.</p>
+
+            <h3>Đối với hệ sinh thái</h3>
+
+            <p>Hệ sinh thái là một quần thể bao gồm nhiều động vật và thực vật sinh sống chúng với nhau, chúng tương tác qua lại để cùng nhau tồn tại. Khi môi trường bị ô nhiễm sẽ khiến hệ sinh thái bị mất cân bằng đe dọa đến sự tồn tại của nhiều loài sinh vật, động vật, thực vật sống.</p>
+
+            <p>Ô nhiễm không khí có thể gây ra mưa axit làm hủy diệt nhiều khu rừng và làm chết nhiều loại động vật quý hiếm.</p>
+            
+            <h3>Đối với sự phát triển Kinh tế – Xã hội</h3>
+
+            <p>Nhiều người có thể không biết rằng ô nhiễm môi trường có ảnh hưởng trực tiếp đến sự phát triển của Kinh tế – Xã hội. Cụ thể như:</p>
+
+            <ul>
+                <li>Gây thiệt hại về kinh tế do bệnh tật xuất hiện</li>
+                <li>Thiệt hại kinh tế do nông sản và thủy sản bị phá hoại</li>
+                <li>Ô nhiễm môi trường gây thiệt hại kinh tế khi du lịch bị ảnh hưởng</li>
+                <li>Ô nhiễm môi trường cũng gây tốn kém chi phí trong việc cải thiện môi trường từ đó ảnh hưởng đến sự phát triển Kinh tế -Xã hội của một đất nước.</li>
+            </ul>
+
+            <h2 class="post-h2">Những việc cần làm để khắc phục ô nhiễm môi trường</h2>
+
+            <p>Biện pháp đầu tiên để khắc phục ô nhiễm môi trường là phải nâng cao ý thức người dân. Nếu mọi người đều vứt rác đúng quy định không thải rác ra ngoài một cách bừa bãi thì tình trạng ô nhiễm môi trường sẽ giảm đi đáng kể.</p>
+
+            <p>Bên cạnh đó các tổ chức, cơ quan địa phương cần có các chương trình giáo dục dâng cao nhận thức về tầm quan trọng của môi trường đối với trẻ em.</p>
+
+            <p>Hạn chế sử dụng các loại hóa chất tẩy rửa có khả năng gây tắc cống thoát thước. Người dân có thể thay chất tẩy bằng các chất vi sinh.</p>
+
+            <img src="../../images/post/page/moi-truong-3-min.jpg" alt="" class="post-img-content">
+
+            <p class="af-pic">Trồng nhiều cây xanh để bảo vệ môi trường hiệu quả</p>
+
+            <p>Hoàn thiện các điều luật về phòng chống ô nhiễm môi trường.</p>
+
+            <p>Nâng cao chế tài xử phạt đối với những hành vi thiếu ý thức gây ô nhiễm môi trường.</p>
+
+            <p>Xây dựng hệ thống bảo vệ môi trường theo tiêu chuẩn quốc tế.</p>
+
+            <p>Các cơ quan chức năng cần thường xuyên kiểm tra, giám sát môi trường kịp thời phát hiện và ngăn chặn những hành vi gây ô nhiễm.</p>
+
+            <p>Nâng cao nghiệp vụ chuyên môn vối những đội ngũ nhân viên trong công tác quản lý bảo vệ môi trường.</p>
+
+            <p>Đầu tư trang thiết bị hiện đại vào các công việc xử lý rác và bụi bẩn.</p>
+
+            <p>Trồng nhiều cây xanh tạo bầu không khí trong lành và ngăn chặn bụi bẩn.</p>
+
+            <p>Xử lý rác thải một cách khoa học</p>
+
+            <p>Sử dụng các loại năng lượng thân thiện với môi trường như năng lượng mặt trời, năng lượng gió.</p>
+
+            <p>Đặc biệt trong các ngành công nghiệp là nơi mà sản sinh ra khối lượng bụi bẩn và rác thải khổng lồ. Và nếu như lượng bụi, rác này không được thu gom xử lý thường xuyên thì chắc chắn sẽ làm môi trường bị ô nhiễm cực nhanh chóng. Do đó để giải quyết điều này thì chúng tôi khuyến cáo các doanh nghiệp nên sử dụng các thiết bị vệ sinh công nghiệp chuyên dụng như: máy hút bụi công nghiệp, máy chà sàn, máy nén khí… Những thiết bị vệ sinh công nghiệp này sẽ giúp bạn thu gom bụi bẩn và rác thải một cách vô cùng nhanh chóng.</p>
+
+            <p>Như vậy qua bài viết trên hẳn bạn đọc đã biết được <b>vì sao cần phải bảo vệ môi trường xung quanh chúng ta và những việc cần làm để bảo vệ môi trường là gì?</b> Hãy bảo vệ môi trường xung quanh chúng ta bằng cách giữ gìn môi trường sống thật sạch sẽ, hạn chế thải các loại khói bụi các rác thải công nghiệp ra ngoài môi trường, tuân thủ theo quy định của pháp luật về bảo vệ môi trường. Tuyên truyền cho mọi người cùng thực hiện!</p>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="meo-vat-du-lich.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="blog-kiem-tien.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

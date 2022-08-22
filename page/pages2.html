@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" class="page">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../index.html" class="nav__logo">
+                    <img src="../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../index.html">Trang chủ</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="pages2.html">Bài viết(2)</a>
+    </div>
+
+    <header class="page-child">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-page">
+        <div>
+            <h1 class="h1">
+                Bài viết
+            </h1>
+        </div>
+
+        <div class="sort">
+            <select name="" id="">
+                <option value="new" selected>Mới nhất</option>
+                <option value="old">Cũ nhất</option>
+                <option value="hot">Đọc nhiều nhất</option>
+            </select>
+        </div>
+
+        <div class="loading page2">
+            <span>1</span>
+            <span class="two">2</span>
+        </div>
+
+        <div class="all-post flex">
+
+            <div class="posts">
+                <div class="flex">
+                    <div class="post-img">
+                        <img src="../images/post/blog-kiem-tien.png" alt="kiemtien">
+                    </div>
+                    <div class="post-content">
+                        <button class="post-topic-btn">Đời sống</button>
+                        <h3>
+                            <a href="../page/post/blog-kiem-tien.html" class="clt">Viết blog có kiếm được tiền thời điểm hiện tại?</a>
+                        </h3>
+                        <p class="post-text">
+                            Viết blog tại sao lại kiếm được tiền? Ai trả tiền cho mình khi viết blog? Viết blog kiếm tiền bằng cách nào?… Đây là những câu hỏi mà H&T nhận được hàng ngày, hàng giờ từ những bạn mới. Và 
+                        </p>
+                        <div class="post-er flex">
+                            <div class="image-post-er">
+                                <img src="../images/logo_nbg.png" alt="h&tblog">
+                            </div>
+                            <div class="profile-post-er">
+                                <a href="about.html">H&T Blog</a>
+                                <p class="post-date flex">
+                                    <time datetime="14-04-2022">14/04/2022</time>
+                                    <i class="fa-solid fa-circle dots"></i>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <time datetime="4month">4 tháng trước</time>
+                                </p>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="react flex">
+                    <div>
+                        <i class="fa-regular fa-heart" id="tym"></i>
+                        Thích
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        Bình luận
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        Chia sẻ
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="flex">
+                    <div class="post-img">
+                        <img src="../images/post/dulichparis_1tuan.png" alt="paris">
+                    </div>
+                    <div class="post-content">
+                        <button class="post-topic-btn">Du lịch</button>
+                        <h3>
+                            <a href="../page/post/paris.html" class="clt">Du lịch Paris và kinh nghiệm</a>
+                        </h3>
+                        <p class="post-text">
+                            Để chốt lại loạt bài về Paris đang ngập tràn trên Blog du lịch của mình mấy bữa nay, đây là biên tổng hợp toàn bộ kinh nghiệm du lịch Paris tự túc từ A tới Z....
+                        </p>
+                        <div class="post-er flex">
+                            <div class="image-post-er">
+                                <img src="../images/logo_nbg.png" alt="h&tblog">
+                            </div>
+                            <div class="profile-post-er">
+                                <a href="about.html">H&T Blog</a>
+                                <p class="post-date flex">
+                                    <time datetime="10-10-2021">10/10/2021</time>
+                                    <i class="fa-solid fa-circle dots"></i>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <time datetime="11month">11 tháng trước</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="react flex">
+                    <div>
+                        <i class="fa-regular fa-heart" id="tym"></i>
+                        Thích
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        Bình luận
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        Chia sẻ
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="flex">
+                    <div class="post-img">
+                        <img src="../images/post/dia-diem-hot.png" alt="diadiemhot">
+                    </div>
+                    <div class="post-content">
+                        <button class="post-topic-btn">Du lịch</button>
+                        <h3>
+                            <a href="../page/post/du-lich-hot.html" class="clt">Hè này nên đi đâu?</a>
+                        </h3>
+                        <p class="post-text">
+                            Mùa hè đang đến gần, bạn đã lên lịch cho những chuyến đi trải nghiệm vào mùa hè này hay chưa? Hãy cùng H&T tìm hiểu về những địa điểm du lịch mùa hè không thể bỏ qua vào năm 2022 này nhé!
+                        </p>
+                        <div class="post-er flex">
+                            <div class="image-post-er">
+                                <img src="../images/logo_nbg.png" alt="h&tblog">
+                            </div>
+                            <div class="profile-post-er">
+                                <a href="about.html">H&T Blog</a>
+                                <p class="post-date flex">
+                                    <time datetime="13-08-2022">13/08/2022</time>
+                                    <i class="fa-solid fa-circle dots"></i>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <time datetime="11day">11 ngày trước</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="react flex">
+                    <div>
+                        <i class="fa-regular fa-heart" id="tym"></i>
+                        Thích
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        Bình luận
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        Chia sẻ
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="flex">
+                    <div class="post-img">
+                        <img src="../images/post/hoan-thien-ban-than.png" alt="hoanthienbanthan">
+                    </div>
+                    <div class="post-content">
+                        <button class="post-topic-btn">Sách</button>
+                        <h3>
+                            <a href="#" class="clt">4 cuốn sách giúp hoàn thiện bản thân</a>
+                        </h3>
+                        <p class="post-text">
+                            Thời đại 4.0 với áp lực cuộc sống nặng nề khiến phụ nữ, những người dễ yếu đuối và lệ thuộc vào người khác thường rơi vào bi kịch. Nhiều bạn nữ không theo kịp xu thế...
+                        </p>
+                        <div class="post-er flex">
+                            <div class="image-post-er">
+                                <img src="../images/logo_nbg.png" alt="h&tblog">
+                            </div>
+                            <div class="profile-post-er">
+                                <a href="about.html">H&T Blog</a>
+                                <p class="post-date flex">
+                                    <time datetime="11-08-2022">11/08/2022</time>
+                                    <i class="fa-solid fa-circle dots"></i>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <time datetime="13day">13 ngày trước</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="react flex">
+                    <div>
+                        <i class="fa-regular fa-heart" id="tym"></i>
+                        Thích
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        Bình luận
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        Chia sẻ
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="flex">
+                    <div class="post-img">
+                        <img src="../images/post/hoang-hon.png" alt="hoanghon">
+                    </div>
+                    <div class="post-content">
+                        <button class="post-topic-btn">Du lịch</button>
+                        <h3>
+                            <a href="#" class="clt">6 địa điểm ngắm hoàng hôn đẹp ở Đà Nẵng</a>
+                        </h3>
+                        <p class="post-text">
+                            Là nơi sở hữu những bãi biển quyến rũ nhất hành tinh, Đà Nẵng còn mang trong mình những danh thắng đẹp như tranh vẽ mà bất kỳ..
+                        </p>
+                        <div class="post-er flex">
+                            <div class="image-post-er">
+                                <img src="../images/logo_nbg.png" alt="h&tblog">
+                            </div>
+                            <div class="profile-post-er">
+                                <a href="about.html">H&T Blog</a>
+                                <p class="post-date flex">
+                                    <time datetime="05-08-2022">05/08/2022</time>
+                                    <i class="fa-solid fa-circle dots"></i>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <time datetime="19day">19 ngày trước</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="react flex">
+                    <div>
+                        <i class="fa-regular fa-heart" id="tym"></i>
+                        Thích
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        Bình luận
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        Chia sẻ
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="flex">
+                    <div class="post-img">
+                        <img src="../images/post/tay-giang.png" alt="taygiang">
+                    </div>
+                    <div class="post-content">
+                        <button class="post-topic-btn">Du lịch</button>
+                        <h3>
+                            <a href="#" class="clt">Tour du lịch Tây Giang</a>
+                        </h3>
+                        <p class="post-text">
+                            Cách thành phố Đà Nẵng tầm 120km về phía Tây Bắc, Tây Giang được ví như Sapa thu nhỏ giữa dải đất miền Trung đầy nắng gió. Du lịch Tây Giang bạn sẽ được đến với vùng đất núi non nên thơ...
+                        </p>
+                        <div class="post-er flex">
+                            <div class="image-post-er">
+                                <img src="../images/logo_nbg.png" alt="h&tblog">
+                            </div>
+                            <div class="profile-post-er">
+                                <a href="about.html">H&T Blog</a>
+                                <p class="post-date flex">
+                                    <time datetime="01-08-2022">01/08/2022</time>
+                                    <i class="fa-solid fa-circle dots"></i>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <time datetime="23day">23 ngày trước</time>
+                                </p>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="react flex">
+                    <div>
+                        <i class="fa-regular fa-heart" id="tym"></i>
+                        Thích
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        Bình luận
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        Chia sẻ
+                    </div>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="flex">
+                    <div class="post-img">
+                        <img src="../images/post/ba-den.png" alt="baden">
+                    </div>
+                    <div class="post-content">
+                        <button class="post-topic-btn">Du lịch</button>
+                        <h3>
+                            <a href="../page/post/nui-ba-den.html" class="clt">Thử thách bản thân bằng leo đỉnh núi Bà Đen</a>
+                        </h3>
+                        <p class="post-text">
+                            Núi Bà Đen (Tây Ninh) ngày càng trở thành điểm khám phá và chinh phục mới của giới trẻ hiện nay, đây là đỉnh núi cao nhất Nam Bộ...
+                        </p>
+                        <div class="post-er flex">
+                            <div class="image-post-er">
+                                <img src="../images/logo_nbg.png" alt="h&tblog">
+                            </div>
+                            <div class="profile-post-er">
+                                <a href="about.html">H&T Blog</a>
+                                <p class="post-date flex">
+                                    <time datetime="15-05-2022">15/05/2022</time>
+                                    <i class="fa-solid fa-circle dots"></i>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <time datetime="3month">3 tháng trước</time>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="react flex">
+                    <div>
+                        <i class="fa-regular fa-heart" id="tym"></i>
+                        Thích
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        Bình luận
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        Chia sẻ
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="loading page2">
+            <span>
+                <a href="pages.html">
+                    <i class="fa-solid fa-angles-left"></i>
+                </a>
+            </span>
+            <span>
+                <a href="pages.html">1</a>
+            </span>
+            <span class="two">
+                2
+            </span>
+            <span>
+                <i class="fa-solid fa-angles-right"></i>
+            </span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

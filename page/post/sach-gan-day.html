@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 21/08/2022</p>
+        <h1 class="post-h1">Những cuốn sách mình đã đọc gần đây</h1>
+
+        <p>"Những cuốn sách tôi đã đọc gần đây" là một bộ trong đó tôi, H&T Blog, sẽ tổng kết hàng tháng những cuốn sách tôi đã đọc trong suốt tháng qua. Trong loạt bài này, tôi sẽ trình bày tóm tắt ngắn gọn về story và sau đó xếp hạng sách trên 5 sao. 5 sao là tốt nhất và 1 sao là tệ nhất!</p>
+
+        <p>Sau đó tôi sẽ đưa ra một mô tả ngắn gọn về lý do tại sao tôi chọn đánh giá một cuốn sách theo một cách nhất định</p>
+
+        <p>Vì vậy, không chậm trễ nữa, hãy vào "Những cuốn sách tôi đã đọc gần đây" và luôn để lại bình luận bên dưới và cho tôi biết những cuốn sách nào bạn cũng đã đọc hoặc dự định đọc tiếp theo.</p>
+
+        <div class="sach-gan-day">
+            <h3>Những sinh vật xinh đẹp - Kami Garcia</h3>
+            <h5>Đánh giá của tôi: 2 trên 5 sao</h5>
+            <div class="sach">
+                <img src="../../images/post/page/sach1.jpg" alt="">
+                <p>Lena Duchannes không giống bất kỳ ai mà thị trấn Gatlin nhỏ bé ở miền Nam từng thấy, và cô đang đấu tranh để che giấu sức mạnh của mình, và một lời nguyền đã ám ảnh gia đình cô qua nhiều thế hệ. Nhưng ngay cả trong những khu vườn mọc um tùm, những đầm lầy âm u và những nghĩa địa đổ nát của miền Nam bị lãng quên, một bí mật không thể bị che giấu mãi mãi.</p>
+            
+                <p>Ethan Wate, người đã đếm số tháng cho đến khi anh có thể trốn thoát khỏi Gatlin, bị ám ảnh bởi những giấc mơ về một cô gái xinh đẹp mà anh chưa bao giờ gặp. Khi Lena chuyển đến đồn điền lâu đời và khét tiếng nhất của thị trấn, Ethan bị lôi cuốn một cách không thể giải thích được với cô và quyết tâm khám phá ra mối liên hệ giữa họ.</p>
+
+                <p>Trong một thị trấn không có bất ngờ, một bí mật có thể thay đổi mọi thứ</p>
+
+                <p>Đây thực sự không phải là cuốn sách yêu thích của tôi. Tôi rất tiếc khi nghe audiobook vì
+                     cuốn sách này quá dày! Đó là một sai lầm! Tôi nghĩ tôi sẽ thích cuốn sách này hơn một chút nếu
+                      tôi đọc một bản sao của cuốn sách. Về cơ bản trong cuốn sách này, Lena Duchanne chuyển đến một thị
+                       trấn nhỏ miền Nam, nơi cô phải lòng một chàng trai hoàn toàn bình thường và cực kỳ nhàm chán tên Ethan.
+                        Ethan không có phép thuật, và khá bình thường. Dù sao Lena cũng là một phù thủy, nhưng cô ấy bị nguyền rủa.
+                         Vào sinh nhật thứ 16 của mình, cô ấy sẽ được tuyên bố là phù thủy tốt hay phù thủy xấu. Cô ấy không có quyền
+                          lựa chọn trong vấn đề này. Lena tin rằng cô ấy sẽ được tuyên bố là phe "ác", vì phép thuật của cô ấy thất thường 
+                          và mất kiểm soát và đã gây ra một số tai nạn khá tồi tệ xung quanh cô ấy, tất nhiên là không có sự kiểm soát của cô ấy.
+                           Trong storBài hát của bạn cứ lặp đi lặp lại, "16 mặt trăng" như một lời cảnh báo hoặc manh mối để phá bỏ lời nguyền 
+                           xuyên suốt cuốn tiểu thuyết, bởi vì tôi đã nghe audiobook họ thực sự đã hát bài hát OVER và OVER AGAIN khoảng 100 lần 
+                           trong suốt cuốn sách này. Đó là bài hát khó chịu nhất mà tôi từng nghe trong đời. Một số điều tốt hơn là để lại cho trí
+                            tưởng tượng. Tôi KHÔNG giới thiệu sách nói! Tôi nghĩ rằng sự ghét bỏ cuốn tiểu thuyết này của tôi chỉ bắt nguồn từ bài
+                             hát này. Kami Garcia có thể cắt hẳn bài hát này ra khỏi cuốn tiểu thuyết và nó sẽ tăng vọt lên có lẽ được đọc 4 sao ... 
+                             nhưng đó là kiểu thúc đẩy nó. Tôi không nghĩ mình sẽ hoàn thành phần còn lại của bộ truyện này. Cuốn sách này ở trên đó với Hoàng hôn của 
+                             Stephanie Meyer là tiểu thuyết bị ghét nhất của tôi. Nếu bạn không đồng ý, tôi xin lỗi trước, nhưng tôi không thể bắt lạiract tuyên bố này.</p>
+            </div>
+
+            <h3>Theo dõi tôi - Nina LaCour</h3>
+            <h5>Đánh giá của tôi: 5 trên 5 sao</h5>
+
+            <div class="sach">
+                <img src="../../images/post/page/sach2.jpg" alt="">
+
+                <p>Mila đã quen với việc ở một mình. Có lẽ đó là lý do tại sao cô ấy nói đồng ý với cơ hội: sống ở một nơi xa xôi này, giữa những bông hoa và sương mù và những con sóng xô bờ phía dưới. </p>
+                
+                <p>Nhưng cô không biết về những hồn ma</p>
+
+                <p>Mới tốt nghiệp trung học, Mila đã già đi khỏi hệ thống chăm sóc nuôi dưỡng. Vì vậy, khi cô ấy đề nghị một công việc 
+                    và một nơi ở tại một trang trại ở một vùng biệt lập của Bờ biển Bắc California, cô ấy ngay lập tức chấp nhận. Có lẽ 
+                    cuối cùng cô ấy cũng sẽ tìm được một ngôi nhà mới, một ngôi nhà thực sự. Trang trại là nơi ẩn náu, nhưng cũng bị ám ảnh
+                     bởi những tổn thương trong quá khứ mà những cư
+                     dân trẻ của nó đã đến để trốn thoát. Và những ký ức khủng khiếp của chính Mila đang bắt đầu nổi lên.</p>
+
+                <p>Trước hết, tôi chắc chắn sẽ không xếp cuốn sách này vào loại tiểu thuyết "Tuổi teen". Tôi cảm thấy cuốn sách
+                     này đã trưởng thành hơn một chút về nội dung và cá nhân tôi muốn xếp nó vào loại tiểu thuyết "Người lớn". Có một
+                      số nội dung khiêu dâm và tôi muốn nói rằng phải có CẢNH BÁO HẤP DẪN đối với hành vi lạm dụng tinh thần / thể chất.
+                       Cuốn sách này không quá dành cho người lớn, nhưng chắc chắn không dành cho độc giả thanh thiếu niên nhỏ tuổi. Dù sao 
+                       thì cuối cùng tôi cũng thực sự yêu thích cuốn tiểu thuyết này, mặc dù nếu thành thật mà nói thì nó không hoàn toàn
+                        như những gì tôi mong đợi. Cá nhân tôi nghĩ rằng đây sẽ là một cuốn sách đọc theo chủ đề huyền bí / Halloween tuyệt
+                         vời, nhưng phần tóm tắt quá xa so với những gì thực sự của cuốn tiểu thuyết này! Trước hết, tất cả các Bóng ma trong 
+                         cuốn tiểu thuyết này thực sự là phép ẩn dụ cho những bóng ma trong characters pasts, và charackể về những tổn thương
+                          trong quá khứ, v.v ... Điều mà tôi cảm thấy thật dối trá, bởi vì cuốn sách này bắt đầu quá kỳ lạ và ớn lạnh, một sự 
+                          sắp đặt hoàn hảo cho một bài đọc huyền bí ma quái, nhưng nó thậm chí không phải như vậy ... RUDE! Mặc dù tôi đã mất 
+                          nhiều thời gian để tìm ra đây là một phép ẩn dụ ... vì vậy tôi nghĩ cha chínhracters thực sự đã bị ma ám! Trong cuốn
+                           tiểu thuyết này, một đám trẻ cuối cùng được nhận nuôi bởi gia đình này, những người sống trong một trang trại ở giữa
+                            chốn không người. Mỗi đứa trẻ được nhận nuôi đều đã phải trải qua một số chấn thương nghiêm trọng trong cuộc đời và
+                             bị cướp đi khỏi "cha mẹ ruột" của chúng. Tất cả họ đã kết thúc ở trang trại này tạo ra một gia đình khá thú vị. Mỗi
+                              đứa trẻ đều có một “bóng ma” ám ảnh chúng. Đó là một lời tựa rất thú vị cho một cuốn tiểu thuyết và tôi thấy mình 
+                              rất hấp dẫn bởi characters và quá khứ của họ. Tôi cũng thực sự thích cuốn tiểu thuyết này, bởi vì nó không chỉ ở mức
+                               độ bề mặt và khiến tôi suy nghĩ sâu hơn một chút về cốt truyện, nhưng tôi ước chúng ta đã biết được những điều 
+                               khácracters trong cuốn tiểu thuyết này tốt hơn một chút. Chúng tôi thực sự chỉ phải tìm hiểu về Mila và cách cô
+                                ấy kết thúc ở trang trại này và tôi rất hấp dẫn bởi người cha kiaracters, vì vậy tôi thực sự cảm thấy đó là thứ 
+                                duy nhất mà cuốn tiểu thuyết này còn thiếu. Đó là một bài đọc thực sự tốt</p>
+            </div>
+
+            <h3>Kẻ ác sâu thẳm Shea Ernshaw</h3>
+            <h5>Đánh giá của tôi: 5 trên 5 sao</h5>
+
+            <div class="sach">
+                <img src="../../images/post/page/sach3.jpg" alt="">
+
+                <p>Chào mừng bạn đến thị trấn Sparrow bị nguyền rủa. Nơi, hai thế kỷ trước, ba chị em gái đã bị kết án tử hình vì tội giết người. Những viên đá bị trói vào mắt cá chân của họ và họ bị dìm xuống vùng nước sâu xung quanh thị trấn.
+                    </p>
+
+                <p>Giờ đây, trong một khoảng thời gian ngắn mỗi mùa hè, các chị em lại quay về, đánh cắp xác của ba cô gái yếu tim để tìm cách trả thù, dụ các chàng trai vào bến cảng và kéo họ theo.</p>
+
+                <p>Giống như nhiều người dân địa phương, Penny Talbot mười bảy tuổi đã chấp nhận số phận của thị trấn. Nhưng năm nay, trước thềm sự trở lại của chị em, một cậu bé tên là Bo Carter đến; không biết gì về sự nguy hiểm mà anh vừa vấp phải</p>
+
+                <p>Sự lầm tưởng và dối trá lan nhanh qua những con đường đẫm nước mưa mặn chát. Người dân thị trấn quay lưng lại với nhau. Penny và Bo nghi ngờ nhau che giấu bí mật. Và cái chết nhanh chóng đến với những ai không thể cưỡng lại tiếng gọi của các chị.</p>
+
+                <p>Nhưng chỉ có Penny nhìn thấy những gì người khác không thể. Và cô ấy sẽ buộc phải lựa chọn: cứu Bo, hoặc cứu chính mình.</p>
+
+                <p>Nếu tôi thành thật mà nói thì cuốn sách này có thể đoán trước được một chút, nhưng nó vẫn thực sự thú vị và có một
+                     cốt truyện độc đáo. Cá nhân tôi nghĩ cuốn sách này sẽ hoàn hảo để đọc vào khoảng thời gian Halloween. Tôi có rất 
+                     nhiều rung cảm của Hocus Pocus khi đọc cuốn tiểu thuyết này. Về cơ bản, trong cuốn sách này có ba chị em gái, những 
+                     người vào cuối những năm 1800 đã bị kết án là phù thủy. Họ bị chết đuối ở Harbour of Sparrow và cứ "Mùa thiên nga", ba
+                      phù thủy này lại trở lại và gây họa cho thị trấn này khiến họ chết đuối. Vào mỗi mùa hè, những phù thủy này chiếm hữu 
+                      cơ thể của các cô gái tuổi teen và tiến hành một cuộc giết chóc tràn lan, dìm chết càng nhiều chàng trai địa phương trong 
+                      bến cảng càng tốt trước khi hạ chí. Sau đó, chúng lại trở nên ngủ đông trong đại dương cho đến mùa hè năm sau. Trong cuốn 
+                      tiểu thuyết này, chúng ta theo chân một cô gái trẻ tên là Penny Talbot, Penny là cô gái duy nhất trong thị trấn có thể nhìn 
+                      thấy hồn ma của ba chị em Swan và biết được họ đã sở hữu ai. Penny cuối cùng phải lòng một chàng trai tên Bo, người vừa
+                       đi qua thị trấn vào một thời điểm hoàn toàn không đúng trong năm! Penny phải tự mình làm để giữ cho cậu bé đẹp trai này
+                        khỏi rắc rối. Tại sao Penny là người duy nhất có thể nhìn thấy ma chị em? Tôi không muốn làm hỏng bất cứ điều gì, 
+                        nhưng nó cực kỳ dễ đoán! Lý do được cho là đến như một tiết lộ SỐC, nhưng tôi đã tìm ra nó như 15 chương trở lại. 
+                        Tuy nhiên, cuốn sách này thực sự rất thú vị, vì vậy tôi không bận tâm nhiều đến khả năng dự đoán của nó. Mặc dù tôi
+                         sẽ nói rằng tôi thấy việc thiếu sự giám sát của người lớn trong suốt cuốn tiểu thuyết này là một chút vấn đề ...
+                          nhưng giống như bất kỳ cuốn sách dành cho thanh thiếu niên nào khác, chỉ cần đừng thắc mắc về nó! Tôi cũng đã rất
+                           thích cái kết của cuốn tiểu thuyết này, thật bất ngờ là buồn vui lẫn lộn. Tôi thực sự yêu thích cuốn tiểu thuyết 
+                           này và 'characters và tôi đặc biệt yêu thích thị trấn Sparrow. Đó là một khung cảnh tuyệt đẹp cho cuốn tiểu thuyết này.</p>
+            </div>
+
+            <h3>Một số loại động vật - Maria Romasco Moore</h3>
+            <h5>Đánh giá của tôi: 5 trên 5 sao</h5>
+
+            <div class="sach">
+
+                <img src="../../images/post/page/sach4.jpg" alt="">
+
+                <p>Đối với người hâm mộ của Wilder Girls và Sadie có một story kể về hai cô gái với một bí mật không ai có thể tin được,
+                     và quãng thời gian hoang dại, tuyệt vọng mà họ sẽ đi để bảo vệ nhau khỏi thế giới bên ngoài.</p>
+
+                <p>Jo sống ở cùng một thị trấn Appalachian, nơi mẹ cô đã biến mất mười lăm năm trước. Mọi người đều biết chuyện gì đã xảy
+                     ra với mẹ Jo. Cô ấy rất hoang dã, và những điều tồi tệ xảy ra với những cô gái như thế.</p>
+
+                <p>Bây giờ mọi người bắt đầu nói về Jo. Cô ấy hầu như không vượt qua lớp học của mình và ngủ gật trên bàn mỗi ngày.
+                     Cô ấy đang theo bước chân của mẹ cô ấy</p>
+
+                <p>Jo có một bí mật. Tuy nhiên, đó không phải là những gì mọi người nghĩ. Không phải con trai hay thói quen dùng thuốc.
+                     Jo có một người chị sinh đôi.</p>
+
+                <p>Em gái của Jo không giống như hầu hết mọi người. Cô ấy sống trong rừng - bắt thỏ bằng tay không và ăn sống.
+                     Đêm này qua đêm khác, Jo trượt ra khỏi cửa sổ phòng ngủ của mình và gặp em gái trên cây. Và họ cùng nhau chạy, không sợ hãi.</p>
+
+                <p>Vấn đề là, không ai từng nhìn thấy em gái của Jo. Vì vậy, khi cặp song sinh của cô tấn công một cậu bé từ thị trấn,
+                     mọi người đều cho rằng đó là Jo. Có nghĩa là Jo phải quyết định - cô ấy nói với cả thế giới về em gái của mình,
+                      hay cô ấy chạy?</p>
+
+                <p>Ok, trước hết cuốn sách này không như tôi mong đợi TẤT CẢ! Tôi chỉ đưa ra một số giả định rất sai lầm khi
+                     đọc cuốn sách này. Nói một cách trung thực theo cách mà Maria Romasco Moore đã mô tả Lee một trong những 
+                     cô gái sinh đôi trong cuốn sách, tôi nghĩ cuốn sách này sẽ nói về Ma cà rồng ... nhưng thực ra nó chỉ là về một
+                      thiếu niên hoang dã đã sống trong rừng cả đời. ... Về cơ bản trong cuốn sách này có một cặp sinh đôi tên là Lee và Jo. 
+                       sống ở ngoại ô trong một thị trấn nhỏ. Em gái song sinh Lee của cô vì bất cứ lý do gì đã bị bỏ rơi và sống trong rừng 
+                       một mình, Jo nghĩ trong nhiều năm! Không ai biết Jo thậm chí còn có một cặp song sinh. Từ từ xuyên suốt cuốn tiểu thuyết,
+                        bí ẩn về Lee và lý do tại sao cô ấy sống trong rừng được hé lộ, nhưng ở phần đầu của cuốn tiểu thuyết, Lee được miêu tả 
+                        là một "sinh vật" hung hãn, ngủ cả ngày và chỉ ra ngoài vào ban đêm để kiếm ăn. " Cô ấy cũng thường xuyên cắn mọi người
+                         nhiều lần, vì vậy tôi không chắc làm thế nào tôi không nên đi đến kết luận "VAMPIRE"! Đọc phần đầu của cuốn tiểu thuyết
+                          này và cho tôi biết tôi đã sai! Nó bắt đầu hoàn toàn kỳ lạ và ngày càng trở nên bí ẩn, làm sao ai đó có thể không đưa
+                           ra kết luận này !? Dù sao thì ngoài sự hiểu lầm đó, càng đi sâu vào cuốn tiểu thuyết này, tôi càng ít hứng thú hơn. 
+                           Mặt sau story cho Lee's character càng ngày càng ra khỏi khung hình khi mọi thứ được tiết lộ! Tôi có cảm giác như mình 
+                           vừa xem một tập kỳ lạ nhất của những bí ẩn chưa được giải đáp ... Tôi thực sự muốn biết Maria Romassco Moore lấy ý 
+                           tưởng từ đâu cho cuốn tiểu thuyết này. Nó phải được dựa trên một story, không đời nào Maria Moore lại là người TƯỞNG
+                            TƯỢNG! Tôi thực sự rất băn khoăn về cuốn tiểu thuyết này, nó thực sự là một tác phẩm giải trítory và được viết rất tốt,
+                             nhưng tôi không thể vượt qua được cốt truyện. Càng nghĩ về nó, tôi càng tìm thấy cuốn tiểu thuyết này. Cốt truyện
+                              không phải là tách trà của tôi. Tôi không ghét, nhưng tôi không yêu nó.</p>
+            </div>
+
+            <p>Ngoài những tựa sách trên, bạn cũng có thể tham khảo những đầu sách cực ý nghĩa như: <b>Khí chất bao nhiêu - Hạnh phúc bấy nhiêu, Đời ngắn đừng ngủ dài, Đắc nhân tâm, Thép đã tôi thế đấy hay Đừng bao giờ đi ăn một mình.</b></p>
+
+            <p>Những bài học cũng như ý nghĩa rút ra từ chính những câu chuyện đầy nhân văn sẽ giúp bạn có một cái nhìn đúng đắn cũng như đủ dũng cảm để bước tới thành công, tự nắm lấy hạnh phúc của chính mình.</p>
+            
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="da-lat.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="co-the-ung-y.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

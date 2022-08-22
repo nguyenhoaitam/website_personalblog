@@ -1,0 +1,502 @@
+div.logo {
+    display: none;
+}
+
+.intro {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-h1 {
+    font-size: 2rem;
+    color: #555555;
+    text-transform: uppercase;
+    position: relative;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.about-h1::after {
+    content: "";
+    width: 30%;
+    height: 3px;
+    margin: 1rem 0;
+    background-color: rgb(234, 60, 60);
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    right: 35%;
+}
+
+.intro p {
+    color: #666666;
+    margin-top: 2.5rem;
+}
+
+.header {
+    width: 85%;
+    margin: 3.5rem auto 2.5rem auto;
+}
+
+.header img {
+    width: 100%;
+}
+
+.about-contents {
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-h1-content::after {
+    content: "";
+    width: 16%;
+    height: 3px;
+    margin: 1rem 0;
+    background-color: rgb(234, 60, 60);
+    position: absolute;
+    top: 100%;
+    left: 42%;
+    right: 42%; 
+}
+
+.about-content-all {
+    justify-content: space-evenly;
+    margin: 4rem 0;
+}
+
+.about-content-left,
+.about-content-right {
+    width: 49%;
+    padding: 1rem;
+    margin-right: .3rem;
+    background: var(--body-color);
+    border-left: 3px solid var(--bg-color-hover);
+    box-shadow: 1px 3px 5px var(--color-shadow);
+}
+
+.about-content-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    margin: 3rem auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-content-img:hover {
+    background-color: var(--main-color);
+}
+
+.about-content-img img {
+    width: 100%;
+}
+
+.about-content-title {
+    color: #555555;
+    /* text-align: left; */
+}
+
+.about-content-content p {
+    text-align: justify;
+}
+
+.about-info {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.about-info > h2 {
+    margin-left: 1.5rem;
+}
+
+.about-info-alls {
+    justify-content: space-evenly;
+}
+
+.about-info-all {
+    width: 31%;
+    padding: 1rem;
+    justify-content: space-between;
+    background: linear-gradient(var(--main-color), var(--body-color));
+    border-radius: 10px;
+}
+
+.about-info-all:hover .about-info-icon-facebook i {
+    color: #0E8DF1;
+}
+
+.about-info-all:hover .about-info-icon-youtube i {
+    color: #FF0000;
+}
+
+.about-info-all:hover .about-info-icon-tiktok i {
+    color: #000000;
+}
+
+.about-info-icon {
+    width: 20%;
+    margin-right: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info-icon i {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color-hover)
+}
+
+.about-info-content {
+    width: 75%;
+    margin-left: 0.3rem;
+}
+
+.about-info-content h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555555;
+}
+
+.about-info-content p {
+    margin: 0;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.about-info-content a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: var(--bg-color-hover);
+    color: var(--color-hover);
+    border-radius: 10px;
+}
+
+.about-why-travel {
+    width: 90%;
+    margin: 0 auto;
+    background: var(--bg-color-item);
+    padding: 1.5rem 1rem;
+}
+
+.about-why-travel h1 {
+    text-align: center;
+}
+
+.about-why-travel-h1::after {
+    content: "";
+    width: 30%;
+    height: 3px;
+    margin: 1rem 0;
+    background-color: rgb(234, 60, 60);
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    right: 35%;
+}
+
+.about-why-travel-alls {
+    margin-top: 4rem;
+    justify-content: space-evenly;
+}
+
+.about-why-travel-left {
+    width: 48%;
+}
+
+.about-why-travel-img {
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.about-why-travel-img img {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-why-travel-right {
+    width: 48%;
+}
+
+.about-why-travel-content {
+    position: relative;
+    background-color: var(--white);
+    height: 300px;
+}
+
+.about-why-travel-box {
+    position: absolute;
+    top: -20%;
+    left: 7%;
+    right: 5%;
+    width: 550px;
+    height: 320px;
+    background-color: #F8F8FF;
+}
+
+.about-why-travel-box h3 {
+    text-align: center;
+    font-size: 24px;
+    color:#555555;
+    margin: 1.5rem 0;
+}
+
+.about-why-travel-box p {
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.about-why-travel-box span {
+    display: flex;
+    justify-content: center;
+}
+
+.about-why-travel-box a {
+    text-decoration: none;
+    color: var(--bg-color-hover);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.about-why-travel-box a::after {
+    content: "";
+    width: 60%;
+    height: 0.15rem;
+    position: absolute;
+    bottom: -4px;
+    left: 20%;
+    right: 20%;
+    background-color: var(--before-h4-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-why-travel-box a:hover {
+    color: #2A3E51;
+}
+
+.about-why-travel-box a:hover::after {
+    background-color: #2A3E51;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+}
+
+.about-why-travel-left:hover .l-img {
+    transform: scale(1.1);
+}
+
+.about-why-travel-right:hover .r-img {
+    transform: scale(1.1);
+}
+
+.about-my-post {
+    width: 90%;
+    margin: 3rem auto;
+    background: var(--bg-color-item);
+    padding: 1rem;
+}
+
+.about-my-post-all {
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.about-my-post-all-item {
+    width: 30%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.about-my-post-all-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-my-post-all-item h3 {
+    margin: 0;
+}
+
+.about-my-post-all-item p {
+    margin: 0;
+}
+
+.about-my-post-all-item-header {
+    width: 85%;
+    padding: 0.5rem;
+    background-color: #fff;
+    position: absolute;
+    top: 70%;
+}
+
+.about-contact {
+    width: 90%;
+    margin: 3rem auto;
+    background: var(--bg-color-item);
+    padding: 1rem;
+}
+
+.about-contact-h1::after {
+    width: 10%;
+    left: 45%;
+    right: 45%;
+}
+
+.about-contact-all {
+    margin: 3rem 0 1rem 0;
+    justify-content: space-evenly;
+}
+
+.about-contact-img {
+    width: 25%;
+}
+
+.about-contact-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-contact-content {
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.about-contact-content h5 {
+    margin: 0;
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.about-contact-social {
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.about-contact-social > div {
+    width: 23%;
+}
+
+.about-contact-social a {
+    text-decoration: none;
+    color: #349BD7;
+    margin: 0.5rem;
+}
+
+.about-contact-social > div > div {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.about-contact-question {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.about-name {
+    justify-content: space-between;
+}
+
+.about-name > div {
+    width: 48%;
+}
+
+.about-name input,
+.about-email input,
+.about-message textarea {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: var(--bg-color-item);
+    margin-bottom: 0.5rem;
+}
+
+.about-send button {
+    padding: 0.7rem 2rem;
+    border: none;
+    outline: none;
+    background: var(--bg-color-hover);
+    color: var(--color-hover);
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-send button:hover {
+    background-color: #4157B2;
+}
+
+.about-contact-question label {
+    font-size: 14px;
+    color: gray;
+    font-weight: inherit;
+}
+
+.about-first-name:hover input,
+.about-last-name:hover input,
+.about-email:hover input,
+.about-message:hover textarea {
+    border-bottom: 2px solid var(--bg-color-hover);
+}
+
+.about-map {
+    margin: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+#alert-about {
+    width: 45rem;
+    height: 25rem;
+    background-color: #bbc1d8;
+    margin: auto;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 10;
+    top: 10rem;
+    left: 26rem;
+    display: none;
+}
+
+div.alert-about > div {
+    position: relative;
+}
+
+div.alert-about img {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 25px;
+}
+
+div.alert-about p {
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    font-weight: 500;
+}
+
+#close-box-about {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#close-box-about:hover {
+    background-color: #FF0000;
+    color: var(--white);
+    border-radius: 0 10px 0 10px;
+}

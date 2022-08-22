@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 14/04/2022</p>
+        <h1 class="post-h1">VIẾT BLOG CÓ KIẾM TIỀN Ở THỜI ĐIỂM HIỆN TẠI?</h1>
+
+        <P>Viết blog tại sao lại kiếm được tiền? Ai trả tiền cho mình khi viết blog? Viết blog kiếm tiền bằng cách nào?… Đây là những câu hỏi mà H&T nhận được hàng ngày, hàng giờ từ những bạn mới</P>
+
+        <P>Và phải nói thật rằng những câu hỏi này rất chính đáng, vì về cơ bản việc kiếm tiền qua viết blog còn rất mới, rất ít người làm, và trong số những người làm đó thì số người thành công lại càng ít.</P>
+
+        <P>Nhớ lại một chút, khi bắt đầu xây dựng blog này vào tháng 9/2015 bản thân H&T trong đầu còn không có bất cứ một ý niệm hay “định nghĩa” nào về “viết blog để kiếm tiền” nữa cơ.</P>
+
+        <P>Tuy nhiên việc viết blog cá nhân để kiếm tiền là hoàn toàn có thật và thậm chí là ngày càng tiềm năng, ngày càng phát triển nhé! Bằng chứng là cá nhân H&T đã sống toàn thời gian với công việc viết blog đến tận ngày hôm nay (đã hơn 3 năm) rồi đó thôi.</P>
+
+        <P>Trở lại với nội dung chính của bài viết này H&T sẽ cố gắng để giúp bạn hiểu hơn về công việc viết blog, và <b>hiểu được chính xác vì sao mà viết blog cá nhân lại có thể kiếm được tiền</b> nhé!</P>
+
+        <P></P>
+
+        <div class="blog-kiem-tien">
+            
+            <h2 class="post-h2">Blog là gì? Tạo sao gọi là Blog mà không gọi là Website?</h2>
+
+            <p>Nếu bạn là thế hệ 8X thì có lẽ trước đây bạn đã từng một lần dùng (hoặc nghe) đến thuật ngữ BLOG. Thời đó chúng ta dùng Yahoo 360 để viết lách những suy nghĩ những trải nghiệm của bản thân, viết hôm nay ăn gì, đi làm kẹt xe ra sao, vui hay buồn…</p>
+
+            <img src="../../images/post/page/blog1-min.jpg" alt="" class="post-img-content">
+            <p class="af-pic">Thời “xa xưa” của blog – đơn giản là một nhật ký cá nhân online</p>
+
+            <p>Hồi đó chúng ta gọi là Blog Yahoo 360, thực ra nó là một nền tảng mạng xã hội để chúng ta có thể tạo ra một nhật ký cá nhân online và ghi chép tất cả những gì chúng ta muốn vào đó. Thông qua nhật ký cá nhân online này, bạn có thể kết nối với những người khác. Những người đó có thể đọc, có thể bình luận ngay trên blog của bạn.</p>
+
+            <p>Rất tiếc sau đó nền tảng Blog Yahoo 360 đã không còn tồn tại nữa, nhưng công nghệ ngày càng phát triển chúng ta lại thấy rất nhiều nền tảng khác ra đời như Blogger của Google, hay nền tảng blog WordPress, rồi gần đây là Medium, Wix, Weebly…</p>
+
+            <h2 class="post-h2">Còn bây giờ blog đã thay đổi như thế nào?</h2>
+
+            <p>Hiện nay không chỉ có cá nhân mới viết blog, các doanh nghiệp, tập đoàn lớn cũng đang hàng ngày viết blog, thậm chí họ còn có cả một đội ngũ nhân viên chỉ… nhận lương để viết blog mà thôi.</p>
+
+            <img src="../../images/post/page/blog2-min.png" alt="" class="post-img-content">
+            <p class="af-pic">Blog của Điện Máy Xanh</p>
+
+            <p>Đến đây có lẽ bạn đã bắt đầu thấy tầm quan trọng của một blog rồi đúng không nào? Đến các doanh nghiệp lớn mà còn phải viết blog vậy thì tại sao bạn lại không?</p>
+
+            <h2 class="post-h2">Khi nào thì gọi là Blog và khi nào thì gọi là Website?</h2>
+
+            <p>Về mặt kỹ thuật thì Blog & Website là không có gì khác nhau. Nhưng</p>
+
+            <ul>
+                <li>
+                    <b>BLog</b> thường được gọi khi phía sau đó có một cá nhân, hoặc một nhóm tạo ra <i>(họ được gọi là Blogger – người viết blog)</i>. Blog cũng là một trang web nhưng về tính chất thì nội dung nó được cập nhật liên tục theo thời gian về một chủ đề cụ thế nào đó. <br>
+                    Với H&T thì chính xác một blog phải là một nơi để người đọc có thể kết nối với chủ nhân của blog đó thông qua các nội dung được chia sẻ, ở đó người đọc sẽ nhận thấy quan điểm cá nhân của người (hoặc nhóm người) đứng phía sau blog đó. Đây mới gọi là “đậm chất blog”! <br>
+
+                    <i>Ví dụ blog NgocDenRoi là một blog viết về chủ đề kiếm tiền online, và chủ nhân phía sau blog này là blogger Nguyễn Anh H&T (là tớ – người đang gõ những dòng này)</i>
+                </li>
+
+                <li>
+                    Website (hay còn gọi là trang web) là một trang do cá nhân hay tổ chức tạo ra với mục đích có thể là cập nhật tin tức, bán hàng online, giới thiệu dịch vụ, chia sẻ kiến thức về một chủ đề nào đó với mục đích riêng của họ. <br>
+                    Thông thường chúng ta hay gọi là website nhiều hơn vì nó là khái niệm chung, phổ biến. Một công ty, doanh nghiệp thường có một website và họ cũng có thể có thêm một blog trong đó. <br>
+
+                    <i>Ví dụ họ hãng mỹ phẩm The Face Shop có thể mở một chuyên mục blog hướng dẫn làm đẹp ngay trong website của họ chẳng hạn.</i>
+                    <img src="../../images/post/page/blog3-min.png" alt="" class="post-img-content">
+                </li>
+            </ul>
+
+            <p><b>Tóm lại:</b> Về cơ bản chúng ta gọi sao cũng được, bạn có thể gọi là website H&T Đến Rồi hay Blog H&T Đến Rồi đều được. Nhưng chắc chắn sẽ có nhiều người gọi là Blog H&T Đến Rồi hơn vì khi truy cập vào họ thấy được Nguyễn Anh H&T là người người viết blog này. Họ cũng tìm thấy trang giới thiệu, từ đó họ hiểu và được kết nối với chủ nhân của blog hơn. Họ tìm thấy một chuỗi nội dung được cập nhật với chủ đề thống nhất xuyên suốt theo thời gian</p>
+            <p>Đó chính là một blog, còn ngược lại thì là một website!</p>
+
+            <h2 class="post-h2">Cá nhân viết blog kiếm được bao nhiêu tiền?</h2>
+
+            <p>Đây lại là một câu hỏi rất khó trả lời. Vì về cơ bản mức độ thu nhập của mỗi blog sẽ phụ thuộc vào rất nhiều yếu tố như chất lượng blog đó như thế nào, chủ đề blog đó nhiều người quan tâm không? Cách kiếm tiền mà blogger đó đang áp dụng là gì…</p>
+
+            <p>Nhưng hãy để H&T cho bạn một vài ví dụ về cá nhân viết blog kiếm tiền nhé:</p>
+
+            <ul>
+                <li>
+                    Blog Smart Passive Income được chủ nhân là Pat Flynn xây dựng khi anh ấy bị thất nghiệp năm 2008 khi khủng hoảng kinh tế xảy ra. Và đến nay theo báo cáo thu nhập thì mỗi tháng trung bình blog này mang về khoảng $130.000
+                    <img src="../../images/post/page/blog4-min.png" alt="" class="post-img-content">
+                </li>
+
+                <li>
+                    Hoặc một blogger Jon Morrow, một người gần như bị liệt toàn thân (đúng theo nghĩa đen) đã xây dựng blog Smart Blogger và hiện có tao ra thu nhập trung bình mỗi tháng $100.000
+                    <img src="../../images/post/page/blog5-min.png" alt="" class="post-img-content">
+                </li>
+
+                <li>
+                    Hay Mike Sagman đã tạo ra blog Dog Food Advisor, một blog chuyên viết về thức ăn cho chó. Hiện trung bình mỗi tháng khoảng hơn 1 triệu lượt truy cập và tạo ra thu nhập rất lớn.
+                </li>
+
+                <li>Và còn nhiều hơn nữa...</li>
+            </ul>
+
+            <p>Đó là những câu chuyện của các blogger nước ngoài, tuy nhiên ở Việt Nam cũng có rất nhiều người đang viết blog toàn thời gian và coi việc viết blog như một nghề nghiệp tạo thu nhập ổn định. Bạn có thể xem rất nhiều câu chuyện về các blogger khác mà H&T có cơ hội phỏng vấn <b><a href="#">TẠI ĐÂY</a></b> nhé!</p>
+
+            <h2 class="post-h2">Họ kiếm tiền với blog như thế nào?</h2>
+
+            <p>Thật ra trên tất cả các blog này có một điểm chung đó là họ sẽ:</p>
+
+            <ul>
+                <li><b>Chọn một chủ đề nào đó rất cụ thể</b> (ví dụ như làm đẹp, ẩm thực, marketing,…)</li>
+                <li><b>Sau đó họ tạo ra rất nhiều nội dung giá trị</b> để thu hút người đọc, giúp người đọc tìm ta được giải pháp để giải quyết vấn đề đang gặp phải.</li>
+            </ul>
+
+            <p>Sau đó họ sẽ áp dụng…</p>
+
+            <h2>Những cách kiếm tiền từ blog:</h2>
+
+            <p>Thật ra nếu bạn là một người mới thì bạn sẽ rất khó để nhận ra những cách kiếm tiền trên một blog mà các blogger đang áp dụng. Tuy nhiên ngay bên dưới đây H&T sẽ chỉ ra cho bạn thấy blog giúp bạn kiếm tiền online như thế nào nhé</p>
+            
+            <h2 class="post-h2">1. Kiếm tiền bằng quảng cáo trên blog</h2>
+
+            <p>Viết blog và kiếm tiền bằng việc đặt vào đó những quảng cáo là điều phổ biến nhất và cũng là cách tạo ra thu nhập thụ động nhất.</p>
+
+            <p>Hình ảnh bên dưới bạn có thể thấy một mẫu quảng cáo của Google được đặt trong nội dung bài viết trên blog. Đây chính là mạng quảng cáo Adsense mà chúng ta thường hay nghe đến, tất nhiên không phải blog, website nào cũng có thể đặt quảng cáo adsense vì cần được Google chấp nhận</p>
+
+            <img src="../../images/post/page/blog6-min.png" alt="" class="post-img-content">
+            <p class="af-pic">Mẫu quảng cáo của Google trên blog – Chương tình quảng cáo Adsense</p>
+
+            <p>Những người viết blog kiếm tiền với quảng cáo phần lớn họ sẽ tập trung tạo ra những nội dung rất hữu ích và có giá trị cho người đọc. Dần dần blog của họ sẽ được Google đánh giá cao và lúc đó họ có thể đăng ký vào chương trình quảng cáo adsense, khi Google chấp nhận họ sẽ có thể bắt đầu kiếm tiền.</p>
+
+            <p>Ngoài mạng quảng cáo adsense thì còn rất nhiều mạng quảng cáo khác mà những bạn sở hữu blog có thể tham gia như Mgid, Adnow… Tuy nhiên tính đến thời điểm hiện tại thì Adsense vẫn là mạng quảng cáo uy tín và nhiều blog, website tham gia nhất.</p>
+
+            <h2 class="post-h2">2. Kiếm tiền bằng cách bán sản phẩm/dịch vụ của chính bạn trên blog</h2>
+
+            <p>Trước đây viết blog chỉ được coi là một cách để ghi lại những kỷ niệm của cá nhân, nhưng hiện nay các blogger đã bắt đầu viết để kinh doanh rồi bạn nhé.</p>
+
+            <p>Họ có thể viết blog để hỗ trợ cho việc kinh doanh, bán sản phẩm. Ví dụ một phụ nữ yêu thích làm đẹp có thể xây dựng một blog chuyên chia sẻ về mẹo làm đẹp sau đó có thể mở một chuyên mục shop bán hàng để bán son handmade hay các loại mỹ phẩm chẳng hạn.</p>
+
+            <img src="../../images/post/page/blog7-min.png" alt="" class="post-img-content">
+
+            <p>Blog ở đây đóng vai trò rất tốt trong việc cung cấp những kiến thức hữu ích, tiếp cận khách hàng mục tiêu và từ đó xây dựng niềm tin, biến họ thành khách hàng trung thành.</p>
+
+            <p>Ngoài ra một blog còn có thể giúp bạn xây dựng thương hiệu cá nhân, từ đó bạn có thể cung cấp các dịch vụ như tư vấn, bán <b>những cuốn sách điện tử</b>, <b>hay khoá học online</b> (đây là việc kinh doanh những sản phẩm số). Ngay trên blog này bạn có thể nhận thấy rõ mô kinh doanh sản phẩm số mà H&T đang áp dụng.</p>
+
+            <h2 class="post-h2">3. Kiếm tiền với Affiliate Marketing (tiếp thị liên kết)</h2>
+
+            <p>Nếu bạn viết blog mà không có bất cứ sản phẩm/dịch vụ nào để bán thì sao? Có cách nào để kiếm tiền từ những blog như thế này không?</p>
+
+            <p>Đừng lo lắng, có và thậm chí thu nhập rất tốt bạn nhé. Đó chính là kiếm tiền bằng cách áp dụng Affiliate Marketing lên blog của bạn.</p>
+
+            <p>Rất đơn giản Affiliate Marketing chính là việc bạn tạo ra nội dung sau đó bán sản phẩm của người khác link liên kết của bạn để nhận hoa hồng.</p>
+
+            <img src="../../images/post/page/blog8-min.png" alt="" class="post-img-content">
+
+            <p>Rất đơn giản Affiliate Marketing chính là việc bạn tạo ra nội dung sau đó bán sản phẩm của người khác link liên kết của bạn để nhận hoa hồng.</p>
+
+            <ul>
+                <li>Bạn sẽ không cần bỏ vốn để nhập sản phẩm</li>
+                <li>Bạn cũng sẽ cần chăm sóc khách hàng, giao hàng</li>
+                <li>Không lo vấn đề hàng tồn kho</li>
+            </ul>
+
+            <p>Việc của bạn đơn giản là tạo ra nội dung hữu ích, sau đó làm cách nào để để khách hàng click vào link liên kết của bạn, khi họ mua sản phẩm/dịch vụ bạn sẽ được nhà cung cấp trả hoa hồng.</p>
+
+            <p>Thú vị từ cách kiếm tiền bằng tiếp thị liên kết trên blog là nó vô cùng thụ động, ngoài ra nếu biết cách thì chỉ cần một bài viết bạn có thể tạo ra thu nhập rất lớn.</p>
+
+            <h2 class="post-h2">Lời kết</h2>
+
+            <p>Oa! bài viết đã khá dài H&T hy vọng không làm cho bạn rối và cảm thấy chán nản với khởi đầu khi đang chuẩn bị cho một blog. Nhưng đây là những bước quan trọng để một blogger tương lai như bạn cần xem xét.</p>
+            
+            <p>Viết blog kiếm tiền thật sự không phải là công việc dễ dàng, cần sự đầu tư, cần sự đam mê và một chiến lược rất cụ thể.</p>
+
+            <p>Vì thế H&T khuyên bạn nên xét tất cả các yếu tố được đề cập trong bài viết này, thật sự điều cuối cùng mà H&T muốn nhấn mạnh để giúp bạn có thêm niềm tin vào công việc viết blog kiếm tiền đó là:</p>
+
+            <p><i>Hãy nhìn vào hành trình, vào công việc của H&T. Chẳng phải cá nhân H&T đang sống toàn thời gian với việc viết blog đó thôi! H&T làm được thì chắc chắn bạn cũng sẽ làm được!</i></p>
+
+            <p><b>Đừng lo, hãy liên hệ với H&T hoặc commnet ngay bên dưới bài viết này nếu bạn còn thấy những điểm chưa thật sự rõ ràng hoặc cần sự hỗ trợ nhé!</b></p>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="tu-duy.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="paris.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

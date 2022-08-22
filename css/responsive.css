@@ -1,0 +1,573 @@
+@media screen and (min-width: 1950px) {
+   
+    div.afmenu a {
+        font-size: 1.3rem;
+    }
+
+    nav.menu {
+        font-size: 1.5rem;
+    }
+
+    nav.menu > ul {
+        margin: 0.5rem 0;
+    }
+
+    div.find {
+        margin: 0.5rem 0;
+    }
+
+    #search-box #search-text {
+        font-size: 24px;
+        width: 300px;
+        padding: 12px 0px 13px 20px;
+    }
+
+    #search-btn {
+        padding: 16px;
+    }
+
+    ul.social i {
+        font-size: 1.5rem;
+    }
+
+    .tbandyt {
+        width: 70px;
+        height: 70px;
+    }
+
+    .tbandyt i {
+        font-size: 2.5rem;
+    }
+
+    .notifi {
+        top: 100px;
+    }
+
+    .favorites-list {
+        top: 190px;
+    }
+
+    #backtop {
+        width: 70px;
+        height: 70px;
+    }
+
+    #backtop i {
+        font-size: 2.5rem;
+    }
+
+    h4.h4, h2.h2 {
+        font-size: 32px;
+    }
+
+    .post-topic-btn {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    a.clt {
+        font-size: 2rem;
+    }
+
+    .post-text {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    .post-er {
+        font-size: 1.25rem;
+    }
+
+    .post-er::after {
+        top: 130%;
+    }
+
+    div.react {
+        margin-top: 2rem;
+        font-size: 1.25rem;
+        justify-content: space-evenly;
+    }
+
+    #load-btn-new, #load-btn-hot {
+        font-size: 1.5rem;
+        padding: 1.1875rem 1.6875rem;
+    }
+
+    #hide-btn-new, #hide-btn-hot {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    p.copyright {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .my-footer i {
+        font-size: 1.5rem;
+    }
+
+    div.about h4 {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    .about-text {
+        font-size: 1.3rem;
+    }
+
+    #about-btn {
+        font-size: 1.2rem;
+        padding: 12px 17px;
+    }
+
+    .topics-btn i, .topics-btn p {
+        font-size: 1.5rem;
+    }
+
+    button.hashtag {
+        padding: 10px 15px;
+        font-size: 1.3rem;
+    }
+
+    .ads-btn {
+        margin-top: 1.1rem;
+        padding: 0.7rem 1.2rem;
+        font-size: 1.3rem;
+    }
+
+    div.news {
+        font-size: 1.3rem;
+    }
+
+    #news-btn {
+        padding: 1.1875rem 1.6875rem;
+    }
+
+    div.follow-me a {
+        font-size: 1.3rem;
+    }
+
+    .follow-item {
+        width: 31%;
+        padding: 0.5rem;
+        margin: 0.6rem auto;
+    }
+
+    .contact-box > div {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .pages .post-text {
+        font-size: 1.4rem;
+    }
+
+    .h1 {
+        margin: 4rem 0 0 0;
+        padding: 1rem 2rem;
+        width: 200px !important;
+        font-size: 2rem;
+    }
+
+    .h1::after {
+        top: 92%;
+    }
+
+    .sort select {
+        padding: 10px 15px;
+        font-size: 1.5rem;
+    }
+
+    .sort {
+        margin: 1rem 0 2rem 83% !important;
+    }
+
+    .intro-travel {
+        font-size: 1.3rem;
+    }
+
+    div.find-location h1 {
+        font-size: 1.9rem;
+    }
+
+    .travel-cont {
+        line-height: 2rem;
+        margin-top: 3.5rem !important;
+    }
+
+    .travel-cont button {
+        padding: 0.5rem 1.2rem;
+        font-size: 1.3rem;
+    }
+
+    .find-locat {
+        width: 80%;
+    }
+
+    .find-loca-text {
+        font-size: 1.5rem !important;
+    }
+
+    .find-locat i {
+        padding: 0rem;
+    }
+
+    .travel-cont h4 {
+        font-size: 1.5rem;
+    }
+
+    .travel-cont > div {
+        font-size: 1.3rem;
+    }
+
+    .travel-cont > p {
+        font-size: 1.3rem;
+    }
+
+    .list-type i {
+        font-size: 2rem;
+    }
+
+    .sp-ticket {
+        width: 90%;
+    }
+
+    .sp-ticket > div:last-child {
+        font-size: 1.5rem;
+    }
+
+    .location-from input {
+        font-size: 1.3rem;
+    }
+
+    .intro-picture {
+        font-size: 1.3rem;
+    }
+
+    .hover-like-copy {
+        left: 63% !important;
+    }
+
+    .about-h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .intro p {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+    .about-info > h2 {
+        font-size: 2rem;
+    }
+
+    .about-info {
+        width: 85% !important;
+    }
+
+    .about-info-content {
+        margin-bottom: 1rem;
+    }
+
+    .about-info-content h5 {
+        font-size: 1.5rem !important;
+    }
+
+    .about-info-content p {
+        font-size: 1.3rem;
+    }
+
+    .about-info-content a {
+        padding: 1rem 1.5rem !important;
+        font-size: 1.2rem;
+    }
+
+    .about-info-all i {
+        font-size: 4rem !important;
+    }
+
+    .about-content-img {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+
+    .about-content-title {
+        font-size: 1.5rem !important;
+    }
+
+    .about-content-content p {
+        font-size: 1.3rem;
+    }
+
+    .about-why-travel-box {
+        width: 700px !important;
+    }
+
+    .about-why-travel-box h3 {
+        font-size: 2rem !important;
+    }
+
+    .about-why-travel-box p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .about-why-travel-box a {
+        font-size: 1.3rem !important;
+    }
+
+    .about-my-post-all-item h3 {
+        font-size: 1.3rem !important;
+    }
+
+    .about-contact-content h5 {
+        font-size: 1.5rem !important;
+    }
+
+    .about-contact-social > div > div {
+        font-size: 1.5rem !important;
+    }
+
+    .about-contact-question label {
+        font-size: 1.5rem !important;
+    }
+
+    .about-name input, .about-email input, .about-message textarea {
+        height: 4rem !important;
+        font-size: 1.3rem !important;
+    }
+
+    .about-send button {
+        padding: 1.2rem 2.5rem !important;
+        font-size: 1.3rem !important;
+    }
+
+    .post-date-up {
+        font-size: 1.3rem;
+    }
+
+    .post-h1 {
+        font-size: 2.5rem;
+    }
+
+    .post-img > p {
+        font-size: 1.5rem;
+    }
+
+    .respon h4 {
+        font-size: 1.6rem;
+    }
+
+    .respon p {
+        font-size: 1.5rem;
+    }
+
+    .post-h2 {
+        font-size: 2rem;
+    }
+
+    .dalat > h3 {
+        font-size: 1.7rem;
+    }
+
+    .post-content-social i {
+        font-size: 1.5rem;
+    }
+
+    .pre-nex a, .pre-nex o{
+        font-size: 1.7rem;
+    }
+
+    .sach-gan-day h3 {
+        font-size: 1.5rem;
+    }
+
+    .sach-gan-day h5 {
+        font-size: 1.2rem;
+    }
+
+    .body-good h5 {
+        font-size: 1.5rem;
+    }
+
+    .respon ul li {
+        font-size: 1.5rem;
+    }
+
+    div.choose {
+        bottom: 10rem !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1410px) {
+    
+}
+
+@media screen and (min-width: 1025px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    ul.menu-item {
+        display: none;
+    }
+
+    div.find {
+        width: 100%;
+        justify-content: center;
+    }
+
+    ul.social {
+        width: 100%;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+    div.logo {
+        width: 50%;
+    }
+
+    .l-navbar {
+        top: 15%;
+    }
+
+    section.main {
+        width: 100%;
+    }
+
+    .tbandyt {
+        right: 2%;
+    }
+
+    .notifi {
+        top: 120px;
+    }
+
+    .favorites-list {
+        top: 170px;
+    }
+
+    .tbandyt {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tbandyt i {
+        font-size: 1.5rem;
+    }
+
+    #backtop {
+        width: 40px;
+        height: 40px;
+        right: 2%;
+    }
+
+    #backtop i {
+        font-size: 1rem;
+    }
+
+    section.main {
+        display: block;
+    }
+
+    div.log {
+        width: 100%;
+    }
+
+    div.logo {
+        width: 25%;
+    }
+
+    .post-img {
+        display: none;
+    }
+
+    .post-content {
+        width: 100%;
+    }
+
+    div.react > div {
+        margin-right: 0;
+    }
+
+    div.aside {
+        width: 100%;
+    }
+
+    #hide-btn-new, #hide-btn-hot {
+        margin-left: 80%;
+    }
+
+    div.follow-me > div {
+        padding: 1.5rem;
+    }
+
+    .all-page {
+        width: 100%;
+    }
+
+    div.all-post > div {
+        width: 100% !important;
+    }
+
+    p.copyright, .my-footer i {
+        font-size: 0.85rem;
+    }
+
+    .h1 {
+        width: 140px;
+        margin-left: 1rem;
+        padding: 5px 10px;
+    }
+
+    .h1::after {
+        width: 50vw;
+        top: 88%;
+    }
+
+    .sort {
+        margin: 0.5rem 0 1rem 65% !important;
+    }
+
+    div.loading {
+        margin: 0 auto !important;
+        font-size: 0.85rem !important;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .image-post-er {
+        display: none;
+    }
+
+    div.follow-me > div {
+        padding: 1rem;
+    }
+
+    .h1::after {
+        width: 40vw;
+        top: 88%;
+    }
+
+    .sort {
+        margin: 0.5rem 0 1rem 45% !important;
+    }
+}

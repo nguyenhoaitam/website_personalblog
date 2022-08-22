@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+        <p class="post-date-up">Đăng ngày: 10/10/2021</p>
+        <h1 class="post-h1">Kinh nghiệm du lịch Paris tự túc</h1>
+
+        <div>
+           
+            <p>Để chốt lại loạt bài về Paris đang ngập tràn trên Blog du lịch của mình mấy bữa nay, đây là biên <b>tổng hợp toàn bộ kinh nghiệm du lịch Paris tự túc từ A tới Z</b>.
+                Bài này tổng hợp không chỉ những kinh nghiệm du lịch Paris do chính bản thân mình trải nghiệm, mà còn là một bài tập hợp tất cả những nguồn thông tin mà tôi tìm hiểu, tham khảo và áp dụng cho chuyến đi Paris của gia đình vào đầu tháng 09/2019 vừa rồi. Mời bạn tham khảo nhé!
+            </p>
+
+            <img src="../../images/post/page/paris1-min.jpg" alt="" class="post-img-content">
+
+            <h2 class="post-h2">1. Di chuyển từ sân bay về trung tâm</h2>
+
+            <p>Paris có ba sân bay, bao gồm sân bay quốc tế lớn nhất là Charles de Gaulle (CDG), Orly (ORY) và Beauvais (BVA). CDG và ORY là hai sân bay lớn, chuyên đón những chuyến bay quốc tế đường dài từ khắp nơi trên thế giới. Nhưng thường đa phần nếu bay từ Việt Nam thì mọi người hay tới CDG nhiều hơn. Còn BVA là sân bay chủ yếu tập trung các hãng hàng không giá rẻ nội vùng châu Âu.</p>
+            
+            <h3>Từ sân bay CDG về trung tâm Paris</h3>
+
+            <p>Có ba cách: Taxi, tàu RER và xe bus.</p>
+
+            <p>Taxi sân bay CDG hiện đã có giá cố định: €55/lượt đối với khu vực Rive Gauche (tả ngạn sông Seine) và €50/lượt với Rive Droite (hữu ngạn sông Seine).</p>
+
+            <p>Khi đặt khách sạn, bạn canh vô vị trí trong bản đồ là có thể biết được mình cần đi về hữu ngạn (gauche) hay tả ngạn (droite). Hữu ngạn và tả ngạn được phân chia như trong hình phía dưới.</p>
+
+            <img src="../../images/post/page/paris2-min.jpg" alt="" class="post-img-content">
+
+            <p>Từ sân bay đi ra, bạn chỉ việc đi theo mũi tên có chữ taxi. Tuy nhiên lần mới đây nhất, khi ra tới cổng đón taxi rồi thì gia đình tôi bị tay nhân viên “móc nối” với bọn “cò” kéo ra ngoài, dụ khị đi taxi “lụi” với giá €183 cho 3 người.</p>
+
+            <p>Bọn này chắc nhìn thấy châu Á tưởng ngáo ngơ, ai ngờ gặp giang hồ Quận 4 thứ thiệt (Quận 4 Sài Gòn chứ không phải Quận 4 Paris nha) nên còn lâu giang hồ mới bị dụ!!!</p>
+
+            <p>Kinh nghiệm của mình đó là bạn cứ lơ tay nhân viên đi, ra tới ngay chỗ chờ taxi của sân bay, và chỉ đón những chiếc taxi có gắn hộp đèn Taxi đàng hoàng phía trên. Từ Paris muốn đón taxi ra sân bay thì có thể nhờ nhân viên khách sạn hoặc host gọi điện, hoặc ra khu vực chờ taxi (giống khu chờ xe bus vậy) mà đợi.</p>
+
+            <p>Ngoài ra, một lời khuyên từ kinh nghiệm thực tế của mình đó là, nếu bạn bay từ Việt Nam qua và đi nhóm khoảng 3 – 4 người, hãy mạnh dạn đi taxi. Tính ra mỗi người trả khoảng trên dưới €15 mà về tới trung tâm khỏe re, khỏi lo hành lý cồng kềnh, trộm cắp móc túi.</p>
+
+            <p>Tôi có cậu bạn đang làm PhD ở Thụy Điển. Cách đây mấy tháng bạn đi Paris để dự hội thảo, và hỡi ôi, chỉ vừa từ sân bay lên đến RER để về khách sạn thôi mà bọn xấu đã kịp thuổng luôn cái laptop, trong đó toàn bộ là tài liệu dự hội thảo cũng như tài liệu chuyên ngành PhD của bạn mấy năm trời!!! Mất đồ một cú “quá mạng“, còn khổ sở vật vã hơn mất tiền mặt, thậm chí mất giấy tờ nhiều!</p>
+
+            <p>Nếu muốn tiết kiệm, bạn có thể chọn cách đi tàu RER B hoặc đi xe bus.</p>
+
+
+            <p>Hiện nay, vé Ticket Mobilis đã có thể kết hợp với tàu <b>RER B/Roissybus/Orlybus để đến CDG và Orly</b>. Để dùng vé này tới sân bay thì bạn phải mua loại có hiệu lực 5 zones (bao gồm luôn cả Disney và Versailles luôn). Thông tin chi tiết mời bạn tham khảo thêm tại <a href="#">TRANG NÀY</a> (kéo xuống phần Ticket Mobilis Prices).</p>
+
+            <p>Đi tàu RER này có hơi bất tiện đó là nó chỉ có ở Terminal 3 và bạn phải bắt một lượt shuttle bus để tới đây. Mà éo le thêm nữa là thứ tự sắp xếp terminal ở CDG là T1 – T3 – T2, thay vì 123 như bình thường. Vì vậy, một lần nữa, lời khuyên chân thành của mình đó là… mời bạn đi taxi cho lẹ!</p>
+
+            <p>Cuối cùng là xe bus. Có 2 loại bus là <b>city bus</b> – xe bus thành phố thông thường, dừng ở tất cả các trạm nên thời gian đi khá lâu nhưng giá rẻ & <b>shuttle bus sân bay</b> – chỉ dừng ở một số trạm cũ thể, thời gian đi nhanh hơn và giá cũng cao hơn. Kỳ này gia đình mình không đi bus nên không nắm chi tiết. Bạn có thể tham khảo cụ thể hơn tại <a href="#">ĐÂY</a>.</p>
+
+            <h3>Từ sân bay Orly (ORY) về trung tâm</h3>
+
+            <p>Tương tự như CDG, từ ORY về trung tâm Paris cũng có 3 cách là taxi (giá fix €30 hoặc €35/lượt tùy theo khu vực), xe lửa và xe bus. Bạn có thể tham khảo chi tiết thông tin, giá vé, thời gian di chuyển của các loại phương tiện này tại <a href="#">ĐÂY</a>.</p>
+
+            <h3>Từ sân bay Beauvais (BVA) về trung tâm</h3>
+
+            <p>Tôi đã từng tới sân bay Beauvais này vào năm 2015, và thề là không bao giờ tin lời mấy hãng hàng không giá rẻ mà đáp xuống BVA một lần nào nữa. Sân bay quá xa trung tâm, nội thời gian di chuyển không thôi cũng hết hơi, chưa kể bạn phải tính thêm tiền di chuyển từ sân bay tới trung tâm và ngược lại nữa. Cộng mấy thứ linh tinh đó vô, vé “rẻ không tưởng” tự nhiên thành… “tưởng là rẻ” ai ngờ…</p>
+
+            <p>Cách đơn giản nhất là đi shuttle bus từ BVA vô tới Porte Malot, rồi từ đó sử dụng phương tiện công cộng để đi tiếp vô trung tâm Paris. Bạn có thể <b>đặt vé shuttle bus online trước</b> để giữ chỗ và được vé rẻ hơn so với mua trực tiếp tại trạm.</p>
+
+            <h2 class="post-h2">2. Di chuyển trong trung tâm thành phố</h2>
+
+            <p>Riêng về di chuyển trong trung tâm Paris, mời bạn tham khảo bài viết “<b><a href="#">Tổng hợp về phương tiện đi lại ở Paris</a></b>” do Blog du lịch của mình hợp tác nội dung với O’bon Paris – trang thông tin du lịch Paris chuẩn và đầy đủ nhất mà tôi thường hay tham khảo.</p>
+
+            <p>Kinh nghiệm của mình: Nếu xác định chỉ tham quan các địa điểm chính ở trung tâm Paris, bạn chỉ cần mua vé zone 1 – 2 là đủ. Ngoài ra còn một lưu ý đó là khái niệm “vé ngày” ở đây là đúng một ngày, tới 12h đêm là hết hiệu lực chứ không phải theo kiểu 24h như mọi người thường nghĩ.</p>
+
+            <p>Nếu bạn xác định có thể đi bộ hoặc không di chuyển nhiều hoặc chỉ đi toàn bộ ở trung tâm thành phố thì nên mua vé t+ (10 vé) cho tiện. Tuy nhiên nếu ở Paris từ 2 ngày trở lên thì bạn nên cân nhắc mua các loại vé ngày sẽ lợi hơn</p>
+
+            <h2 class="post-h2">3. Chổ ở</h2>
+
+            <p>Paris là thành phố du lịch nổi tiếng nhất châu Âu hiện nay rồi nên bạn không phải lo là không có chỗ ở. Cái cần lo là tìm được chỗ ở hợp lý, vừa túi tiền, khu vực an ninh, tránh xa các khu nhập cư phức tạp, v.v…</p>
+
+            <p>Để đặt phòng khách sạn thì tốt nhất là đặt qua <b><a href="#">Booking.com</a></b>. Đây cũng là một trong số những trang web đặt phòng uy tín khi làm thủ tục xin visa du lịch trong khối Schengen.</p>
+            
+            <p>Nhìn vào bản đồ đặt phòng dưới đây, bạn có thể dễ dàng tìm được loại phòng mình mong muốn dựa vào vị trí và giá phòng được niêm yết sẵn luôn ở đây nhé!</p>
+
+            <p>Bên cạnh Booking thì bạn có hai sự lựa chọn khác đó là <b>host người Việt ở Paris và Airbnb</b>. Nếu may mắn, bạn có thể book được <b>căn Airbnb này với view nhìn ra tháp Eiffel</b> (hình dưới) với giá chỉ khoảng €80/người/đêm.</p>
+
+            <img src="../../images/post/page/paris3-min.jpg" alt="" class="post-img-content">
+
+            <img src="../../images/post/page/paris4-min.jpg" alt="" class="post-img-content">
+
+            <h2 class="post-h2">4. Lưu ý về trộm cắp móc túi</h2>
+
+            <p>Đồng hành cùng với du lịch là combo móc túi/dàn cảnh/cướp giật/ăn xin/xin chữ ký/v.v… Đây là vấn nạn nhức não ở các thành phố lớn khác ở châu Âu như Barcelona, Roma, Venice chứ không riêng gì Paris xinh đẹp.</p>
+
+            <h3>Phác thảo sơ qua thì ở Paris có các thể loại như sau:</h3>
+
+            <ul>
+                <li>Móc túi. Vụ này thì ở đâu cũng có. Cách tốt nhất là đề cao cảnh giác, tránh mang nhiều tiền mặt trong người, nếu có cũng nên bỏ trong túi đeo vào bên trong người hoặc phân tán khắp nơi, tránh để một chỗ.</li>
+                <li>Dàn cảnh. Thường tụi nó sẽ giả bộ làm khách du lịch hỏi đường/xô xát/nhóm bạn chơi đùa ồn ào trên tàu điện ngầm v.v… nhằm đánh lạc hướng và phân tán tư tưởng “con mồi”, sau đó thì hành động chớp nhoánh.</li>
+                <li>Xin chữ ký. Tụi này lúc trước tập trung cực kỳ đông ở Nhà thờ Đức Bà, kiểu cầm một bảng danh sách quái quỷ gì đó rồi kêu gọi mọi người ký vào, ủng hộ tiền bạc blah blah. Gặp thể loại này thì tuyệt đối giả câm giả điếc, đồng thời để ý tư trang, nó nói một hồi chán sẽ tự bỏ đi.</li>
+                <li>Đeo vòng tình bạn hay hoa hồng tình yêu gì đó. Gặp tụi này thì cứ lầy vô. Nó đeo vòng xong đòi tiền? OK tao không có tiền! Mày muốn đòi tiền? Lên công an đi anh em êi! Thế là tụi nó sẽ chửi thề bằng vài ba thứ tiếng, rồi thôi. Tất nhiên bạn vẫn phải cẩn thận tư trang nhé!</li>
+                <li>Lưu ý là trên đồi Montmartre, chỗ ngay Sacre Cœur thường hay có rất nhiều bọn lưu manh tụ tập. Lần trước, có hai đứa nhìn thì tưởng như cha con đang chơi với nhau, nhưng bọn chúng theo sát gia đình tôi tới tận mấy bậc thang dẫn lên đồi. Nếu đi một mình, bạn tuyệt đối không nên đi vào những chỗ vắng, vì có thể chúng sẽ theo sát và chờ lúc thích hợp để trấn lột! Lúc đầu tôi không để ý lắm, nhưng khoảng vài phút sau là tôi thấy “có mùi” rồi nên một mặt thì đi nhanh ra khỏi con đường đó, mặt khác nhìn trừng trừng vô mắt con nhỏ “con gái” để cảnh báo nó là “tao biết rồi nha mậy, đồ con nít quỷ!”</li>
+            </ul>
+
+            <h2 class="post-h2">5. Top 5 trải nghiệm ở Paris</h2>
+
+            <h3>Dù bạn có đi du lịch Paris 2 ngày, 3 ngày hay thậm chí cả tuần, đừng bỏ qua 5 trải nghiệm “must do” này ở kinh đô ánh sáng nha:</h3>
+
+            <ol>
+                <li>Tham quan tháp Eiffel kết hợp với đi tàu trên sông Seine. Bạn có thể đứng phía dưới để ngắm hoặc mua vé leo lên tháp.</li>
+                <li>Tham quan bảo tàng Louvre. Bảo tàng mở cửa miễn phí vào ngày thứ Bảy đầu tiên của mỗi tháng, từ 18h.</li>
+                <li>Tham quan Khải Hoàn Môn và đại lộ Champs Élysées. Bạn có thể leo lên trên tầng thượng của Khải Hoàn Môn để nhìn toàn cảnh Paris, đặc biệt rất đẹp vào hoàng hôn</li>
+                <li>Tham quan Nhà thờ Đức Bà Notre Dame de Paris, tuy nhiên hiện nay thì du khách chỉ có thể đứng bên ngoài thôi chứ không vô trong và leo lên tháp được nữa. Hình minh họa ở đầu bài chính là tôi chụp từ tháp của Nhà thờ Đức Bà hồi năm 2015 đó!</li>
+                <li>Đồi Montmartre và Sacre Cœur.</li>
+            </ol>
+
+            <p>Từ những gợi ý căn bản này, tùy thuộc vào thời gian và sở thích mà bạn có thể sắp xếp các điểm tham quan cũng như các hoạt động trong ngày khác sao cho phù hợp Nếu không có nhiều thời gian thì… cứ yên tâm, bạn vẫn có thể <b><a href="#">tham quan trọn vẹn những nơi này trong vòng 2 ngày!</a></b></p>
+
+            <img src="../../images/post/page/paris5-min.jpg" alt="" class="post-img-content">
+
+            <p><i>Bảo tàng Louvre với kim tự tháp bằng kính được thắp sáng rực rỡ trong đêm nè. Nếu muốn chụp được như vầy, bắt buộc bạn phải có tripod hoặc bét lắm là để tựa máy lên bờ tường quanh hồ nước rồi mới chụp phơi sáng được nha.</i></p>
+
+            <h2 class="post-h2">6. Những trải nghiệm thú vị khác ở Paris</h2>
+
+            <p>Trước chuyến đi kỳ này, mình đã tham khảo khoảng trên dưới 30 chiếc website du lịch và blog cá nhân khác nhau để tìm ra lịch trình du lịch Paris phù hợp nhất cho 2 ngày và đi với người lớn tuổi. Sở dĩ phải tham khảo một lượng thông tin nhiều như vậy là vì blogger du lịch viết về Paris thì không thiếu, nhưng blogger viết về kinh nghiệm du lịch Paris 2 ngày với người lớn tuổi thì… chắc chỉ có mình, hehe! Bởi vậy phải chắt lọc thông tin dữ lắm mới ra được cái lịch trình như ý muốn.</p>
+
+            <p>Có rất nhiều thông tin du lịch hay ho mà mình không hoặc chưa sử dụng tới, nhân tiện biên hết ra đây để bạn tiện tra cứu và tham khảo thêm khi cần nghen!</p>
+
+            <ul>
+                <li>Bảo tàng Musée d’Orsay</li>
+                <li>Vườn Luxembourg (Jardin du Luxembourg)</li>
+                <li>Vườn Tuileries (Jardin des Tuileries)</li>
+                <li>Tòa nhà Les Invalides (nơi có hài cốt của Napoleon)</li>
+                <li>Bảo tàng nước hoa Fragonard Musée du Parfum</li>
+                <li>Cầu Pont-Neuf</li>
+                <li>Cầu Alexander III</li>
+                <li>Cầu Bir-Hakeim (chỗ này chụp tháp Eiffel rất đẹp và art)</li>
+                <li>Palais Royal</li>
+                <li>Trung tâm mua sắm cao cấp La Fayette (đặc biệt trang trí siêu đẹp vào dịp Giáng Sinh)</li>
+                <li>Nhà hát lớn (Palais Garnier)</li>
+                <li>Hiệu sách Shakespeare and Company (sách tiếng Anh)</li>
+                <li>Chụp hình sống ảo với dãy nhà màu pastel trên đường Rue Crémieux</li>
+                <li>Đi dạo (và chụp hình lifestyle) ở khu Le Marais. Đây cũng là một trong những khu vực an ninh và đậm chất Pháp nhất ở Paris. </li>
+                <li>Tham quan khu Latin (Quartier Latin)</li>
+                <li>Ghé qua Paris est toujour Paris để lùng quà lưu niệm đặc trưng của Pháp</li>
+                <li>Góc sống ảo với tháp Eiffel: Góc ngã ba Rue Surcouf và Rue Saint-Dominique, ngay trước quán Au Canon des Invalides.</li>
+            </ul>
+
+            <img src="../../images/post/page/paris6-min.jpg" alt="" class="post-img-content">
+
+            <p><i>Đây là cầu Bir-Hakeim. Tuyến metro số 6 đoạn giữa Bir-Hakeim và Trocadero sẽ có view từ cửa sổ toa tàu ra tháp Eiffel cực kỳ đẹp!</i></p>
+
+            <h2 class="post-h2">7. Ẩm thực Pháp</h2>
+
+            <ul>
+                <li>•	Uống cà phê ở quán Au vieux Paris d’Arcole</li>
+                <li>•	Thưởng thức bánh macaron ngon nhất Paris tại Pierre Hermé (cái này là nghe mấy blogger du lịch khác nói dzậy chứ mình chưa ăn)</li>
+                <li>•	Ăn thử bánh ngọt Pháp tại Stohrer – tiệm bánh ngọt (patisserie) lâu đời nhất tại Paris (từ năm 1730).</li>
+                <li>Trải nghiệm ẩm thực Phú Lang Xa tại các nhà hàng sau: La Gauloise (loạt hình phía dưới), Chartier Bouillon hoặc Le Procope</li>
+            </ul>
+
+            <img src="../../images/post/page/paris7-min.jpg" alt="" class="post-img-content">
+            <img src="../../images/post/page/paris8-min.jpg" alt="" class="post-img-content">
+
+            <p>Thường tại các bistrot, giá một menu cố định 3 món (khai vị, món chính, tráng miệng) là khoảng từ €17/người. Ở nhà hàng (restaurant) thì phải từ €27/người trở lên, tùy độ sang chảnh của nhà hàng cũng như món ăn mà bạn gọi.</p>
+
+            <p><b>Lưu ý:</b> Nếu muốn uống nước trắng, hãy gọi tap water (nước vòi) để được nhà hàng phục vụ nước miễn phí. Nếu bạn chỉ kêu water không thôi, họ sẽ bưng ra nước đóng chai và tính thêm tiền nước nữa đó nha.</p>
+
+            <p style="text-align: center;"><b>TRỌN BỘ KINH NGHIỆM DU LỊCH PARIS CỦA MÌNH ĐẾN ĐÂY LÀ HẾT. HY VỌNG BÀI BIÊN NÀY CUNG CẤP CHO BẠN NHỮNG THÔNG TIN CĂN BẢN VÀ HỮU ÍCH NHẤT ĐỂ CHUẨN BỊ CHO CHUYẾN ĐI PARIS SẮP TỚI CỦA MÌNH!</b></p>
+
+            <p style="text-align: center;"><b>CHÚC BẠN CÓ MỘT CHUYẾN ĐI TỚI KINH ĐÔ ÁNH SÁNG THẬT NHIỀU NIỀM VUI VÀ KỶ NIỆM ĐẸP!</b></p>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="blog-kiem-tien.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="du-lich-hot.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

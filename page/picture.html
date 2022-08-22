@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/picture.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../index.html" class="nav__logo">
+                    <img src="../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../index.html">Trang chủ</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="picture.html">Hình ảnh</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="all-page">
+        <h1 class="h1">Hình ảnh</h1>
+        <p class="intro-picture">Trong đây là toàn bộ những ảnh do mình đi du lịch & do mình sưu tầm được ở đâu đấy.
+            Nếu bạn là người yêu thích và có đam mê về chụp ảnh thì nó sẽ hữu ích với bạn.
+        </p>
+    </div>
+
+    <section class="main-picture">
+       <div class="banner">
+            <img src="../images/pic/poster/poster1.png" alt="banner">
+       </div>
+
+       <section class="slider-images">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="slider-title">
+                        <h2>Một số ảnh</h2>
+                    </div>
+                    
+                    <div class="slider-content-container">
+
+                        <div class="slider-content-father">
+                            <div class="slider-items flex">
+
+                                <div class="slider-item">
+                                    <img src="../images/pic/thac-datanla-da-lat.png" alt="thac-datanla-da-lat">
+                                    <div class="slider-items-text">
+                                        <h5>Thác Datanla Đà Lạt</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/thanh-pho-da-nang.png" alt="thanh-pho-da-nang">
+                                    <div class="slider-items-text">
+                                        <h5>Thành phố Đà Nẵng</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/thung-lung-ty-da-lat.png" alt="thung-lung-ty-da-lat">
+                                    <div class="slider-items-text">
+                                        <h5>Thung lũng tình yêu</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/ruong-bac-thang.png" alt="ruong-bac-thang">
+                                    <div class="slider-items-text">
+                                        <h5>Ruộng bậc thang</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/bien-phan-thiet.png" alt="bien-phan-thiet">
+                                    <div class="slider-items-text">
+                                        <h5>Biển ở Phan Thiết</h5>
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                            <div class="slider-items flex">
+
+                                <div class="slider-item">
+                                    <img src="../images/pic/dharamshala.png" alt="dharamshala">
+                                    <div class="slider-items-text">
+                                        <h5>Dharamshala</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/mostar.png" alt="mostar">
+                                    <div class="slider-items-text">
+                                        <h5>Mostar</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/hoa-lupine.png" alt="hoa-lupine">
+                                    <div class="slider-items-text">
+                                        <h5>Hoa Lupine</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/salzburg.png" alt="salzburg">
+                                    <div class="slider-items-text">
+                                        <h5>Salzburg</h5>
+                                    </div>
+                                </div>
+        
+                                <div class="slider-item">
+                                    <img src="../images/pic/bo-bien.png" alt="bo-bien">
+                                    <div class="slider-items-text">
+                                        <h5>Đường bờ biển</h5>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+
+                        <div class="slider-pre-nex">
+                            <i class="fa-solid fa-chevron-left chevron-pre"></i>
+                            <i class="fa-solid fa-chevron-right chevron-next"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        <section class="show-images">
+            <div class="flex">
+                <div>
+                    <div class="hover-pics">
+                        <img src="../images/pic/1.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/1.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/2.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/2.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/3.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/3.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/4.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/4.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/18.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/18.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/5.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/5.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/7.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/7.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/8.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/8.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/10.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/10.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/17.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/17.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/12.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/12.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/14.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/14.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/15.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/15.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/16.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/16.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/19.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/19.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/20.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/20.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover-pics">
+                        <img src="../images/pic/13.jpg" alt="">
+                        <div class="hover-pic">
+                            <div class="hover-content">
+                                <div class="hover-like-copy flex">
+                                    <div>
+                                        <i class="fa-solid fa-link" title="Sao chép địa chỉ liên kết"></i>
+                                    </div>
+                                    <div class="like-pic">
+                                        <i class="fa-solid fa-heart" title="Yêu thích"></i>
+                                    </div>
+                                </div>
+
+                                <div class="hover-dow">
+                                    <div>
+                                        <a href="../images/pic/13.jpg" download>
+                                            <i class="fa-solid fa-circle-arrow-down" title="Tải ảnh xuống"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

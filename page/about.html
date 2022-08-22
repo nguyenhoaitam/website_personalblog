@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="shortcut icon" href="../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body">
+
+    <div class="alert-about animate__animated animate__fadeInDown" id="alert-about">
+        <div>
+            <span><i class="fa-solid fa-xmark" id="close-box-about"></i></span>
+            <div>
+                <p>Cảm ơn bạn đã liên hệ &hearts; Mọi lời nhắn hay góp ý đều được chúng mình đọc và phản hồi lại.</p>
+            </div>
+            <div>
+                <img src="../images/cam-on.png" alt="camon">
+            </div>
+        </div>
+    </div>
+
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../index.html" class="nav__logo">
+                    <img src="../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../index.html">Trang chủ</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="about.html">H&T Blog</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="my-about">
+
+        <div class="intro">
+            <h1 class="about-h1">Đôi lời giới thiệu về H&T Blog</h1>
+            <p>H&T Blog ra đời từ 5/2019. 
+                Với sứ mệnh <b>Chia Sẻ Kinh Nghiệm Du lịch</b> cho cộng đồng du lịch Việt Nam, chuyên sâu là những kinh nghiệm thực tế, review thật, trải nghiệm thật. 
+                Mục đích giúp mọi người đều có thể đi Du Lịch Tự Túc một cách dễ dàng. Bên cạnh đó H&T Blog cũng có những bài viết về <b>Cuộc Sống Ngày, 
+                Mẹo Vặt Cuộc Sống, Sách hay, cũng như chia sẽ về công việc của blogger</b>. H&T Blog luôn hy vọng có thể chia sẻ cùng bạn những trải nghiệm độc đáo, 
+                hữu ích và giúp cho hành trình của bạn trở nên dễ dàng hơn. Nhằm khẳng định lại những giá trị chân thực của Du lịch, đó là: <br>
+                <b>TỰ DO TRẢI NGHIỆM THEO CÁCH CỦA CHÍNH MÌNH</b>.</p>
+                <hr>
+        </div>
+
+        <div class="about-info">
+            <h2>Theo dõi mình tại đây</h2>
+            
+            <div class="about-info-alls flex">
+                <div class="about-info-all flex">
+                    <div class="about-info-icon about-info-icon-facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="about-info-content">
+                        <h5>Facebook</h5>
+                        <p>Các nội dung liên quan tới du lịch, sống tích cực, thể dục thể thao và các mẹo vặt mình đều cập nhật tại page này nhé.</p>
+                        <a href="https://www.facebook.com/" target="_blank">Vào Facebook</a>
+                    </div>
+                </div>
+    
+                <div class="about-info-all flex">
+                    <div class="about-info-icon about-info-icon-youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="about-info-content">
+                        <h5>Youtube</h5>
+                        <p>Tất cả video mình quay được đều ở kênh này. Bạn có thể ghé qua để tìm những điều tích cực trong cuộc sống nhé.</p>
+                        <a href="https://www.youtube.com/" target="_blank">Vào Youtube</a>
+                    </div>
+                </div>
+    
+                <div class="about-info-all flex">
+                    <div class="about-info-icon about-info-icon-tiktok">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="about-info-content">
+                        <h5>Tiktok</h5>
+                        <p>Toàn bộ video trên kênh tiktok mình đều về du lịch, do mới gia nhập nên còn thô sơ. Cơ mà bảo đảm có chiều sâu nè.</p>
+                        <a href="https://www.tiktok.com/" target="_blank">Vào Tiktok</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <header class="header">
+            <img src="../images/about2.png" alt="">
+        </header>
+
+        <section class="about-contents">
+
+            <div class="about-content">
+                <h1 class="about-h1 about-h1-content">Sứ mệnh H&T Blog</h1>
+                <div class="about-content-all flex">
+                    <div class="about-content-left">
+                        <div class="about-content-img">
+                            <img src="../images/icon-travel2.png" alt="sumenh">
+                        </div>
+                        <div class="about-content-content">
+                            <h2 class="about-content-title">CHIA SẺ KINH NGHIỆM DU LỊCH</h2>
+                            <p>Cuộc sống là cho đi, với niềm Đam Mê Du Lịch của mình, H&T BLOG không có gì ngoài những Kinh Nghiệm chuyến đi. 
+                                Tất cả đều được chúng tôi chia sẻ hết trong các bài viết. 
+                                Đây đều là những Trải nghiệm Thật đã .được các thành viên trong team,
+                                 cũng như cộng đồng cộng tác viên chia sẻ. Bạn cũng đừng ngại ngần chia sẻ những
+                                  điều thú vị trong chuyến đi của mình với cộng đồng nhé, hãy liên hệ H&T BLOG để chúng ta 
+                                  cùng giúp mọi người có những chuyến đi đầy Ý Nghĩa, giàu trải nghiệm.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-content-right">
+                        <div class="about-content-img">
+                            <img src="../images/icon-travel1.png" alt="sumenh">
+                        </div>
+                        <div class="about-content-content">
+                            <h2 class="about-content-title">ĐEM ĐẾN NHỮNG GỢI Ý & TIPS HAY CHO CUỘC SỐNG</h2>
+                            <p>Với những kiến thức cũng như hiểu biết qua trường lớp, cuộc sống hàng ngày.
+                                 H&T Blog luôn mang đến cho bạn những gợi ý hay, những lời khuyên hữu ích.
+                                  Những bài viết về chủ đề này sẽ được chúng tôi cập nhật hàng tuần với mong muốn giúp ích cho mọi. 
+                                  Hy vọng sẽ được mọi người đón nhận nồng nhiệt. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about-why-travel">
+            <h1 class="about-h1 about-why-travel-h1">Tại sao nên đi du lịch cùng H&T</h1>
+
+            <div class="flex about-why-travel-alls">
+
+                <div class="about-why-travel-left">
+                    <div class="about-why-travel-img">
+                        <img src="../images/about4.png" class="l-img" alt="">
+                    </div>
+                    <div class="about-why-travel-content">
+                        <div class="about-why-travel-box">
+                            <h3>Tự do khám phá</h3>
+                            <p>H&T tôn trọng sở thích của người du lịch,
+                                 bạn sẽ được tự do khám phá, làm những gì bạn muốn,
+                                  tự trải nghiệm và tạo cho mình những dấu ấn riêng cho bản thân.
+                                   Lịch trình linh hoạt, có nhiều chuyến đi trong tháng giúp bạn 
+                                   linh hoạt trong việc lựa chọn thời gian, cùng với nhiều địa 
+                                   điểm đến thú vị, hứa hẹn cho bạn một mùa du lịch tuyệt vời.</p>
+                            <span><a href="#">XEM THÊM</a></span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="about-why-travel-right">
+                    <div class="about-why-travel-img">
+                        <img src="../images/about5.png" class="r-img" alt="">
+                    </div>
+                    <div class="about-why-travel-content">
+                        <div class="about-why-travel-box">
+                            <h3>Trải nghiệm du lịch tại địa phương</h3>
+                            <p>Bạn được hòa mình và không gian văn hóa con người địa phương. 
+                                Sống như họ và hiểu họ hơn sau mỗi chuyến đi. H&T kết hợp hài 
+                                hòa phương tiện công cộng & xe ô tô đưa đón 1 cách linh hoạt, 
+                                bạn sẽ được đi Metro, bus, Ăn ở nhà hàng địa phương (tùy theo món
+                                 bạn chọn), lưu trú tại homestay hay Apartment cũng do bạn chọn luôn.</p>
+                            <span><a href="#">XEM THÊM</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about-my-post">
+            <h1 class="about-h1">Một số bài viết nổi bật của mình</h1>
+
+            <div class="about-my-post-all flex">
+                <div class="about-my-post-all-item">
+                    <div>
+                        <div>
+                            <img src="../images/post/travel/doi-thien-phuc-duc-da-lat.png" alt="">
+                        </div>
+                        <div class="about-my-post-all-item-header">
+                            <h3>Lên đồi Thiên Phúc Đức ở Đà Lạt, cắm trại săn mây view bao đẹp</h3>
+                            <p>30/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-my-post-all-item">
+                    <div>
+                        <div>
+                            <img src="../images/post/travel/aquatopia-phu-quoc.png" alt="">
+                        </div>
+                        <div class="about-my-post-all-item-header">
+                            <h3>Trải nghiệm Công Viên Nước Aquatopia Water Park</h3>
+                            <p>05/08/2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-my-post-all-item">
+                    <div>
+                        <div>
+                            <img src="../images/post/travel/kinh-thanh-hue.png" alt="">
+                        </div>
+                        <div class="about-my-post-all-item-header">
+                            <h3>Kinh Thành Huế - di sản hơn 100 năm của Triều Nguyễn</h3>
+                            <p>16/06/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about-contact">
+            <h1 class="about-h1 about-contact-h1">Liên hệ với mình</h1>
+            <div class="flex about-contact-all">
+                <div class="about-contact-img">
+                    <img src="../images/about1.png" alt="">
+                </div>
+
+                <div class="about-contact-content">
+                    <h5>Nếu bạn có quan tâm đến việc cộng tác, có câu hỏi hoặc đơn giản chỉ muốn tâm sự, 
+                        bạn có thể liên hệ với mình qua các thông tin dưới đây, chúng mình sẽ trả trời trong thời gian sớm nhất.
+                    </h5>
+
+                    <div class="about-contact-social flex">
+
+                        <div class="about-contact-social-address">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Địa chỉ</span>
+                                <div>
+                                    <a href="#">317 Nguyễn Kiệm - Quận Gò Vấp</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-contact-social-phone">
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Điện thoại</span>
+                                <div>
+                                    <a href="tel:0981694834">(+84)981694834</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-contact-social-facebook">
+                            <div>
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>
+                                <div>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        facebook.com/handtblog
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-contact-social-email">
+                            <div>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email</span>
+                                <div>
+                                    <a href="mailto:hantblog@gmail.com" target="_blank">hantblog@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-contact-question">
+                        <form action="">
+                            <div>
+                                <div class="about-name flex">
+                                    <div class="about-first-name">
+                                        <label for="input-first-name">
+                                            Họ lót<sup>(*)</sup>
+                                        </label>
+                                        <div>
+                                            <input type="text" name="first-name" id="input-first-name">
+                                        </div>
+                                    </div>
+                                    <div class="about-last-name">
+                                        <label for="input-last-name">
+                                            Tên<sup>(*)</sup>
+                                        </label>
+                                        <div>
+                                            <input type="text" name="last-name" id="input-last-name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-email">
+                                    <label for="input-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-email">
+                                    </div>
+                                </div>
+                                <div class="about-message">
+                                    <label for="input-message">Lời nhắn...</label>
+                                    <div>
+                                        <textarea name="message" id="input-message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="about-send">
+                                    <button type="button" onclick="thanksAbout()">Gửi</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9307587752796!2d106.67637871474926!3d10.81661089229422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1660887821553!5m2!1svi!2s"
+                width="100%" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 24/07/2022</p>
+        <h1 class="post-h1">Top 4 cuốn sách rèn luyện kỹ năng tư duy hay nhất</h1>
+
+        <div>
+
+            <p>Tư duy logic là một kỹ năng cần thiết cho sự thành công. Bạn có thể rèn luyện kỹ năng quan trọng này nhờ những cuốn sách rèn luyện tư duy logic, từ đó có thể dễ dàng giải quyết được những vấn đề trong công việc, cuộc sống. Nếu có thể, bạn hãy lựa chọn một trong những những cuốn sách về tư duy logic hay nhất ở bài viết dưới đây. </p>
+            
+            <img src="../../images/post/page/sach-ren-luyen-tu-duy-1-min.jpeg" alt="" class="post-img-content">
+
+            <p class="af-pic">Những cuốn sách rèn luyện tư duy logic hay nhất</p>
+
+            <h2 class="post-h2">Tư duy nhanh và chậm</h2>
+
+            <img src="../../images/post/page/sach-ren-luyen-tu-duy-2-min.png" alt="" class="post-img-content">
+
+            <p class="af-pic">Tư duy nhanh và chậm</p>
+
+            <p>Chúng ta thường hay cho rằng con người là sinh vật có lý trí mạnh mẽ, luôn đưa ra đánh ra kỹ lưỡng về một vấn đề. Nhưng sự thật là, dù bạn có cẩn trọng hay kỹ lưỡng tới mức nào thì trong cuộc sống bạn vẫn có những quyết định dựa trên cảm tính chủ quan. “Tư duy nhanh và chậm” là một cuốn sách tổng hợp các nghiên cứu qua nhiều thập kỷ của nhà tâm lý học Daniel Kahneman từng đạt giải Nobel kinh tế. Qua cuốn sách bạn sẽ thấy được sự hợp lý và phi lý trong tư duy của chính mình. </p>
+
+            <h2 class="post-h2">Những kẻ xuất chúng</h2>
+
+            <img src="../../images/post/page/sach-ren-luyen-tu-duy-3-min.jpeg" alt="" class="post-img-content">
+
+            <p class="af-pic">Những kẻ xuất chúng</p>
+
+            <p>Đây là cuốn sách sẽ giúp bạn rèn luyện tư duy logic thông qua những phân tích về văn hoá, xã hội và câu chuyện của những nhân vật xuất chúng như Bill Gate, Mozart và Beatles. Bên cạnh đó là những thất bại khó hiểu của một số người khác (ví dụ: Christopher Langan người sở hữu IQ cao hơn cả Einstein nhưng lại quay về làm việc trong một trang trại ngựa). Theo đó, với tài năng và tham vọng, những người trên đỉnh cao của sự thành công để được thừa hưởng một cơ hội đặc biệt để rèn luyện kỹ năng và cho phép họ vượt lên những người cùng thời đại. </p>
+
+            <h2 class="post-h2">Nghệ thuật tư duy rành mạch</h2>
+
+            <img src="../../images/post/page/sach-ren-luyen-tu-duy-4-min.jpg" alt="" class="post-img-content">
+
+            <p class="af-pic">Nghệ thuật tư duy rành mạch</p>
+
+            <p>Cuốn sách với 99 chương là những ví dụ cụ thể, sinh động với hàng loạt những lỗi sai mà bạn vô tình mắc phải trong cuộc sống mà bạn không hề nhận ra. Những sai lầm trong tư duy và những định kiến sẽ được bóc tách. Cuốn sách có thể giúp bạn sáng suốt hơn khi tư duy và đưa ra quyết định. </p>
+            
+            <p>Với lời văn mạch lạc, thẳng thắn, những lời khuyên được gửi gắm một cách xúc tích qua những ví dụ cụ thể, cuốn sách sẽ phù hợp với cả những bạn lần đầu đọc về sách rèn luyện tư duy logic. Nếu bạn đang tìm kiếm một câu trả lời nhanh chóng về cách tư duy rành mạch, đây là cuốn sách bạn không nên bỏ qua.</p>
+
+            <h2 class="post-h2">Rèn luyện kỹ năng tư duy logic trong 1 phút</h2>
+
+            <img src="../../images/post/page/sach-ren-luyen-tu-duy-5-min.jpeg" alt="" class="post-img-content">
+
+            <p class="af-pic">Rèn luyện kỹ năng tư duy logic trong 1 phút</p>
+
+            <P>Cuốn sách được thiết kế một cách rất thú vị dưới dạng câu hỏi và câu trả lời. Tác giả sẽ đưa ra những câu hỏi trong trường hợp cụ thể, đòi hỏi người đọc cần phải suy ngẫm và tư duy trước khi biết đáp án. Bạn sẽ phải trầm trồ và thán phục mỗi lần được thấy câu trả lời ở phần giải thích. </P>
+
+            <P>Những vấn đề mang tính trừu tượng cũng được phân tích cụ thể dựa trên việc bạn có thể quan sát chúng dễ dàng hàng ngày. Xuyên suốt toàn bộ cuốn sách, bạn sẽ nhận được rất nhiều kiến thức bổ ích về kỹ năng tư duy. Đây không chỉ là một cuốn sách rèn luyện tư duy mà nó còn nâng cao vốn kiến thức sống cho bạn.</P>
+
+            <h2 class="post-h2">Kết luận</h2>
+
+            <p>Không thể phủ nhận những hiệu quả của tư duy logic mang đến cho bạn trong công việc lẫn cuộc sống. Trên đây là những cuốn sách về tư duy logic được nhiều độc giả yêu thích và được đánh giá cao nhất trên các diễn đàn và các trang thương mại điện tử. Qua bài viết, hy vọng bạn sẽ lựa chọn được cuốn <b>sách rèn luyện tư duy</b> phù hợp với trình độ của bản thân nhất.</p>
+                
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="moi-truong.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="blog-kiem-tien.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

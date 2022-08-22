@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 13/08/2022</p>
+        <h1 class="post-h1">Địa điểm du lịch hot nhất hè 2022</h1>
+
+        <div>
+
+            <p>Mùa hè đang đến gần, bạn đã lên lịch cho những chuyến đi trải nghiệm vào mùa hè này hay chưa? Hãy cùng H&T tìm hiểu về những địa điểm du lịch mùa hè không thể bỏ qua vào năm 2022 này nhé!</p>
+
+            <h2 class="post-h2">1. Sapa - Điểm đến chưa bao giờ hết hot trong mùa hè</h2>
+
+            <p>Địa điểm du lịch đầu tiên mà du khách không thể bỏ qua đó là Sapa. Vào những ngày hè oi bức, tại Sapa nhiệt độ không bị gay gắt so với các vùng khác.</p>
+
+            <p>Nhiệt độ mùa hè ở Sapa chỉ rơi vào khoảng 13 °C – 15 °C vào ban đêm và 20 °C – 25 °C vào ban ngày. Ở độ cao hơn 1600m so với mực nước biển du khách sẽ thấy khung cảnh cây xanh êm đềm. Tại đây còn có các con suối nước chảy luồn qua các khe đá.</p>
+
+            <img src="../../images/post/page/du-lich1-min.jpg" alt="" class="post-img-content">
+
+            <p>Đến Sapa du khách sẽ được rời xa cái nắng oi ả của thị thành. Du khách sẽ được trải nghiệm khung cảnh thiên nhiên tươi đẹp của núi Hàm Rồng. Du khách có thể ghé thăm Bản Cát Cát. Bản Cát Cát được coi là bản làng nghề du lịch lớn ở Sapa. Với các địa điểm du lịch ở Sapa mọi người sẽ có chuyến đi du lịch tránh nắng lý tưởng nhất. </p>
+
+            <h2 class="post-h2">2. Vịnh Hạ Long- Địa điểm du lịch tại Quảng Ninh nổi tiếng nhất</h2>
+
+            <p>Vịnh Hạ Long – di sản thiên nhiên thế giới, một điểm đến không thể bỏ qua của bất kì một du khách nào khi đến Việt Nam và Quảng Ninh. Tham thú cảnh sắc non nước và dành thời gian nghỉ dưỡng giữa lênh đênh sóng nước thì còn gì tuyệt vời hơn?</p>
+
+            <img src="../../images/post/page/du-lich2-min.jpg" alt="" class="post-img-content">
+
+            <p>Đến Hạ Long bên cạnh bãi biển đẹp thì nơi đây còn có khung cảnh thiên nhiên rất kỳ vĩ. Du khách sẽ được tham gia nhiều hoạt động trên bãi biển. Từ đó mọi người sẽ cảm thấy thú vị và phấn khích.</p>
+
+            <p>Vui chơi nhưng đừng quên ăn uống các bạn nha. Tại Hạ Long có rất nhiều đặc sản ngon. Mọi người có cơ hội để thưởng thức các món ăn ngon như: xôi trắng chả mực, hàu nướng, sam xào chua ngọt, sá sùng, bún tôm, ghẹ hấp bia… Các món ăn đều được chế biến từ các loại hải sản tươi ngon. </p>
+
+            <p>Du khách du lịch Hạ Long vào những ngày hè sẽ dừng chân tại các khách sạn hay resort cao cấp. Ở đây các dịch vụ du lịch rất đầy đủ, giá thành phải chăng phù hợp nhu cầu của các du khách trong nước và du khách quốc tế.</p>
+
+            <h2 class="post-h2">3. Phú Quốc - Địa điểm du lịch hè hot hit được giới trẻ yêu thích nhất</h2>
+
+            <p>Địa điểm du lịch đảo ngọc Phú Quốc đã không còn xa lạ đối với các du khách. Nơi đây là một trong những địa điểm tham quan, nghỉ dưỡng lý tưởng. Đặc biệt vào những ngày hè du khách đến đây có thể thoải mái tận hưởng những giây phút bình yên, thư giãn</p>
+
+            <img src="../../images/post/page/du-lich3-min.jpg" alt="" class="post-img-content">
+
+            <p>Những bãi biển trong xanh đầy nắng và gió sẽ giúp cho mọi người có thể thoải mái tắm biển. Ngoài ra, tại Phú Quốc còn có nhiều món ăn đặc sản được chế biến từ hải sản tươi sống. Đó cũng là sức hấp dẫn của đảo ngọc đối với du khách đặc biệt là trong dịp hè nóng nực.</p>
+
+            <h2 class="post-h2">4. Đà Lạt - Thành phố ngàn hoa thơ mộng </h2>
+
+            <p>Với khung cảnh thơ mộng, thời tiết mát mẻ Đà Lạt chính là điểm đến lý tưởng của rất nhiều các du khách. Những ngày hè nóng bức được đến Đà Lạt thời tiết mát mẻ quả là điều thú vị. </p>
+
+            <p>Đà Lạt được ví như một thành phố thu nhỏ mang dáng dấp của châu Âu cổ kính. Không gian mênh mang với hàng ngàn loài hoa, hàng thông xanh mướt vi vu trong gió và thấp thoáng những ngôi biệt thự cổ kính dọc những con đường nhỏ. </p>
+
+            <img src="../../images/post/page/da-lat5-min.jpg" alt="" class="post-img-content">
+
+            <p>Về đêm ở Đà Lạt tiết trời se se lạnh nên du khách cảm thấy rất dễ chịu. Mọi người sẽ rời xa được các ồn ào của phố thị và tận hưởng không gian bình yên nhất. Đà Lạt điểm mà thu hút hàng triệu lượt khách đến đây thăm quan, nghỉ dưỡng, và tận hưởng một kỳ hè khó quên.</p>
+
+            <p><i>Với những điểm du lịch trên. H&T hi vọng bạn tim được một địa điểm phù hợp</i></p>
+
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="paris.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="nui-ba-den.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

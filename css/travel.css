@@ -1,0 +1,439 @@
+:root {
+    --box-color: #B3D4E8;
+    --box-color-text: #333435;
+    --white: #FFFFFF;
+    
+    --color-hover: #EEEEEE;
+}
+
+div.logo {
+    display: none;
+}
+
+.intro-travel {
+    text-align: center;
+    font-weight: 500;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.main-travel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.find-location {
+    background-color: var(--box-color);
+    width: 70%;
+    margin: 1rem auto 2rem auto;
+    border-radius: 10px;
+    border: 3px dashed blue;
+}
+
+div.find-location h1 {
+    text-align: center;
+    color: var(--box-color-text);
+    margin: 1 0 1rem 0;
+}
+
+.find-locat {
+    background-color: var(--white);
+    width: 60%;
+    margin: 0 auto 1rem auto;
+    border-radius: 10px;
+}
+
+.find-loca-text {
+    padding: 0.7rem 1.3rem;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.travel-left {
+    width: 70%;
+}
+
+.travel-right {
+    width: 30%;
+}
+
+.travel-right > div > h2 {
+    margin-top: 1rem;
+}
+
+.travel-list {
+    list-style-type: none;
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    
+}
+
+.travel-list a {
+    margin: 0.5rem;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.travel-list li:hover {
+    color: red;
+}
+
+.most-read img {
+    width: 100%;
+}
+
+.most-read span {
+    position: absolute;
+    left: 0rem;
+    top: 2rem;
+    background-color: red;
+    color: white;
+    padding: 0.1rem 0.7rem;
+    border-radius: 50%;
+}
+
+.most-read > div {
+    width: 50%;
+    position: relative;
+}
+
+.most-read > a {
+    width: 50%;
+    text-decoration: none;
+    padding: 1rem;
+    margin: auto 0;
+}
+
+.travel-item {
+    position: relative;
+}
+
+.travel-item::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: #333435;
+    position: absolute;
+    bottom: 0;
+}
+
+.travel-item {
+    padding: 0.5rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.travel-img {
+    width: 30%;
+}
+
+.travel-cont {
+    width: 67%;
+    margin-top: 2.5rem;
+}
+
+.travel-cont > a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.travel-item img {
+    width: 100%;
+}
+
+.travel-cont button {
+    padding: 0.3rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.travel-cont button:hover {
+    background-color: var(--box-color);
+    color: rgb(61, 57, 57);
+}
+
+.travel-cont > div {
+    margin-bottom: 0.3rem;
+}
+
+.travel-cont > div > i {
+    display: flex;
+    align-items: center;
+    margin-left: 0.2rem;
+    color: blue;
+}
+
+.travel-cont > div > p {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.travel-cont h4 {
+    margin: 0.5rem 0 0.2rem 0;
+    cursor: pointer;
+}
+
+.travel-cont p {
+    margin: 0;
+}
+
+.travel-cont > p {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.travel-date {
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 1.2rem;
+}
+
+.travel-date i {
+    margin-right: 0.3rem;
+}
+
+.book-ticket a {
+    text-decoration: none;
+    display: block;
+    color: var(--font-color-item);
+    margin-left: 7rem;
+}
+
+/*  */
+
+.loading {
+    color: var(--font-color-item);
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+div.loading span {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+div.loading a {
+    text-decoration: none;
+    color: var(--font-color-item);
+}
+
+div.loading.travel1 .one,
+div.loading.travel2 .two,
+div.loading.travel3 .three {
+    background: var(--bg-color-hover);
+    color: var(--color-hover);
+}
+
+/*  */
+
+.ticket {
+    width: 260px;
+}
+
+.ticket:after {
+    width: 63vw;
+}
+
+div.sp-ticket {
+    width: 60%;
+    margin: 0 auto;
+}
+
+div.sp-ticket > div:first-child {
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    border-radius: 15px 15px 0 0;
+}
+
+.list-type {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.list-type > li {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+div.sp-ticket > div:last-child {
+    justify-content: space-between
+}
+
+.location-from {
+    width: 49%;
+    border-bottom: 1px solid;
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.location-from input {
+    padding: 1rem;
+    width: 80%;
+    outline: 0;
+    border: 0;
+    font-size: 1.2rem;
+}
+
+.location-from i {
+    padding: 0.5rem
+}
+
+.location-to {
+    width: 49%;
+    border-bottom: 1px solid;
+}
+
+.location-to input {
+    padding: 1rem;
+    width: 80%;
+    outline: 0;
+    border: 0;
+    font-size: 1.2rem;
+}
+
+.location-to i {
+    padding: 0.5rem
+}
+
+.date-from {
+    width: 25%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.date-from input {
+    width: 90%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-size: 1.1rem;
+}
+
+.date-to {
+    width: 25%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.date-to input {
+    width: 90%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-size: 1.1rem;
+}
+
+.people {
+    width: 25%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.people input {
+    width: 90%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-size: 1.1rem;
+}
+
+.find-loca{
+    width: 15%;
+    margin: auto 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#find-location {
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgb(230, 144, 39);
+    color: var(--white);
+    cursor: pointer;
+}
+div.choose {
+    padding: 1rem;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 7rem;
+    display: none;
+}
+
+.info-loca {
+    margin: 1.5rem 0;
+}
+
+.info-loca h5 {
+    width: 10rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.info-loca input {
+    width: 60%;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.list-loca ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-loca a {
+    text-decoration: none;
+}
+
+.list-loca ul li {
+    width: 33%;
+}
+
+.choose::before {
+    content: "";
+    border: 1rem solid;
+    position: absolute;
+    top: -2rem;
+    left: 5rem;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #EEEEEE;
+}
+
+#x-choose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 0.7rem;
+}
+
+#x-choose:hover {
+    color: var(--white);
+    background-color: red;
+    border-radius: 0 10px 0 10px;
+}
