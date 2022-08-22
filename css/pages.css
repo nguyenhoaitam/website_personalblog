@@ -2,8 +2,12 @@
     margin: 1rem 0 2rem 85%;
 }
 
-.sort select { 
+.sort select {
     padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
 }
 
 div.all-post {
