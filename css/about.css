@@ -235,9 +235,9 @@ div.logo {
 .about-why-travel-box {
     position: absolute;
     top: -20%;
-    left: 7%;
+    left: 5%;
     right: 5%;
-    width: 550px;
+    width: 90%;
     height: 320px;
     background-color: #F8F8FF;
 }
@@ -457,16 +457,17 @@ div.logo {
 }
 
 #alert-about {
-    width: 45rem;
-    height: 25rem;
     background-color: #bbc1d8;
     margin: auto;
     border-radius: 10px;
     position: fixed;
     z-index: 10;
-    top: 10rem;
-    left: 26rem;
     display: none;
+    width: 60%;
+    height: 65%;
+    top: 20%;
+    left: 20%t;
+    right: 20%;
 }
 
 div.alert-about > div {

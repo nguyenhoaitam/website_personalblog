@@ -126,26 +126,26 @@ $("#x-choose").click(function() {
 
 //JS TRƯỢT ẢNH
 
-let index = 0;
-const pre = document.querySelector(".chevron-pre");
-const next = document.querySelector(".chevron-next");
-const numberBox = document.querySelectorAll(".slider-items");
+// let index = 0;
+// const pre = document.querySelector(".chevron-pre");
+// const next = document.querySelector(".chevron-next");
+// const numberBox = document.querySelectorAll(".slider-items");
 
-next.addEventListener("click", function() {
-    index = index + 1;
-    if (index > (numberBox.length - 1)) {
-        index = 0;
-    }
-    document.querySelector(".slider-content-father").style.right = index * 100 + "%"
-})
+// next.addEventListener("click", function() {
+//     index = index + 1;
+//     if (index > (numberBox.length - 1)) {
+//         index = 0;
+//     }
+//     document.querySelector(".slider-content-father").style.right = index * 100 + "%"
+// })
 
-pre.addEventListener("click", function() {
-    index = index - 1;
-    if (index <= 0) {
-        index = numberBox.length - 1;
-    }
-    document.querySelector(".slider-content-father").style.right = index * 100 + "%"
-})
+// pre.addEventListener("click", function() {
+//     index = index - 1;
+//     if (index <= 0) {
+//         index = numberBox.length - 1;
+//     }
+//     document.querySelector(".slider-content-father").style.right = index * 100 + "%"
+// })
 
 function upCmt() {
 
@@ -247,6 +247,97 @@ function thanksAbout() {
     }
 }
 
+const btnLike = document.querySelectorAll(".tym")
+
+btnLike.forEach(function(btn, index) {
+    btn.addEventListener("click", function(event) {
+        var btnItem = event.target
+        var like = btnItem.parentElement.parentElement.parentElement.parentElement
+
+        var likeImg = like.querySelector(".post-img > img").src
+        var likeName = like.querySelector(".post-content > h3 > a").innerText
+
+        addDiv(likeImg, likeName)
+    })
+})
+
+function addDiv(likeImg, likeName) {
+    var add = document.createElement("div")
+    var divContent = `
+        <div class="list-like-item flex">
+            <div class="img-like">
+                <img src="${likeImg}" alt="">
+            </div>
+            <h5 class="title-like">${likeName}</h5>
+            <div class="remove-like">
+                <i class="fa-solid fa-trash-can" title="Xóa"></i>
+            </div>
+        </div>
+    `
+
+    add.innerHTML = divContent
+
+    var divfa = document.querySelector("div.list-like")
+
+    divfa.append(add)
+
+    total()
+    deleteL()
+}
+
+function total() {
+    var totalitem = document.querySelectorAll(".list-like-item")
+
+    var totalspan = document.querySelector(".list-like-h5 span")
+
+    totalspan.innerHTML = totalitem.length
+}
+
+function deleteL() {
+    var deleitem = document.querySelectorAll(".list-like-item")
+
+    for (var i = 0; i < deleitem.length; i++) {
+        var deleBtn = document.getElementsByClassName("remove-like")
+        deleBtn[i].addEventListener("click", function(event) {
+            var temp = event.target
+            var temp2 = temp.parentElement.parentElement
+            temp2.remove()
+            console.log(temp2)
+        })
+    }
+}
+
+
+// function searchfun() {
+//     var k = document.getElementById("find-loca")
+//     if (k != null) {
+//         k = k.value;
+
+//         var itemSearch = document.querySelectorAll(".travel-items > .travel-item")
+//         for (var i = 0; i < itemSearch.length; i++) {
+//             var h4 = itemSearch[i].querySelector("travel-cont > button")
+            
+//             if (h4.indexOf(k) >= 0)
+
+//                 itemSearch[i].style.border = "2px solid red"
+//         }
+    
+    
+    
+//     }
+// }
+
+$(document).ready(function() {
+    $("#searchBtn").click(function() {
+        var k = $("find-loca").val()
+
+        var itemS = $(".travel-cont button")
+
+        for (var i = 0; i < itemS.length; i++)
+            if ($(itemS[i]).text().indexOf(k) >= 0)
+                $(itemS[i]).parent().parent().css("outline", "2px solid red")
+    })
+})
 
 wow = new WOW({
     boxClass:     'wow',      // default

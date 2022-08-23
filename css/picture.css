@@ -210,17 +210,13 @@ h1.h1 {
     transform: scale(1,1)
 }
 
-.hover-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    padding: 20px;
-    text-align: center;
+.hover-pic {
+    transition: all 0.4s ease-in-out;
     opacity: 0;
-    transition: 0.5s;
-    width: 100%;
-    height: 100%;
+}
+
+.hover-pics:hover .hover-pic {
+    opacity: 1;
 }
 
 .hover-content > div {
@@ -228,33 +224,112 @@ h1.h1 {
 }
 
 .hover-pics:hover .hover-content {
-    opacity: 1;
+    display: block;
 }
 
-.hover-like-copy {
-    display: fixed;
-    top: -3.7%;
-    left: 58%;
-}
 
-.hover-dow {
-    display: fixed;
-    left: 78.5%;
-    top: -3.7%;
-}
-
-.hover-dow a {
-    text-decoration: none;
-    color: var(--black);
-}
-
-.hover-like-copy > div > i,
-.hover-dow i {
+.hover-pic > div {
     width: 3rem;
     height: 3rem;
     background: var(--white);
     margin: 0.5rem;
     cursor: pointer;
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.hover-pic a {
+    z-index: 9999;
+}
+
+.hover-dow a {
+    color: #000;
+}
+
+.hover-dow {
+    z-index: 99;
+}
+
+.pic-container {
+    width: 80%;
+    height: 80%;
+    margin: 3rem auto;
+}
+
+.pic-main {
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-main > div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.list-images {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-images div {
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: #000;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.active {
+    background: rgb(181, 56, 56);
+}
+
+.img-slider {
+    transition: all 0.5s;
+    /* animation: slideL 1s ease-in-out forwards; */
+}
+
+@keyframes slideL {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideR {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

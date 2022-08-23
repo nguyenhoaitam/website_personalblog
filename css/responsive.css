@@ -400,22 +400,997 @@
     div.choose {
         bottom: 10rem !important;
     }
+
+    .notifi-content {
+        left: -330%;
+        bottom: -200%;
+    }
+
+    .list-like {
+        right: 6rem;
+        top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .post-content h3 {
+        font-size: 24px;
+    }
+
+    .post-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1410px) and (max-width: 1480px) {
+    section.main {
+        width: 85%;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1410px) {
-    
+    section.main {
+        width: 90%;
+    }
+
+    div.log {
+        width: 68%;
+    }
+
+    #alert {
+        width: 60% !important;
+        height: 400px !important;
+        top: 20% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    #alert-about {
+        width: 60% !important;
+        height: 420px !important;
+        top: 40% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    .all-page {
+        width: 95%;
+    }
+
+    .travel-cont {
+        margin-top: 1rem !important;
+    }
+
+    div.sp-ticket {
+        width: 75% !important;
+    }
+
+    .pic-container {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .main-picture {
+        width: 90% !important;
+    }
+
+    .about-my-post-all-item-header {
+        width: 95% !important;
+        top: 65% !important;
+        border-radius: 0 0 0 10px !important;
+    }
+
+    .about-my-post-all-item-header h3 {
+        font-size: 1rem !important;
+    }
+
+    .about-contact-social > div {
+        width: 48% !important; 
+        margin-bottom: 2rem !important;
+    }
+
+    .about-contact-img {
+        height: auto !important;
+        display: block;
+        margin: auto 0;
+    }
+
+    .tbl {
+        width: 90% !important;
+    }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1023px) and (max-width: 1200px) {
+    nav.menu {
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 56%;
+    }
+
+    .social.no-mobile {
+        width: 16%;
+    }
+
+    .find.no-mobile {
+        width: 28%;
+    }
+
+    ul.social > li {
+        padding: 5px;
+    }
+
+    ul.menu-item > li > a {
+        padding: 10px 15px;
+    }
+
+    .notifi {
+        top: 65px;
+    }
+
+    .favorites-list {
+        top: 125px;
+    }
+
+    section.main {
+        width: 95%;
+    }
+
+    div.log {
+        width: 68%;
+    }
+
+    div.aside {
+        width: 30%;
+    }
+    div.about {
+        padding: 1rem;
+    }
+
+    div.tag {
+        padding: 1.5rem;
+    }
+
+    div.news {
+        padding: 1.5rem;
+    }
     
+    div.follow-me > div {
+        padding: 1rem;
+    }
+
+    .contact-box > div {
+        padding: 1.5rem;
+    }
+
+    .post-topic-btn {
+        margin-bottom: 0;
+    }
+
+    .post-content h3 {
+        margin-bottom: 0;
+    }
+
+    .post-text {
+        margin: 0;
+    }
+
+    #alert {
+        width: 60% !important;
+        height: 400px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    #alert-about {
+        width: 60% !important;
+        height: 400px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    div.all-post > div {
+        margin: 0.3rem !important;
+        margin-bottom: 0.75rem !important;
+        
+    }
+
+    .all-page {
+        width: 100%;
+    }
+
+    /* .post-er {
+       display: none;
+    } */
+    
+    .h1 {
+        width: 160px;
+        padding: 10px 15px;
+        margin: 1rem auto;
+        border-radius: 1.5rem;
+    }
+
+    .h1::after {
+       display: none;
+    }
+
+    div.find-location {
+        width: 90% !important;
+    }
+
+    .find-locat i {
+        padding: rem;
+    }
+
+    .main-travel {
+        width: 90% !important;
+    }
+    
+    .travel-cont {
+        margin-top: 0 !important;
+    }
+
+    .travel-item {
+        padding-right: 1rem !important;
+    }
+
+    .travel-list {
+        width: 80% !important;
+    }
+
+    .book-ticket a {
+        margin-left: 5rem !important;
+    }
+
+    div.sp-ticket {
+        width: 80% !important;
+    }
+
+    .main-picture {
+        width: 95% !important;
+    }
+
+    .intro-picture {
+        padding: 0 1rem;
+    }
+
+    .intro {
+        width: 90% !important;
+    }
+
+    .about-info {
+        width: 90% !important;
+    }
+
+    .about-why-travel {
+        width: 100% !important;
+    }
+
+    .about-why-travel-box {
+        width: 84% !important;
+        left: 8% !important;
+        right: 8% !important;
+        height: 410px !important;
+    }
+
+    .about-why-travel-content {
+        height: 360px !important;
+    }
+
+    .about-my-post {
+        width: 100% !important;
+        margin: 3rem 0 !important;
+    }
+
+    .about-my-post-all-item-header {
+        width: 95% !important;
+        top: 67% !important;
+        border-radius: 0 0 0 10px !important;
+    }
+
+    .about-my-post-all-item-header h3 {
+        font-size: 0.9rem !important;
+    }
+
+    .about-contact {
+        width: 100% !important;
+    }
+
+    .about-contact-social > div {
+        width: 48% !important; 
+        margin-bottom: 2rem !important;
+    }
+
+    .about-contact-img {
+        height: auto !important;
+        display: block;
+        margin: auto 0;
+    }
+
+    div.afmenu {
+        margin-left: 6% !important;
+    }
+
+    .tbl {
+        width: 95% !important;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
+    ul.menu-item {
+        display: none;
+    }
+
+    div.find {
+        width: 100%;
+        justify-content: center;
+    }
+
+    ul.social {
+        width: 100%;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    .l-navbar {
+        top: 18%;
+    }
+
+    section.main {
+        width: 100%;
+    }
+
+    .post-er {
+        gap: 0;
+    }
+
+    div.aside {
+        width: 30%;
+    }
+
+    div.log {
+        width: 67%;
+    }
+
+    div.about {
+        padding: 1rem;
+    }
+
+    .post-topic-btn {
+        margin-bottom: 0.5rem;
+    }
+
+    .post-content h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .post-text {
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .topics-btn {
+        font-size: 1rem;
+    }
+
+    div.icon-box {
+        font-size: 1rem;
+    } 
+
+    .topics-btn p {
+        font-size: 1rem;
+        width: 50%;
+    }
+
+    div.news {
+        padding: 1.5rem;
+    }
+
+    #news-btn {
+        padding: 0.5rem 0.5rem !important;
+    }
+
+    .topics-btn {
+        padding: 0.8rem !important;
+    }
+
+
+    .all-page {
+        width: 75%;
+    }
+
+    .h1 {
+        width: 160px;
+        padding: 10px 15px;
+        margin: 1rem auto;
+        border-radius: 1.5rem;
+    }
+
+    .h1::after {
+       display: none;
+    }
+
+    .sort select {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .sort {
+        margin: 1rem 0 2rem 80% !important;
+    }
+
+    div.all-post > div {
+        width: 100% !important;
+    }
+
+
+    #alert {
+        width: 60% !important;
+        height: 380px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    #alert-about {
+        width: 60% !important;
+        height: 380px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    .post-img {
+        display: none;
+    }   
+
+    .post-content {
+        width: 100%;
+    }
+
+    .contact-box > div {
+        padding: 1rem;
+    }
+
+    div.follow-me > div {
+        padding: 1rem 0.5rem;
+    }
+
+    .posts {
+        padding: 1.5rem;
+    }
+
+    .tbandyt {
+        right: 2%;
+    }
+
+    .notifi {
+        top: 130px;
+    }
+
+    .favorites-list {
+        top: 180px;
+    }
+
+    .tbandyt {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tbandyt i {
+        font-size: 1.5rem;
+    }
+
+    #backtop {
+        width: 40px;
+        height: 40px;
+        right: 2%;
+    }
+
+    #backtop i {
+        font-size: 1rem;
+    }
+
+    #hide-btn-new, #hide-btn-hot {
+        margin-left: 85%;
+    }
+
+    .margin-top {
+        justify-content: space-evenly !important;
+    }
+
+    .post-content > h3 > a {
+        margin-left: 10px;
+    }
+
+    div.find-location {
+        width: 100% !important;
+    }
+
+    .main-travel {
+        width: 97% !important;
+    }
+
+    .travel-left {
+        width: 63% !important;
+    }
+
+    .travel-right {
+        width: 35%;
+    }
+
+    .travel-cont {
+        margin-top: 0 !important;
+    }
+
+    .most-read span {
+        left: 0.2rem !important;
+        top: 1.7rem !important;
+    }
+
+    .book-ticket a {
+        margin-left: 4rem !important;
+    }
+
+    div.sp-ticket {
+        width: 85% !important;
+    }
+
+    .date-from, .date-to,
+    .people, .find-loca {
+        width: 50% !important;
+    }
+
+    .people {
+        margin-top: 0 !important;
+    }
+
+    .travel-list {
+        width: 80% !important;
+    }
+
+    div.choose {
+        bottom: 13rem !important;
+    }
+
+    .show-images > div > div {
+        width: 100% !important;
+    }
+
+    .about-info {
+        width: 100% !important;
+    }
+
+    .about-content-left, .about-content-right {
+       width: 100% !important;
+       margin-bottom: 1rem !important;
+       border-bottom: 3px solid var(--bg-color-hover);
+    }
+
+    .about-why-travel-left, .about-why-travel-right {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .about-why-travel-box {
+        left: 5% !important;
+        right: 5% !important;
+        width: 90% !important;
+        height: 50% !important;
+    }
+
+    .about-my-post-all-item h3 {
+        font-size: 1rem;
+    }
+
+    .about-my-post {
+        width: 100% !important;
+    }
+
+    .about-my-post-all-item {
+        width: 100% !important;
+    }
+
+    .about-my-post-all {
+        padding: 0 !important;
+    }
+
+    .about-my-post-all-item-header {
+        top: 75% !important;
+        width: 90% !important;
+    }
+
+    .about-contact-img {
+        display: none;
+    }
+
+    .about-contact-content {
+        width: 100% !important;
+    }
+
+    .about-contact-social > div {
+        width: 50% !important;
+        margin-bottom: 1rem;
+    }
+
+    .tbl {
+        width: 100%;
+    }
+
+    .pre-nex i, .pre-nex a {
+        font-size: 0.9rem;
+    }
+
+    .notifi-content {
+        left: -540%;
+        bottom: -375%;
+    }
+
+    .list-like {
+        right: 4rem;
+        top: 0rem;
+    }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    
+    ul.menu-item {
+        display: none;
+    }
+
+    div.find {
+        width: 100%;
+        justify-content: center;
+    }
+
+    ul.social {
+        width: 100%;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    div.logo {
+        width: 50%;
+    }
+
+    .l-navbar {
+        top: 15%;
+    }
+
+    section.main {
+        width: 100%;
+    }
+
+    .tbandyt {
+        right: 2%;
+    }
+
+    .notifi {
+        top: 120px;
+    }
+
+    .favorites-list {
+        top: 170px;
+    }
+
+    .tbandyt {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tbandyt i {
+        font-size: 1.5rem;
+    }
+
+    #backtop {
+        width: 40px;
+        height: 40px;
+        right: 2%;
+    }
+
+    #backtop i {
+        font-size: 1rem;
+    }
+
+    section.main {
+        display: block;
+    }
+
+    div.log {
+        width: 100%;
+    }
+
+    div.logo {
+        width: 25%;
+    }
+
+    .post-img {
+        display: none;
+    }
+
+    .post-content {
+        width: 100%;
+    }
+
+    div.react > div {
+        margin-right: 0;
+    }
+
+    div.aside {
+        width: 100%;
+    }
+
+    #hide-btn-new, #hide-btn-hot {
+        margin-left: 80%;
+        font-size: 1rem;
+    }
+
+    div.follow-me > div {
+        padding: 1.5rem;
+    }
+
+    .all-page {
+        width: 100%;
+    }
+
+    div.all-post > div {
+        width: 100% !important;
+    }
+
+    p.copyright, .my-footer i {
+        font-size: 0.85rem;
+    }
+
+    .h1 {
+        width: 140px;
+        padding: 5px 10px;
+        margin: 1rem auto;
+        border-radius: 1.5rem;
+    }
+
+    .h1::after {
+       display: none;
+    }
+
+    .sort {
+        margin: 0 1rem 1rem 75% !important;
+    }
+
+    div.loading {
+        margin: 0 auto !important;
+        font-size: 0.85rem !important;
+    }
+
+    .main-travel {
+        width: 100% !important;
+    }
+
+    div.find-location {
+        margin: 0rem !important;
+        width: 100% !important;
+    }
+
+    .find-loca-text {
+        width: 85% !important;
+    }
+
+    .travel-left {
+        width: 100% !important;
+    }
+
+    .travel-cont {
+        margin-top: 0 !important;
+    }
+
+    .travel-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .travel-right {
+        width: 100% !important;
+    }
+
+    .most-read span {
+        top: 3rem !important;
+    }
+
+    .travel-list {
+        width: 80% !important;
+    }
+
+    .sp-ticket {
+        width: 100% !important;
+    }
+
+    .date-from {
+        width: 50% !important;
+    }
+
+    .date-to {
+        width: 50% !important;
+    }
+
+    .people {
+        width: 50% !important;
+    }
+
+    .find-loca {
+        width: 50% !important;
+    }
+
+    div.choose {
+        bottom: 14rem !important;
+    }
+
+    .list-type {
+        font-size: 1.5rem !important;
+    }
+
+    .main-picture {
+        width: 100% !important;
+    }
+
+    .show-images > div {
+        display: block !important;
+    }
+
+    .show-images > div > div {
+        width: 100% !important;
+    }
+
+    .intro {
+        width: 97% !important;
+        text-align: justify !important;
+    }
+
+    .about-info {
+        width: 97% !important;
+    }
+
+    .about-info-all {
+        width: 97% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .about-content-left, .about-content-right {
+        width: 97% !important;
+        margin-bottom: 1rem !important;
+        border-bottom: 3px solid var(--bg-color-hover);
+    }
+
+    .header {
+        width: 97% !important;
+    }
+
+    .about-why-travel-left {
+        width: 97% !important;
+    }
+
+    .about-why-travel-right {
+        width: 97% !important;
+    }
+
+    .about-why-travel-box {
+        width: 90% !important;
+        overflow: scroll;
+        top: -15% !important;
+        left: 5% !important;
+    }
+
+    .about-my-post-all-item {
+        width: 97% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .about-my-post-all-item h3 {
+        font-size: 1rem !important;
+    }
+
+    .about-my-post-all-item-header {
+        width: 85% !important;
+        top: 75% !important;
+        border-radius: 0 0 10px 10px !important;
+    }
+
+    .about-my-post {
+        width: 97% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .about-my-post-all {
+        padding: 0 !important;
+    }
+
+    .about-contact {
+        width: 97% !important;
+        padding: 1rem 0 !important;
+    }
+
+    .about-contact-img {
+        display: none;
+    }
+
+    .about-contact-content {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .about-contact-social > div {
+        width: 50% !important;
+        margin-bottom: 1rem;
+    }
+
+    .about-contact-social > div:first-child {
+        width: 60% !important;
+    }
+
+    .about-contact-social > div:nth-child(2) {
+        width: 40% !important;
+    }
+
+    .about-name > div {
+        width: 100% !important;
+    }
+
+    .about-map > iframe {
+        height: 450px !important;
+    }
+
+    #alert {
+        width: 60% !important;
+        height: 300px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    #alert-about {
+        width: 60% !important;
+        height: 320px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    .notifi-content {
+        left: -540%;
+        bottom: -370%;
+    }
+
+    section.all-post {
+        width: 97%;
+    }
+
+    .cmt-name, 
+    .cmt-email {
+        width: 100%;
+    }
+
+    .tbl {
+        width: 95%;
+    }
+
+    .pre-nex i, .pre-nex a {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -440,6 +1415,7 @@
     .no-mobile {
         display: none;
     }
+
     div.logo {
         width: 50%;
     }
@@ -543,12 +1519,195 @@
     }
 
     .sort {
-        margin: 1rem 1rem 1rem 60% !important;
+        margin: 0 1rem 1rem 60% !important;
     }
 
     div.loading {
         margin: 0 auto !important;
         font-size: 0.85rem !important;
+    }
+
+    .main-travel {
+        width: 100% !important;
+    }
+
+    div.find-location {
+        margin: 1.5rem !important;
+        width: 100% !important;
+    }
+
+    .find-loca-text {
+        width: 85% !important;
+    }
+
+    .travel-left {
+        width: 100% !important;
+    }
+
+    .travel-cont {
+        margin-top: 0 !important;
+    }
+
+    .travel-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .travel-right {
+        width: 100% !important;
+    }
+
+    .most-read span {
+        top: 3rem !important;
+    }
+
+    .travel-list {
+        width: 80% !important;
+    }
+
+    .sp-ticket {
+        display: none;
+    }
+
+    .main-picture {
+        width: 100% !important;
+    }
+
+    .show-images > div {
+        display: block !important;
+    }
+
+    .show-images > div > div {
+        width: 100% !important;
+    }
+
+    .intro {
+        width: 97% !important;
+        text-align: justify !important;
+    }
+
+    .about-info {
+        width: 97% !important;
+    }
+
+    .about-info-all {
+        width: 97% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .about-content-left, .about-content-right {
+        width: 97% !important;
+        margin-bottom: 1rem !important;
+        border-bottom: 3px solid var(--bg-color-hover);
+    }
+
+    .header {
+        width: 97% !important;
+    }
+
+    .about-why-travel-left {
+        width: 97% !important;
+    }
+
+    .about-why-travel-right {
+        width: 97% !important;
+    }
+
+    .about-why-travel-box {
+        width: 90% !important;
+        overflow: scroll;
+        top: -15% !important;
+        left: 5% !important;
+    }
+
+    .about-my-post-all-item {
+        width: 97% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .about-my-post-all-item h3 {
+        font-size: 1rem !important;
+    }
+
+    .about-my-post-all-item-header {
+        width: 100% !important;
+        top: 65% !important;
+        border-radius: 0 0 10px 10px !important;
+    }
+
+    .about-my-post {
+        width: 97% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .about-my-post-all {
+        padding: 0 !important;
+    }
+
+    .about-contact {
+        width: 97% !important;
+        padding: 1rem 0 !important;
+    }
+
+    .about-contact-img {
+        display: none;
+    }
+
+    .about-contact-content {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .about-contact-social > div {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .about-name > div {
+        width: 100% !important;
+    }
+
+    .about-map > iframe {
+        height: 350px !important;
+    }
+
+    #alert {
+        width: 60% !important;
+        height: 280px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    #alert-about {
+        width: 60% !important;
+        height: 280px !important;
+        top: 30% !important;
+        left: 20% !important;
+        right: 20% !important;
+    }
+
+    .notifi-content {
+        left: -540%;
+        bottom: -370%;
+    }
+
+    section.all-post {
+        width: 97%;
+    }
+
+    .cmt-name, 
+    .cmt-email {
+        width: 100%;
+    }
+
+    .tbl {
+        width: 95%;
+    }
+
+    .pre-nex i, .pre-nex a {
+        font-size: 1rem;
     }
 
 }
@@ -568,7 +1727,23 @@
     }
 
     .sort {
-        margin: 1rem 1rem 1rem 50% !important;
+        margin: 0 1rem 1rem 50% !important;
+    }
+
+    .travel-img {
+        display: none;
+    }
+
+    .travel-cont {
+        width: 100% !important;
+    }
+
+    .travel-item {
+        padding: 0.5rem !important;
+    }
+
+    div.find-location {
+        margin: 0 !important;
     }
 
 }

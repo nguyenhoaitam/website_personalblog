@@ -978,16 +978,17 @@ div.follow-me a {
 }
 
 #alert {
-    width: 45rem;
-    height: 25rem;
     background-color: #bbc1d8;
     margin: auto;
     border-radius: 10px;
     position: fixed;
     z-index: 10;
-    top: 10rem;
-    left: 26rem;
     display: none;
+    width: 60%;
+    height: 65%;
+    top: 20%;
+    left: 20%t;
+    right: 20%;
 }
 
 div.alert > div {
@@ -1081,6 +1082,75 @@ div.alert p {
 .favorites-list {
     top: 170px;
     color: red;
+}
+
+.favorites-list:hover .list-like {
+    display: block;
+}
+
+.list-like {
+    width: 300px;
+    height: 600px;
+    background: var(--main-color);
+    position: absolute;
+    right: 4rem;
+    top: 0;
+    padding: 1rem;
+    /* overflow: auto; */
+    display: none;
+}
+
+.list-like::before {
+    content: "";
+    border: 15px solid var(--main-color);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: -1.8rem;
+    top: 0.5rem;
+}
+
+.list-like-item {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    height: 105px;
+}
+
+.img-like {
+    width: 30%;
+}
+
+.list-like-item img {
+    width: 80%;
+}
+
+.title-like {
+    width: 50%;
+    font-size: 12px;
+}
+
+.remove-like {
+    width: 10%;
+}
+
+.remove-like i {
+    animation: none;
+    font-size: 14px;
+}
+
+.list-like-h4 {
+    margin: 0 0 0.3rem 0;
+    text-align: center;
+}
+
+.list-like-h5 {
+    margin: 0.3rem 0 0 0;
+    text-align: end;
 }
 
 @keyframes runglac {
